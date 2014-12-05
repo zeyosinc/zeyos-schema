@@ -1,0 +1,453 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<html>
+<head><link rel="icon" href="../favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"><link href="http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,300" rel="stylesheet" type="text/css">
+  <!-- SchemaSpy rev 590 -->
+  <title>appointments - ZeyOS Schema Documentation</title>
+  <link rel="stylesheet" href="../schemaSpy.css" type="text/css">
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../jquery.js"></script>
+  <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../schemaSpy.js"></script>
+  <script LANGUAGE="JavaScript" TYPE="text/javascript">
+    table='appointments';
+  </script>
+</head>
+<body>
+<table id="headerHolder" cellspacing="0" cellpadding="0"><tr><td>
+<div id="header">
+ <ul>
+  <li><a href="../index.html" title="All tables and views in the schema">Tables</a></li>
+  <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+  
+  <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+  
+  <li><a href="../columns.byTable.html" title="All of the columns in the schema">Columns</a></li>
+  
+ </ul>
+</div>
+</td></tr></table>
+<div class="content" style="clear:both;"><h1>Table: appointments</h1><h2>Columns</h2>
+
+<table width="100%" border="0">
+<tr valign="top"><td class="container" align="left" valign="top">
+<form name="options" action="">
+ <label for="showRelatedCols"><input type="checkbox" id="showRelatedCols">Related columns</label>
+ <label for="showConstNames"><input type="checkbox" id="showConstNames">Constraints</label>
+ <label for="showComments"><input type="checkbox" checked id="showComments">Comments</label>
+ <label for="showLegend"><input type="checkbox" checked id="showLegend">Legend</label>
+</form>
+</td><td class="container" rowspan="2" align="right" valign="top">
+ <table class="legend" border="0">
+  <tr>
+   <td class="dataTable" valign="bottom">Legend:</td>
+   <td class="container" align="right" valign="top"></td>
+  </tr>
+  <tr><td class="container" colspan="2">
+   <table class="dataTable" border="1">
+    <tbody>
+    <tr><td class="primaryKey">Primary key columns</td></tr>
+    <tr><td class="indexedColumn">Columns with indexes</td></tr>
+    <tr class="impliedRelationship"><td class="detail"><span class="impliedRelationship">Implied relationships</span></td></tr>
+    <tr><td class="excludedColumn">Excluded column relationships</td></tr>
+    <tr><td class="legendDetail">&lt; <em>n</em> &gt; number of related tables</td></tr>
+   </tbody></table>
+  </td></tr>
+ </table>
+<div style="margin-right: 2pt;">
+
+
+</div>
+&nbsp;
+</td></tr><tr valign="top"><td class="container" align="left" valign="top">
+<a name="columns"></a>
+<table id="columns" class="dataTable" border="1" rules="groups">
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup class="comment">
+<thead align="left">
+<tr>
+  <th>Column</th>
+  <th>Type</th>
+  <th>Size</th>
+  <th title="Are nulls allowed?">Nulls</th>
+  <th title="Is column automatically updated?">Auto</th>
+  <th title="Default value">Default</th>
+  <th title="Columns in tables that reference this column"><span class="notSortedByColumn">Children</span></th>
+  <th title="Columns in tables that are referenced by this column"><span class="notSortedByColumn">Parents</span></th>
+  <th title="Comments" class="comment"><span class="notSortedByColumn">Comments</span></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="odd">
+ <td class="primaryKey" title="Primary Key">ID</td>
+ <td class="detail">serial</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center" title="Automatically updated by the database">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="right">nextval('"appointments_ID_seq"'::regclass)</td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative odd" valign="top">
+    <td class="relatedTable detail" title="invitations.appointment refs appointments.ID via FK_invitations_appointment"><a href="invitations.html">invitations</a><span class="relatedKey">.appointment</span>
+    </td>
+    <td class="constraint detail">FK_invitations_appointment<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+  </table>
+</td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="indexedColumn" title="Indexed">owneruser</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="appointments.owneruser refs users.ID via FK_appointments_owneruser"><a href="users.html">users</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_appointments_owneruser<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail">The</td>
+</tr>
+<tr class="odd">
+ <td class="indexedColumn" title="Indexed">ownergroup</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative odd" valign="top">
+    <td class="relatedTable detail" title="appointments.ownergroup refs groups.ID via FK_appointments_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_appointments_ownergroup<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
+</tr>
+<tr class="even">
+ <td class="indexedColumn" title="Indexed">creator</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="appointments.creator refs users.ID via FK_appointments_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_appointments_creator<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail">The object creator</td>
+</tr>
+<tr class="odd">
+ <td class="indexedColumn" title="Indexed">assigneduser</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative odd" valign="top">
+    <td class="relatedTable detail" title="appointments.assigneduser refs users.ID via FK_appointments_assigneduser"><a href="users.html">users</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_appointments_assigneduser<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail">The assigned user</td>
+</tr>
+<tr class="even">
+ <td class="detail">creationdate</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
+</tr>
+<tr class="odd">
+ <td class="detail">lastmodified</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
+</tr>
+<tr class="even">
+ <td class="detail">visibility</td>
+ <td class="detail">int2</td>
+ <td class="detail" align="right">5</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">0</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">0: visible, 1: deleted, 2: archived</td>
+</tr>
+<tr class="odd">
+ <td class="detail">name</td>
+ <td class="detail">varchar</td>
+ <td class="detail" align="right">255</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="detail">location</td>
+ <td class="detail">varchar</td>
+ <td class="detail" align="right">255</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">''::character varying</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="detail">color</td>
+ <td class="detail">varchar</td>
+ <td class="detail" align="right">6</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">''::character varying</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="indexedColumn" title="Indexed">datefrom</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">Unix timestamp in seconds</td>
+</tr>
+<tr class="odd">
+ <td class="indexedColumn" title="Indexed">dateto</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">Unix timestamp in seconds</td>
+</tr>
+<tr class="even">
+ <td class="detail">recurrence</td>
+ <td class="detail">int2</td>
+ <td class="detail" align="right">5</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="detail">interval</td>
+ <td class="detail">int2</td>
+ <td class="detail" align="right">5</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">1</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="detail">daterecurrence</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="detail">description</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">''::text</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+<p title="17 columns">Table contained 0 rows at Do Dez 04 12:05 MEZ 2014</p><p></p>
+</td></tr></table>
+<div class="indent">
+<b>Indexes:</b>
+<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
+<thead>
+ <tr>
+  <th>Column(s)</th>
+  <th>Type</th>
+  <th>Sort</th>
+  <th class="constraint" style="text-align:left;">Constraint Name</th>
+  <th>Anomalies</th>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td class="primaryKey"></td>
+  <td class="detail">Primary key</td>
+  <td class="detail" style="text-align:left;"></td>
+  <td class="constraint" style="text-align:left;">PK_appointments_ID</td>
+  <td class="detail">These unique columns are also nullable</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">assigneduser</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">FK_appointments_assigneduser</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">creator</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">FK_appointments_creator</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">ownergroup</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">FK_appointments_ownergroup</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">owneruser</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">FK_appointments_owneruser</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">datefrom + dateto</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">IDX_appointments_datefrom_dateto</td>
+  <td>&nbsp;</td>
+ </tr>
+</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+</div>
+<table width="100%" border="0"><tr><td class="container">
+<br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from appointments">
+&nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
+<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="appointments.html" title="appointments" alt="" coords="376,99,631,571">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,193,147,612">
+<area shape="rect" id="node3" href="groups.html" title="groups" alt="" coords="191,133,332,408">
+<area shape="rect" id="node4" href="invitations.html" title="invitations" alt="" coords="675,5,796,232">
+</map>
+  <a name="diagram"><img id="oneDegreeImg" src="../diagrams/appointments.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
+<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="627,1380,760,1463">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="381,2377,522,2796">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="204,816,337,899">
+<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="18,1603,160,1877">
+<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1289,3095,1410,3177">
+<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="1094,3179,1227,3261">
+<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="882,3447,1015,3529">
+<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="882,2323,1015,2405">
+<area shape="rect" id="node42" href="projects.html" title="projects" alt="" coords="627,3821,760,3904">
+<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="888,1312,1009,1395">
+<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="627,2625,760,2708">
+<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="566,1824,821,2296">
+<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="627,512,760,595">
+<area shape="rect" id="node13" href="campaigns2contacts.html" title="campaigns2contacts" alt="" coords="865,512,1032,595">
+<area shape="rect" id="node14" href="categories.html" title="categories" alt="" coords="633,1084,754,1167">
+<area shape="rect" id="node15" href="comments.html" title="comments" alt="" coords="888,3347,1009,3429">
+<area shape="rect" id="node16" href="records.html" title="records" alt="" coords="627,3721,760,3804">
+<area shape="rect" id="node17" href="components.html" title="components" alt="" coords="888,1684,1009,1767">
+<area shape="rect" id="node18" href="items.html" title="items" alt="" coords="627,1552,760,1635">
+<area shape="rect" id="node19" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="618,712,769,795">
+<area shape="rect" id="node20" href="contracts.html" title="contracts" alt="" coords="888,2875,1009,2957">
+<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="882,2975,1015,3057">
+<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="1076,2975,1245,3057">
+<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="633,884,754,967">
+<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="888,2523,1009,2605">
+<area shape="rect" id="node25" href="follows.html" title="follows" alt="" coords="633,2525,754,2608">
+<area shape="rect" id="node26" href="groups2users.html" title="groups2users" alt="" coords="633,984,754,1067">
+<area shape="rect" id="node27" href="invitations.html" title="invitations" alt="" coords="888,1820,1009,2047">
+<area shape="rect" id="node28" href="likes.html" title="likes" alt="" coords="888,3247,1009,3329">
+<area shape="rect" id="node29" href="links.html" title="links" alt="" coords="633,3349,754,3432">
+<area shape="rect" id="node30" href="mailinglists.html" title="mailinglists" alt="" coords="627,140,760,223">
+<area shape="rect" id="node31" href="mailinglists2contacts.html" title="mailinglists2contacts" alt="" coords="865,185,1032,268">
+<area shape="rect" id="node32" href="mailservers.html" title="mailservers" alt="" coords="627,240,760,323">
+<area shape="rect" id="node33" href="messages.html" title="messages" alt="" coords="1094,261,1227,344">
+<area shape="rect" id="node34" href="notes.html" title="notes" alt="" coords="633,3449,754,3532">
+<area shape="rect" id="node35" href="objects.html" title="objects" alt="" coords="633,3549,754,3632">
+<area shape="rect" id="node36" href="opportunities.html" title="opportunities" alt="" coords="888,1112,1009,1195">
+<area shape="rect" id="node37" href="payments.html" title="payments" alt="" coords="1100,2799,1221,2881">
+<area shape="rect" id="node38" href="permissions.html" title="permissions" alt="" coords="633,412,754,495">
+<area shape="rect" id="node39" href="pricelists.html" title="pricelists" alt="" coords="627,612,760,695">
+<area shape="rect" id="node40" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="870,1212,1026,1295">
+<area shape="rect" id="node41" href="pricelists2items.html" title="pricelists2items" alt="" coords="882,1448,1014,1531">
+<area shape="rect" id="node43" href="resources.html" title="resources" alt="" coords="888,2623,1009,2705">
+<area shape="rect" id="node44" href="services.html" title="services" alt="" coords="888,2723,1009,2805">
+<area shape="rect" id="node45" href="stocktransactions.html" title="stocktransactions" alt="" coords="1088,2004,1233,2087">
+<area shape="rect" id="node46" href="storages.html" title="storages" alt="" coords="627,1652,760,1735">
+<area shape="rect" id="node47" href="suppliers.html" title="suppliers" alt="" coords="888,1548,1009,1631">
+<area shape="rect" id="node48" href="tokens.html" title="tokens" alt="" coords="633,2725,754,2808">
+<area shape="rect" id="node49" href="weblets.html" title="weblets" alt="" coords="888,2423,1009,2505">
+</map>
+
+  <a name="diagram"><img id="twoDegreesImg" src="../diagrams/appointments.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
+</td></tr></table>
+</div>
+<div id="footer">
+	<div>Copyright &copy; 2012-2014 <a href="http://www.zeyos.com">Zeyon Technologies Inc.</a> All rights reserved.</div>
+	<div id="links">
+		<a href="http://www.zeyos.com" id="zeyos-link"></a>
+		<a href="http://www.zeyconnect.com" id="zeyconnect-link"></a>
+		<a href="http://www.ixmldev.com" id="ixml-link"></a>
+	</div>
+	<div style="clear:both"></div>
+</div>
+</body>
+</html>

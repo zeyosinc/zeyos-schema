@@ -104,11 +104,10 @@ digraph "oneDegreeRelationshipsDiagram" {
   "projects":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"ownergroup":w -> "groups":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "records":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"ownergroup":w -> "groups":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "records":"recipientgroup":w -> "groups":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
-  "records":"recipientuser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "storages":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "storages":"ownergroup":w -> "groups":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "tasks":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -362,7 +361,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="description" COLSPAN="2" ALIGN="LEFT">description</TD><TD PORT="description.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="signature" COLSPAN="2" ALIGN="LEFT">signature</TD><TD PORT="signature.type" ALIGN="LEFT">varchar[32]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">28 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">27 &gt;</TD></TR>
     </TABLE>>
     URL="groups.html"
     tooltip="groups"
@@ -476,7 +475,6 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="serverout" COLSPAN="3" ALIGN="LEFT">serverout</TD></TR>
       <TR><TD PORT="usernameout" COLSPAN="3" ALIGN="LEFT">usernameout</TD></TR>
       <TR><TD PORT="passwordout" COLSPAN="3" ALIGN="LEFT">passwordout</TD></TR>
-      <TR><TD PORT="interval" COLSPAN="3" ALIGN="LEFT">interval</TD></TR>
       <TR><TD PORT="lastfetch" COLSPAN="3" ALIGN="LEFT">lastfetch</TD></TR>
       <TR><TD PORT="uidvalidity" COLSPAN="3" ALIGN="LEFT">uidvalidity</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
@@ -661,10 +659,9 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
       <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="recipientuser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientuser</TD></TR>
-      <TR><TD PORT="recipientgroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientgroup</TD></TR>
       <TR><TD PORT="entity" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">entity</TD></TR>
       <TR><TD PORT="index" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">index</TD></TR>
       <TR><TD PORT="flag" COLSPAN="3" ALIGN="LEFT">flag</TD></TR>
@@ -676,7 +673,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="size" COLSPAN="3" ALIGN="LEFT">size</TD></TR>
       <TR><TD PORT="binfile" COLSPAN="3" ALIGN="LEFT">binfile</TD></TR>
       <TR><TD PORT="meta" COLSPAN="3" ALIGN="LEFT">meta</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="records.html"
     tooltip="records"

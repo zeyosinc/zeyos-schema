@@ -25,11 +25,10 @@ digraph "oneDegreeRelationshipsDiagram" {
   "groups":"leader":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "likes":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "likes":"record":w -> "records":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "records":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "records":"recipientgroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "records":"recipientuser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "comments" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -58,7 +57,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">28 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">27 &gt;</TD></TR>
     </TABLE>>
     URL="groups.html"
     tooltip="groups"
@@ -84,10 +83,9 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="owneruser" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD><TD PORT="owneruser.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="ownergroup" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD><TD PORT="ownergroup.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="creator" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD><TD PORT="creator.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD><TD PORT="assigneduser.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="2" ALIGN="LEFT">creationdate</TD><TD PORT="creationdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
-      <TR><TD PORT="recipientuser" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientuser</TD><TD PORT="recipientuser.type" ALIGN="LEFT">int4[10]</TD></TR>
-      <TR><TD PORT="recipientgroup" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientgroup</TD><TD PORT="recipientgroup.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="entity" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">entity</TD><TD PORT="entity.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="index" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">index</TD><TD PORT="index.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="flag" COLSPAN="2" ALIGN="LEFT">flag</TD><TD PORT="flag.type" ALIGN="LEFT">int2[5]</TD></TR>
@@ -99,7 +97,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="size" COLSPAN="2" ALIGN="LEFT">size</TD><TD PORT="size.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="binfile" COLSPAN="2" ALIGN="LEFT">binfile</TD><TD PORT="binfile.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="meta" COLSPAN="2" ALIGN="LEFT">meta</TD><TD PORT="meta.type" ALIGN="LEFT">json[2147483647]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="records.html"
     tooltip="records"

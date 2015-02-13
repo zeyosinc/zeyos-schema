@@ -143,7 +143,6 @@ digraph "twoDegreesRelationshipsDiagram" {
   "projects":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "records":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "records":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -372,7 +371,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">28 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">27 &gt;</TD></TR>
     </TABLE>>
     URL="groups.html"
     tooltip="groups"
@@ -479,7 +478,6 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="serverout" COLSPAN="3" ALIGN="LEFT">serverout</TD></TR>
       <TR><TD PORT="usernameout" COLSPAN="3" ALIGN="LEFT">usernameout</TD></TR>
       <TR><TD PORT="passwordout" COLSPAN="3" ALIGN="LEFT">passwordout</TD></TR>
-      <TR><TD PORT="interval" COLSPAN="3" ALIGN="LEFT">interval</TD></TR>
       <TR><TD PORT="lastfetch" COLSPAN="3" ALIGN="LEFT">lastfetch</TD></TR>
       <TR><TD PORT="uidvalidity" COLSPAN="3" ALIGN="LEFT">uidvalidity</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
@@ -505,15 +503,15 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="flag" COLSPAN="2" ALIGN="LEFT">flag</TD><TD PORT="flag.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="date" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD><TD PORT="date.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="subject" COLSPAN="2" ALIGN="LEFT">subject</TD><TD PORT="subject.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="sender" COLSPAN="2" ALIGN="LEFT">sender</TD><TD PORT="sender.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="sender" COLSPAN="2" ALIGN="LEFT">sender</TD><TD PORT="sender.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="sender_email" COLSPAN="2" ALIGN="LEFT">sender_email</TD><TD PORT="sender_email.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="sender_name" COLSPAN="2" ALIGN="LEFT">sender_name</TD><TD PORT="sender_name.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="to" COLSPAN="2" ALIGN="LEFT">to</TD><TD PORT="to.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="to" COLSPAN="2" ALIGN="LEFT">to</TD><TD PORT="to.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="to_email" COLSPAN="2" ALIGN="LEFT">to_email</TD><TD PORT="to_email.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="to_name" COLSPAN="2" ALIGN="LEFT">to_name</TD><TD PORT="to_name.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="to_count" COLSPAN="2" ALIGN="LEFT">to_count</TD><TD PORT="to_count.type" ALIGN="LEFT">int4[10]</TD></TR>
-      <TR><TD PORT="cc" COLSPAN="2" ALIGN="LEFT">cc</TD><TD PORT="cc.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="bcc" COLSPAN="2" ALIGN="LEFT">bcc</TD><TD PORT="bcc.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="cc" COLSPAN="2" ALIGN="LEFT">cc</TD><TD PORT="cc.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="bcc" COLSPAN="2" ALIGN="LEFT">bcc</TD><TD PORT="bcc.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="contenttype" COLSPAN="2" ALIGN="LEFT">contenttype</TD><TD PORT="contenttype.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="size" COLSPAN="2" ALIGN="LEFT">size</TD><TD PORT="size.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="text" COLSPAN="2" ALIGN="LEFT">text</TD><TD PORT="text.type" ALIGN="LEFT">text[2147483647]</TD></TR>
@@ -619,7 +617,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">records</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="records.html"
     tooltip="records"

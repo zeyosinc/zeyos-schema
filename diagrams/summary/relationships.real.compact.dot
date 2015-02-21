@@ -302,6 +302,18 @@ digraph "compactRelationshipsDiagram" {
     URL="tables/extdatavalues.html"
     tooltip="extdatavalues"
   ];
+  "files" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">files</TD></TR>
+      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
+      <TR><TD PORT="record" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">record</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/files.html"
+    tooltip="files"
+  ];
   "follows" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -611,7 +623,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="index" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">index</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">3 &gt;</TD></TR>
     </TABLE>>
     URL="tables/records.html"
     tooltip="records"
@@ -874,6 +886,7 @@ digraph "compactRelationshipsDiagram" {
   "extdataforms":"application":w -> "applications":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "extdataforms":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "extdatavalues":"field":w -> "extdatafields":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "files":"record":w -> "records":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "follows":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "groups":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "groups":"leader":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];

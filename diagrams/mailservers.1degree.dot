@@ -67,10 +67,10 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="sender" COLSPAN="2" ALIGN="LEFT">sender</TD><TD PORT="sender.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="serverin" COLSPAN="2" ALIGN="LEFT">serverin</TD><TD PORT="serverin.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="usernamein" COLSPAN="2" ALIGN="LEFT">usernamein</TD><TD PORT="usernamein.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="passwordin" COLSPAN="2" ALIGN="LEFT">passwordin</TD><TD PORT="passwordin.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="passwordin" COLSPAN="2" ALIGN="LEFT">passwordin</TD><TD PORT="passwordin.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="serverout" COLSPAN="2" ALIGN="LEFT">serverout</TD><TD PORT="serverout.type" ALIGN="LEFT">varchar[255]</TD></TR>
       <TR><TD PORT="usernameout" COLSPAN="2" ALIGN="LEFT">usernameout</TD><TD PORT="usernameout.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="passwordout" COLSPAN="2" ALIGN="LEFT">passwordout</TD><TD PORT="passwordout.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="passwordout" COLSPAN="2" ALIGN="LEFT">passwordout</TD><TD PORT="passwordout.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="lastfetch" COLSPAN="2" ALIGN="LEFT">lastfetch</TD><TD PORT="lastfetch.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="uidvalidity" COLSPAN="2" ALIGN="LEFT">uidvalidity</TD><TD PORT="uidvalidity.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="description" COLSPAN="2" ALIGN="LEFT">description</TD><TD PORT="description.type" ALIGN="LEFT">text[2147483647]</TD></TR>

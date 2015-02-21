@@ -56,12 +56,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="sender" COLSPAN="3" ALIGN="LEFT">sender</TD></TR>
       <TR><TD PORT="text" COLSPAN="3" ALIGN="LEFT">text</TD></TR>
-      <TR><TD PORT="filename" COLSPAN="3" ALIGN="LEFT">filename</TD></TR>
-      <TR><TD PORT="mimetype" COLSPAN="3" ALIGN="LEFT">mimetype</TD></TR>
-      <TR><TD PORT="size" COLSPAN="3" ALIGN="LEFT">size</TD></TR>
-      <TR><TD PORT="binfile" COLSPAN="3" ALIGN="LEFT">binfile</TD></TR>
       <TR><TD PORT="meta" COLSPAN="3" ALIGN="LEFT">meta</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">3 &gt;</TD></TR>
     </TABLE>>
     URL="records.html"
     tooltip="records"

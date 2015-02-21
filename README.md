@@ -35,6 +35,7 @@ Tables
 * [extdatafields](http://schema.zeyos.com/tables/extdatafields.html)
 * [extdataforms](http://schema.zeyos.com/tables/extdataforms.html)
 * [extdatavalues](http://schema.zeyos.com/tables/extdatavalues.html)
+* [files](http://schema.zeyos.com/tables/files.html)
 * [follows](http://schema.zeyos.com/tables/follows.html)
 * [groups](http://schema.zeyos.com/tables/groups.html)
 * [groups2users](http://schema.zeyos.com/tables/groups2users.html)

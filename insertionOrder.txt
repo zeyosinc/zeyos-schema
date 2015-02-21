@@ -13,14 +13,15 @@ items
 transactions
 storages
 applications
-pricelists
 records
+pricelists
 campaigns
 appointments
 dunning
 stocktransactions
 tasks
 extdatavalues
+files
 follows
 serials
 tagrels

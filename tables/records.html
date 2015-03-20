@@ -64,11 +64,26 @@
 <td>icon</td>
 <td>Icon for external application 16x16px</td>
 </tr>
-<tr>
-<td></td>
-</tr>
 </tbody>
 </table>
+<h2 id="monitor-entries">Monitor entries</h2>
+<p>Records are also being used to store information about changes that occured with the related object.
+Those records are flagged as &quot;Monitor entry&quot; (<code>flag: 3</code>)</p>
+<p>The record text represents the changeset that occured. The text value consists of the following elements:</p>
+<pre><code>{ACTION} {entity} {index} {name}
+</code></pre><p>For instance, when an object (in the following example a &quot;task&quot;) is created, ZeyOS automatically creates 
+a record with the following text:</p>
+<pre><code>CREATE tasks 123 Sample task
+</code></pre><p>The following action labels exist:</p>
+<ul>
+<li>CREATE</li>
+<li>MODIFY</li>
+<li>DELETE</li>
+<li>ACTIVATE</li>
+<li>DEACTIVATE</li>
+<li>ARCHIVE</li>
+<li>RESTORE</li>
+</ul>
 </td></tr></table><h2>Columns</h2>
 
 <table width="100%" border="0">
@@ -339,7 +354,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="14 columns">Table contained 0 rows at Sa Feb 21 16:48 MEZ 2015</p><p></p>
+<p title="14 columns">Table contained 0 rows at Fr M�r 20 14:32 MEZ 2015</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>

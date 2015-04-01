@@ -29,7 +29,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">9 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">10 &gt;</TD></TR>
     </TABLE>>
     URL="tables/accounts.html"
     tooltip="accounts"
@@ -533,9 +533,10 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/payments.html"
     tooltip="payments"
@@ -677,8 +678,9 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="item" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD></TR>
       <TR><TD PORT="storage" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">storage</TD></TR>
       <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
+      <TR><TD PORT="transfer" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transfer</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="tables/stocktransactions.html"
     tooltip="stocktransactions"
@@ -936,6 +938,7 @@ digraph "compactRelationshipsDiagram" {
   "opportunities":"contact":w -> "contacts":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "opportunities":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "opportunities":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "payments":"account":w -> "accounts":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"transaction":w -> "transactions":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -966,6 +969,7 @@ digraph "compactRelationshipsDiagram" {
   "stocktransactions":"item":w -> "items":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "stocktransactions":"storage":w -> "storages":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "stocktransactions":"transaction":w -> "transactions":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "stocktransactions":"transfer":w -> "stocktransactions":"ID":e [arrowhead=none dir=back arrowtail=teeodot];
   "storages":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "storages":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "suppliers":"account":w -> "accounts":"ID":e [arrowhead=none dir=back arrowtail=crowodot];

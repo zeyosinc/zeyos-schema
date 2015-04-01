@@ -25,6 +25,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "stocktransactions":"item":w -> "items":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "stocktransactions":"storage":w -> "storages":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "stocktransactions":"transaction":w -> "transactions":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "stocktransactions":"transfer":w -> "stocktransactions":"ID.type":e [arrowhead=none dir=back arrowtail=teeodot];
   "storages":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "transactions":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "transactions":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -78,6 +79,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="item" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD><TD PORT="item.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="storage" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">storage</TD><TD PORT="storage.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="transaction" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD><TD PORT="transaction.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="transfer" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">transfer</TD><TD PORT="transfer.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="flag" COLSPAN="2" ALIGN="LEFT">flag</TD><TD PORT="flag.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="date" COLSPAN="2" ALIGN="LEFT">date</TD><TD PORT="date.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="chargenum" COLSPAN="2" ALIGN="LEFT">chargenum</TD><TD PORT="chargenum.type" ALIGN="LEFT">varchar[255]</TD></TR>
@@ -86,7 +88,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="amount" COLSPAN="2" ALIGN="LEFT">amount</TD><TD PORT="amount.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="sellingprice" COLSPAN="2" ALIGN="LEFT">sellingprice</TD><TD PORT="sellingprice.type" ALIGN="LEFT">float8[17,17]</TD></TR>
       <TR><TD PORT="purchaseprice" COLSPAN="2" ALIGN="LEFT">purchaseprice</TD><TD PORT="purchaseprice.type" ALIGN="LEFT">float8[17,17]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="stocktransactions.html"
     tooltip="stocktransactions"

@@ -12,13 +12,13 @@ messages
 items
 transactions
 storages
+stocktransactions
 applications
 records
 pricelists
 campaigns
 appointments
 dunning
-stocktransactions
 tasks
 extdatavalues
 files
@@ -43,7 +43,6 @@ events
 groups2users
 invitations
 mailinglists2contacts
-payments
 pricelists2accounts
 pricelists2items
 suppliers
@@ -51,6 +50,8 @@ contracts
 links
 notes
 objects
+payments
 opportunities
 actionsteps
 associates
+binfiles

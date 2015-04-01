@@ -54,6 +54,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="item" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD></TR>
       <TR><TD PORT="storage" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">storage</TD></TR>
       <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
+      <TR><TD PORT="transfer" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transfer</TD></TR>
       <TR><TD PORT="flag" COLSPAN="3" ALIGN="LEFT">flag</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="chargenum" COLSPAN="3" ALIGN="LEFT">chargenum</TD></TR>
@@ -62,7 +63,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="amount" COLSPAN="3" ALIGN="LEFT">amount</TD></TR>
       <TR><TD PORT="sellingprice" COLSPAN="3" ALIGN="LEFT">sellingprice</TD></TR>
       <TR><TD PORT="purchaseprice" COLSPAN="3" ALIGN="LEFT">purchaseprice</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="stocktransactions.html"
     tooltip="stocktransactions"

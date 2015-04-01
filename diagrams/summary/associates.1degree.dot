@@ -29,6 +29,7 @@ digraph "associates" {
       <TR><TD PORT="entity2" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">entity2</TD></TR>
       <TR><TD PORT="index2" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">index2</TD></TR>
       <TR><TD PORT="relation" COLSPAN="3" ALIGN="LEFT">relation</TD></TR>
+      <TR><TD PORT="meta" COLSPAN="3" ALIGN="LEFT">meta</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/associates.html"

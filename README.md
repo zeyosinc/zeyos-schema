@@ -21,6 +21,7 @@ Tables
 * [applications](http://schema.zeyos.com/tables/applications.html)
 * [appointments](http://schema.zeyos.com/tables/appointments.html)
 * [associates](http://schema.zeyos.com/tables/associates.html)
+* [binfiles](http://schema.zeyos.com/tables/binfiles.html)
 * [campaigns](http://schema.zeyos.com/tables/campaigns.html)
 * [campaigns2contacts](http://schema.zeyos.com/tables/campaigns2contacts.html)
 * [categories](http://schema.zeyos.com/tables/categories.html)

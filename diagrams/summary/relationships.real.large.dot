@@ -63,6 +63,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="actionnum" COLSPAN="3" ALIGN="LEFT">actionnum</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="duedate" COLSPAN="3" ALIGN="LEFT">duedate</TD></TR>
       <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="effort" COLSPAN="3" ALIGN="LEFT">effort</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
@@ -665,11 +666,26 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="contenttype" COLSPAN="3" ALIGN="LEFT">contenttype</TD></TR>
       <TR><TD PORT="size" COLSPAN="3" ALIGN="LEFT">size</TD></TR>
       <TR><TD PORT="text" COLSPAN="3" ALIGN="LEFT">text</TD></TR>
+      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
       <TR><TD PORT="binfile" COLSPAN="3" ALIGN="LEFT">binfile</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/notes.html"
     tooltip="notes"
+  ];
+  "notifications" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">notifications</TD></TR>
+      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
+      <TR><TD PORT="user" COLSPAN="3" ALIGN="LEFT">user</TD></TR>
+      <TR><TD PORT="record" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">record</TD></TR>
+      <TR><TD PORT="date" COLSPAN="3" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="flag" COLSPAN="3" ALIGN="LEFT">flag</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/notifications.html"
+    tooltip="notifications"
   ];
   "objects" [
     label=<
@@ -853,7 +869,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="sender" COLSPAN="3" ALIGN="LEFT">sender</TD></TR>
       <TR><TD PORT="text" COLSPAN="3" ALIGN="LEFT">text</TD></TR>
       <TR><TD PORT="meta" COLSPAN="3" ALIGN="LEFT">meta</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">3 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
     </TABLE>>
     URL="tables/records.html"
     tooltip="records"
@@ -906,6 +922,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="entity" COLSPAN="3" ALIGN="LEFT">entity</TD></TR>
       <TR><TD PORT="schedule" COLSPAN="3" ALIGN="LEFT">schedule</TD></TR>
       <TR><TD PORT="interval" COLSPAN="3" ALIGN="LEFT">interval</TD></TR>
+      <TR><TD PORT="url" COLSPAN="3" ALIGN="LEFT">url</TD></TR>
       <TR><TD PORT="code" COLSPAN="3" ALIGN="LEFT">code</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -1124,7 +1141,7 @@ digraph "largeRelationshipsDiagram" {
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
       <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">83 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">84 &gt;</TD></TR>
     </TABLE>>
     URL="tables/users.html"
     tooltip="users"
@@ -1255,6 +1272,8 @@ digraph "largeRelationshipsDiagram" {
   "notes":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "notifications":"record":w -> "records":"ID":e [arrowhead=none dir=back arrowtail=teeodot];
+  "notifications":"user":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];

@@ -37,10 +37,10 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="creationdate" COLSPAN="2" ALIGN="LEFT">creationdate</TD><TD PORT="creationdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="activity" COLSPAN="2" ALIGN="LEFT">activity</TD><TD PORT="activity.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="name" COLSPAN="2" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="identifier" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD><TD PORT="identifier.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="vendor" COLSPAN="2" ALIGN="LEFT">vendor</TD><TD PORT="vendor.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="accesskey" COLSPAN="2" ALIGN="LEFT">accesskey</TD><TD PORT="accesskey.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="name" COLSPAN="2" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="identifier" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD><TD PORT="identifier.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="vendor" COLSPAN="2" ALIGN="LEFT">vendor</TD><TD PORT="vendor.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="accesskey" COLSPAN="2" ALIGN="LEFT">accesskey</TD><TD PORT="accesskey.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="zeyconnectid" COLSPAN="2" ALIGN="LEFT">zeyconnectid</TD><TD PORT="zeyconnectid.type" ALIGN="LEFT">varchar[40]</TD></TR>
       <TR><TD PORT="defaultsettings" COLSPAN="2" ALIGN="LEFT">defaultsettings</TD><TD PORT="defaultsettings.type" ALIGN="LEFT">json[2147483647]</TD></TR>
       <TR><TD PORT="settings" COLSPAN="2" ALIGN="LEFT">settings</TD><TD PORT="settings.type" ALIGN="LEFT">json[2147483647]</TD></TR>
@@ -109,6 +109,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="entity" COLSPAN="3" ALIGN="LEFT">entity</TD></TR>
       <TR><TD PORT="schedule" COLSPAN="3" ALIGN="LEFT">schedule</TD></TR>
       <TR><TD PORT="interval" COLSPAN="3" ALIGN="LEFT">interval</TD></TR>
+      <TR><TD PORT="url" COLSPAN="3" ALIGN="LEFT">url</TD></TR>
       <TR><TD PORT="code" COLSPAN="3" ALIGN="LEFT">code</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -134,7 +135,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
       <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">83 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">84 &gt;</TD></TR>
     </TABLE>>
     URL="users.html"
     tooltip="users"

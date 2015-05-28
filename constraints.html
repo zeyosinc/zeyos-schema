@@ -32,7 +32,7 @@
 <div class="indent">
 <table width="100%">
 <tr><td class="container" valign="bottom"><b>
-165 Foreign Key Constraints:</b>
+167 Foreign Key Constraints:</b>
 </td><td class="container" align="right">
 <table>
   <tr><td class="container" align="right" valign="top"></td></tr>
@@ -747,6 +747,20 @@
   <tr class="even">
   <td class="detail">FK_notes_owneruser</td>
   <td class="detail"><a href="tables/notes.html">notes</a>.owneruser</td>
+  <td class="detail"><a href="tables/users.html">users</a>.ID</td>
+  <td class="detail"><span title="Cascade on delete:
+ Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
+ </tr>
+  <tr class="odd">
+  <td class="detail">FK_notifications_record</td>
+  <td class="detail"><a href="tables/notifications.html">notifications</a>.record</td>
+  <td class="detail"><a href="tables/records.html">records</a>.ID</td>
+  <td class="detail"><span title="Cascade on delete:
+ Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
+ </tr>
+  <tr class="even">
+  <td class="detail">FK_notifications_user</td>
+  <td class="detail"><a href="tables/notifications.html">notifications</a>.user</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>

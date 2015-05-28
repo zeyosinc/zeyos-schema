@@ -32,7 +32,7 @@
 <form name="options" action="">
  <label for="showRelatedCols"><input type="checkbox" id="showRelatedCols">Related columns</label>
  <label for="showConstNames"><input type="checkbox" id="showConstNames">Constraints</label>
- <label for="showComments"><input type="checkbox" id="showComments">Comments</label>
+ <label for="showComments"><input type="checkbox" checked id="showComments">Comments</label>
  <label for="showLegend"><input type="checkbox" checked id="showLegend">Legend</label>
 </form>
 </td><td class="container" rowspan="2" align="right" valign="top">
@@ -85,8 +85,8 @@
 <tbody valign="top">
 <tr class="even">
  <td class="primaryKey" title="Primary Key">ID</td>
- <td class="detail">int8</td>
- <td class="detail" align="right">19</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
  <td class="detail" align="center"></td>
  <td class="detail" align="center"></td>
  <td class="detail"></td>
@@ -116,8 +116,19 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
+<tr class="odd">
+ <td class="detail">date</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">Unix timestamp in seconds</td>
+</tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="3 columns">Table contained 0 rows at Mi Apr 01 10:11 MESZ 2015</p><p></p>
+<p title="4 columns">Table contained 0 rows at Do Mai 28 11:14 MESZ 2015</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>

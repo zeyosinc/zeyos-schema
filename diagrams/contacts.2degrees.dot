@@ -116,6 +116,8 @@ digraph "twoDegreesRelationshipsDiagram" {
   "notes":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "notifications":"elipses":w -> "records":"elipses":e [arrowhead=none dir=back arrowtail=teeodot];
+  "notifications":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -320,25 +322,25 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="creationdate" COLSPAN="2" ALIGN="LEFT">creationdate</TD><TD PORT="creationdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="2" ALIGN="LEFT">visibility</TD><TD PORT="visibility.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="lastname" COLSPAN="2" ALIGN="LEFT">lastname</TD><TD PORT="lastname.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="firstname" COLSPAN="2" ALIGN="LEFT">firstname</TD><TD PORT="firstname.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="lastname" COLSPAN="2" ALIGN="LEFT">lastname</TD><TD PORT="lastname.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="firstname" COLSPAN="2" ALIGN="LEFT">firstname</TD><TD PORT="firstname.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="type" COLSPAN="2" ALIGN="LEFT">type</TD><TD PORT="type.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="title" COLSPAN="2" ALIGN="LEFT">title</TD><TD PORT="title.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="company" COLSPAN="2" ALIGN="LEFT">company</TD><TD PORT="company.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="position" COLSPAN="2" ALIGN="LEFT">position</TD><TD PORT="position.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="department" COLSPAN="2" ALIGN="LEFT">department</TD><TD PORT="department.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="address" COLSPAN="2" ALIGN="LEFT">address</TD><TD PORT="address.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="postalcode" COLSPAN="2" ALIGN="LEFT">postalcode</TD><TD PORT="postalcode.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="city" COLSPAN="2" ALIGN="LEFT">city</TD><TD PORT="city.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="region" COLSPAN="2" ALIGN="LEFT">region</TD><TD PORT="region.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="title" COLSPAN="2" ALIGN="LEFT">title</TD><TD PORT="title.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="company" COLSPAN="2" ALIGN="LEFT">company</TD><TD PORT="company.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="position" COLSPAN="2" ALIGN="LEFT">position</TD><TD PORT="position.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="department" COLSPAN="2" ALIGN="LEFT">department</TD><TD PORT="department.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="address" COLSPAN="2" ALIGN="LEFT">address</TD><TD PORT="address.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="postalcode" COLSPAN="2" ALIGN="LEFT">postalcode</TD><TD PORT="postalcode.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="city" COLSPAN="2" ALIGN="LEFT">city</TD><TD PORT="city.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="region" COLSPAN="2" ALIGN="LEFT">region</TD><TD PORT="region.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="country" COLSPAN="2" ALIGN="LEFT">country</TD><TD PORT="country.type" ALIGN="LEFT">varchar[2]</TD></TR>
-      <TR><TD PORT="phone" COLSPAN="2" ALIGN="LEFT">phone</TD><TD PORT="phone.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="phone2" COLSPAN="2" ALIGN="LEFT">phone2</TD><TD PORT="phone2.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="cell" COLSPAN="2" ALIGN="LEFT">cell</TD><TD PORT="cell.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="fax" COLSPAN="2" ALIGN="LEFT">fax</TD><TD PORT="fax.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="email" COLSPAN="2" ALIGN="LEFT">email</TD><TD PORT="email.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="email2" COLSPAN="2" ALIGN="LEFT">email2</TD><TD PORT="email2.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="website" COLSPAN="2" ALIGN="LEFT">website</TD><TD PORT="website.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="phone" COLSPAN="2" ALIGN="LEFT">phone</TD><TD PORT="phone.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="phone2" COLSPAN="2" ALIGN="LEFT">phone2</TD><TD PORT="phone2.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="cell" COLSPAN="2" ALIGN="LEFT">cell</TD><TD PORT="cell.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="fax" COLSPAN="2" ALIGN="LEFT">fax</TD><TD PORT="fax.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="email" COLSPAN="2" ALIGN="LEFT">email</TD><TD PORT="email.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="email2" COLSPAN="2" ALIGN="LEFT">email2</TD><TD PORT="email2.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="website" COLSPAN="2" ALIGN="LEFT">website</TD><TD PORT="website.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="birthdate" COLSPAN="2" ALIGN="LEFT">birthdate</TD><TD PORT="birthdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="description" COLSPAN="2" ALIGN="LEFT">description</TD><TD PORT="description.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="gravatar" COLSPAN="2" ALIGN="LEFT">gravatar</TD><TD PORT="gravatar.type" ALIGN="LEFT">varchar[32]</TD></TR>
@@ -550,6 +552,16 @@ digraph "twoDegreesRelationshipsDiagram" {
     URL="notes.html"
     tooltip="notes"
   ];
+  "notifications" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">notifications</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="notifications.html"
+    tooltip="notifications"
+  ];
   "objects" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -653,7 +665,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">records</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">3 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
     </TABLE>>
     URL="records.html"
     tooltip="records"
@@ -767,7 +779,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
       <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">83 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">84 &gt;</TD></TR>
     </TABLE>>
     URL="users.html"
     tooltip="users"

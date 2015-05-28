@@ -116,6 +116,8 @@ digraph "twoDegreesRelationshipsDiagram" {
   "notes":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "notifications":"elipses":w -> "records":"elipses":e [arrowhead=none dir=back arrowtail=teeodot];
+  "notifications":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "objects":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -224,6 +226,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="actionnum" COLSPAN="3" ALIGN="LEFT">actionnum</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="duedate" COLSPAN="3" ALIGN="LEFT">duedate</TD></TR>
       <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="effort" COLSPAN="3" ALIGN="LEFT">effort</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
@@ -515,6 +518,16 @@ digraph "twoDegreesRelationshipsDiagram" {
     URL="notes.html"
     tooltip="notes"
   ];
+  "notifications" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">notifications</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="notifications.html"
+    tooltip="notifications"
+  ];
   "objects" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -612,7 +625,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">records</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">3 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
     </TABLE>>
     URL="records.html"
     tooltip="records"
@@ -733,24 +746,24 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="creationdate" COLSPAN="2" ALIGN="LEFT">creationdate</TD><TD PORT="creationdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="account" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD><TD PORT="account.type" ALIGN="LEFT">int4[10]</TD></TR>
-      <TR><TD PORT="transactionnum" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">transactionnum</TD><TD PORT="transactionnum.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="transactionnum" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">transactionnum</TD><TD PORT="transactionnum.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="type" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">type</TD><TD PORT="type.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="date" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD><TD PORT="date.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="duedate" COLSPAN="2" ALIGN="LEFT">duedate</TD><TD PORT="duedate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="status" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">status</TD><TD PORT="status.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="currency" COLSPAN="2" ALIGN="LEFT">currency</TD><TD PORT="currency.type" ALIGN="LEFT">varchar[3]</TD></TR>
       <TR><TD PORT="exchangerate" COLSPAN="2" ALIGN="LEFT">exchangerate</TD><TD PORT="exchangerate.type" ALIGN="LEFT">float8[17,17]</TD></TR>
-      <TR><TD PORT="shippingrecipient" COLSPAN="2" ALIGN="LEFT">shippingrecipient</TD><TD PORT="shippingrecipient.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="shippingaddress" COLSPAN="2" ALIGN="LEFT">shippingaddress</TD><TD PORT="shippingaddress.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="shippingpostalcode" COLSPAN="2" ALIGN="LEFT">shippingpostalcode</TD><TD PORT="shippingpostalcode.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="shippingcity" COLSPAN="2" ALIGN="LEFT">shippingcity</TD><TD PORT="shippingcity.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="shippingregion" COLSPAN="2" ALIGN="LEFT">shippingregion</TD><TD PORT="shippingregion.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="shippingrecipient" COLSPAN="2" ALIGN="LEFT">shippingrecipient</TD><TD PORT="shippingrecipient.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="shippingaddress" COLSPAN="2" ALIGN="LEFT">shippingaddress</TD><TD PORT="shippingaddress.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="shippingpostalcode" COLSPAN="2" ALIGN="LEFT">shippingpostalcode</TD><TD PORT="shippingpostalcode.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="shippingcity" COLSPAN="2" ALIGN="LEFT">shippingcity</TD><TD PORT="shippingcity.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="shippingregion" COLSPAN="2" ALIGN="LEFT">shippingregion</TD><TD PORT="shippingregion.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="shippingcountry" COLSPAN="2" ALIGN="LEFT">shippingcountry</TD><TD PORT="shippingcountry.type" ALIGN="LEFT">varchar[2]</TD></TR>
-      <TR><TD PORT="billingrecipient" COLSPAN="2" ALIGN="LEFT">billingrecipient</TD><TD PORT="billingrecipient.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="billingaddress" COLSPAN="2" ALIGN="LEFT">billingaddress</TD><TD PORT="billingaddress.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="billingpostalcode" COLSPAN="2" ALIGN="LEFT">billingpostalcode</TD><TD PORT="billingpostalcode.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="billingcity" COLSPAN="2" ALIGN="LEFT">billingcity</TD><TD PORT="billingcity.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="billingregion" COLSPAN="2" ALIGN="LEFT">billingregion</TD><TD PORT="billingregion.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="billingrecipient" COLSPAN="2" ALIGN="LEFT">billingrecipient</TD><TD PORT="billingrecipient.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="billingaddress" COLSPAN="2" ALIGN="LEFT">billingaddress</TD><TD PORT="billingaddress.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="billingpostalcode" COLSPAN="2" ALIGN="LEFT">billingpostalcode</TD><TD PORT="billingpostalcode.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="billingcity" COLSPAN="2" ALIGN="LEFT">billingcity</TD><TD PORT="billingcity.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="billingregion" COLSPAN="2" ALIGN="LEFT">billingregion</TD><TD PORT="billingregion.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="billingcountry" COLSPAN="2" ALIGN="LEFT">billingcountry</TD><TD PORT="billingcountry.type" ALIGN="LEFT">varchar[2]</TD></TR>
       <TR><TD PORT="discount" COLSPAN="2" ALIGN="LEFT">discount</TD><TD PORT="discount.type" ALIGN="LEFT">float8[17,17]</TD></TR>
       <TR><TD PORT="netamount" COLSPAN="2" ALIGN="LEFT">netamount</TD><TD PORT="netamount.type" ALIGN="LEFT">float8[17,17]</TD></TR>
@@ -782,7 +795,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
       <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">83 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">84 &gt;</TD></TR>
     </TABLE>>
     URL="users.html"
     tooltip="users"

@@ -24,6 +24,7 @@ weblets
 services
 resources
 permissions
+notifications
 likes
 extdataforms
 comments

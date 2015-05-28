@@ -49,6 +49,7 @@ Tables
 * [mailservers](http://schema.zeyos.com/tables/mailservers.html)
 * [messages](http://schema.zeyos.com/tables/messages.html)
 * [notes](http://schema.zeyos.com/tables/notes.html)
+* [notifications](http://schema.zeyos.com/tables/notifications.html)
 * [objects](http://schema.zeyos.com/tables/objects.html)
 * [opportunities](http://schema.zeyos.com/tables/opportunities.html)
 * [payments](http://schema.zeyos.com/tables/payments.html)

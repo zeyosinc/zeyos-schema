@@ -66,8 +66,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="account" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD><TD PORT="account.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="2" ALIGN="LEFT">visibility</TD><TD PORT="visibility.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="name" COLSPAN="2" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">varchar[255]</TD></TR>
-      <TR><TD PORT="contractnum" COLSPAN="2" ALIGN="LEFT">contractnum</TD><TD PORT="contractnum.type" ALIGN="LEFT">varchar[255]</TD></TR>
+      <TR><TD PORT="name" COLSPAN="2" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="contractnum" COLSPAN="2" ALIGN="LEFT">contractnum</TD><TD PORT="contractnum.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="datefrom" COLSPAN="2" ALIGN="LEFT">datefrom</TD><TD PORT="datefrom.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="dateto" COLSPAN="2" ALIGN="LEFT">dateto</TD><TD PORT="dateto.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="datecancel" COLSPAN="2" ALIGN="LEFT">datecancel</TD><TD PORT="datecancel.type" ALIGN="LEFT">int8[19]</TD></TR>
@@ -116,7 +116,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
       <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">83 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">84 &gt;</TD></TR>
     </TABLE>>
     URL="users.html"
     tooltip="users"

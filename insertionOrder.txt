@@ -29,6 +29,7 @@ tokens
 comments
 extdataforms
 likes
+notifications
 permissions
 resources
 services

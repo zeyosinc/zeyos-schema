@@ -42,9 +42,6 @@ digraph "twoDegreesRelationshipsDiagram" {
   "campaigns":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "campaigns":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "campaigns":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "campaigns2contacts":"elipses":w -> "campaigns":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "campaigns2contacts":"elipses":w -> "contacts":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "campaigns2contacts":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "categories":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "categories":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "categories":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -94,12 +91,10 @@ digraph "twoDegreesRelationshipsDiagram" {
   "links":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "links":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailinglists":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "mailinglists":"elipses":w -> "campaigns":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailinglists":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailinglists":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailinglists":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "mailinglists2contacts":"elipses":w -> "contacts":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "mailinglists2contacts":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "mailinglists2contacts":"elipses":w -> "mailinglists":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"elipses":w -> "messages":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -127,6 +122,9 @@ digraph "twoDegreesRelationshipsDiagram" {
   "opportunities":"elipses":w -> "contacts":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "opportunities":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "opportunities":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "participants":"elipses":w -> "campaigns":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "participants":"elipses":w -> "contacts":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "participants":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"elipses":w -> "accounts":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -237,20 +235,10 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">campaigns</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="campaigns.html"
     tooltip="campaigns"
-  ];
-  "campaigns2contacts" [
-    label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">campaigns2contacts</TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
-    </TABLE>>
-    URL="campaigns2contacts.html"
-    tooltip="campaigns2contacts"
   ];
   "categories" [
     label=<
@@ -267,7 +255,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">comments</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
     URL="comments.html"
     tooltip="comments"
@@ -277,7 +265,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">components</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
       <TR><TD PORT="item" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD></TR>
@@ -294,7 +282,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">contacts</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">9 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">8 &gt;</TD></TR>
     </TABLE>>
     URL="contacts.html"
     tooltip="contacts"
@@ -374,10 +362,10 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">groups</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="leader" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">leader</TD></TR>
+      <TR><TD PORT="leader" COLSPAN="3" ALIGN="LEFT">leader</TD></TR>
       <TR><TD PORT="activity" COLSPAN="3" ALIGN="LEFT">activity</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
@@ -413,7 +401,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">items</TD></TR>
       <TR><TD PORT="ID" COLSPAN="2" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD><TD PORT="ID.type" ALIGN="LEFT">serial[10]</TD></TR>
       <TR><TD PORT="ownergroup" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD><TD PORT="ownergroup.type" ALIGN="LEFT">int4[10]</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD><TD PORT="creator.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="2" ALIGN="LEFT">creator</TD><TD PORT="creator.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="2" ALIGN="LEFT">creationdate</TD><TD PORT="creationdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="2" ALIGN="LEFT">visibility</TD><TD PORT="visibility.type" ALIGN="LEFT">int2[5]</TD></TR>
@@ -459,20 +447,10 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">mailinglists</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
     URL="mailinglists.html"
     tooltip="mailinglists"
-  ];
-  "mailinglists2contacts" [
-    label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">mailinglists2contacts</TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
-    </TABLE>>
-    URL="mailinglists2contacts.html"
-    tooltip="mailinglists2contacts"
   ];
   "mailservers" [
     label=<
@@ -534,6 +512,16 @@ digraph "twoDegreesRelationshipsDiagram" {
     URL="opportunities.html"
     tooltip="opportunities"
   ];
+  "participants" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">participants</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="participants.html"
+    tooltip="participants"
+  ];
   "payments" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -579,7 +567,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">pricelists2items</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
       <TR><TD PORT="pricelist" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">pricelist</TD></TR>
@@ -648,7 +636,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">stocktransactions</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
       <TR><TD PORT="item" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD></TR>
@@ -683,7 +671,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">suppliers</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
       <TR><TD PORT="item" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD></TR>
@@ -757,7 +745,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
       <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">84 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">83 &gt;</TD></TR>
     </TABLE>>
     URL="users.html"
     tooltip="users"

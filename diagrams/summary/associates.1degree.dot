@@ -22,7 +22,7 @@ digraph "associates" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">associates</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="entity1" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">entity1</TD></TR>
       <TR><TD PORT="index1" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">index1</TD></TR>

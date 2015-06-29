@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">bigserial</td>
  <td class="detail" align="right">19</td>
@@ -94,20 +94,40 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">record</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
  <td class="detail" align="center"></td>
- <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
  <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="files.record refs records.ID via FK_files_record"><a href="records.html">records</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_files_record<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="indexedColumn" title="Indexed">comment</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
    <tr class="relative odd" valign="top">
-    <td class="relatedTable detail" title="files.record refs records.ID via FK_files_record"><a href="records.html">records</a><span class="relatedKey">.ID</span>
+    <td class="relatedTable detail" title="files.comment refs comments.ID via FK_files_comment"><a href="comments.html">comments</a><span class="relatedKey">.ID</span>
     </td>
-    <td class="constraint detail">FK_files_record<span title="Cascade on delete:
+    <td class="constraint detail">FK_files_comment<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
   </table>
@@ -159,7 +179,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="6 columns">Table contained 0 rows at Do Mai 28 11:14 MESZ 2015</p><p></p>
+<p title="7 columns">Table contained 0 rows at Mo Jun 29 17:51 MESZ 2015</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -182,6 +202,13 @@
   <td class="detail">These unique columns are also nullable</td>
  </tr>
  <tr>
+  <td class="indexedColumn">comment</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">FK_files_comment</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
   <td class="indexedColumn">record</td>
   <td class="detail">Performance</td>
   <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
@@ -194,18 +221,19 @@
 <br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from files">
 &nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
 <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="files.html" title="files" alt="" coords="183,5,412,213">
-<area shape="rect" id="node2" href="records.html" title="records" alt="" coords="5,32,139,427">
+<area shape="rect" id="node1" href="comments.html" title="comments" alt="" coords="183,77,316,280">
+<area shape="rect" id="node2" href="records.html" title="records" alt="" coords="5,79,139,473">
+<area shape="rect" id="node3" href="files.html" title="files" alt="" coords="360,5,589,237">
 </map>
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/files.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="comments.html" title="comments" alt="" coords="607,5,729,88">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,156,147,239">
-<area shape="rect" id="node3" href="records.html" title="records" alt="" coords="376,73,509,468">
-<area shape="rect" id="node5" href="groups.html" title="groups" alt="" coords="191,121,332,204">
-<area shape="rect" id="node4" href="files.html" title="files" alt="" coords="553,105,783,313">
-<area shape="rect" id="node6" href="likes.html" title="likes" alt="" coords="607,345,729,428">
-<area shape="rect" id="node7" href="notifications.html" title="notifications" alt="" coords="607,475,729,557">
+<area shape="rect" id="node1" href="comments.html" title="comments" alt="" coords="553,77,687,280">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,232,147,315">
+<area shape="rect" id="node3" href="records.html" title="records" alt="" coords="376,149,509,544">
+<area shape="rect" id="node5" href="groups.html" title="groups" alt="" coords="191,197,332,280">
+<area shape="rect" id="node4" href="files.html" title="files" alt="" coords="731,5,960,237">
+<area shape="rect" id="node6" href="likes.html" title="likes" alt="" coords="559,339,681,421">
+<area shape="rect" id="node7" href="notifications.html" title="notifications" alt="" coords="559,523,681,605">
 </map>
 
   <a name="diagram"><img id="twoDegreesImg" src="../diagrams/files.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>

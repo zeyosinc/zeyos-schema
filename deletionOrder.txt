@@ -1,8 +1,9 @@
 binfiles
 associates
 actionsteps
-opportunities
 payments
+opportunities
+participants
 objects
 notes
 links
@@ -10,7 +11,6 @@ contracts
 suppliers
 pricelists2items
 pricelists2accounts
-participants
 invitations
 groups2users
 events

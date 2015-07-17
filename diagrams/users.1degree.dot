@@ -125,9 +125,11 @@ digraph "oneDegreeRelationshipsDiagram" {
   "participants":"campaign":w -> "campaigns":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "participants":"contact":w -> "contacts":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "participants":"creator":w -> "users":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "participants":"mailinglist":w -> "mailinglists":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"account":w -> "accounts":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"assigneduser":w -> "users":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"creator":w -> "users":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "payments":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "payments":"transaction":w -> "transactions":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "permissions":"creator":w -> "users":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "permissions":"group":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -552,7 +554,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">27 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">28 &gt;</TD></TR>
     </TABLE>>
     URL="groups.html"
     tooltip="groups"
@@ -669,7 +671,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="sender" COLSPAN="3" ALIGN="LEFT">sender</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="mailinglists.html"
     tooltip="mailinglists"
@@ -841,7 +843,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="phone" COLSPAN="3" ALIGN="LEFT">phone</TD></TR>
       <TR><TD PORT="email" COLSPAN="3" ALIGN="LEFT">email</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="participants.html"
     tooltip="participants"
@@ -851,19 +853,19 @@ digraph "oneDegreeRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">payments</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
       <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
       <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="flag" COLSPAN="3" ALIGN="LEFT">flag</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="subject" COLSPAN="3" ALIGN="LEFT">subject</TD></TR>
-      <TR><TD PORT="reference" COLSPAN="3" ALIGN="LEFT">reference</TD></TR>
+      <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="amount" COLSPAN="3" ALIGN="LEFT">amount</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="payments.html"
     tooltip="payments"

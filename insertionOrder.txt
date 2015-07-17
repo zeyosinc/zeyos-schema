@@ -42,7 +42,6 @@ dunning2transactions
 events
 groups2users
 invitations
-participants
 pricelists2accounts
 pricelists2items
 suppliers
@@ -50,8 +49,9 @@ contracts
 links
 notes
 objects
-payments
+participants
 opportunities
+payments
 actionsteps
 associates
 binfiles

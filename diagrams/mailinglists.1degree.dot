@@ -33,6 +33,9 @@ digraph "oneDegreeRelationshipsDiagram" {
   "messages":"mailinglist":w -> "mailinglists":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "participants":"campaign":w -> "campaigns":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "participants":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "participants":"mailinglist":w -> "mailinglists":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "campaigns" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -67,7 +70,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">27 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">28 &gt;</TD></TR>
     </TABLE>>
     URL="groups.html"
     tooltip="groups"
@@ -88,7 +91,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="name" COLSPAN="2" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="sender" COLSPAN="2" ALIGN="LEFT">sender</TD><TD PORT="sender.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="description" COLSPAN="2" ALIGN="LEFT">description</TD><TD PORT="description.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="mailinglists.html"
     tooltip="mailinglists"
@@ -128,6 +131,25 @@ digraph "oneDegreeRelationshipsDiagram" {
     </TABLE>>
     URL="messages.html"
     tooltip="messages"
+  ];
+  "participants" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">participants</TD></TR>
+      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
+      <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
+      <TR><TD PORT="mailinglist" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">mailinglist</TD></TR>
+      <TR><TD PORT="campaign" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">campaign</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="phone" COLSPAN="3" ALIGN="LEFT">phone</TD></TR>
+      <TR><TD PORT="email" COLSPAN="3" ALIGN="LEFT">email</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="participants.html"
+    tooltip="participants"
   ];
   "users" [
     label=<

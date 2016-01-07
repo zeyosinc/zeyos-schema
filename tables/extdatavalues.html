@@ -84,7 +84,7 @@
 </thead>
 <tbody valign="top">
 <tr class="even">
- <td class="primaryKey" title="Primary Key">ID</td>
+ <td class="detail">ID</td>
  <td class="detail">bigserial</td>
  <td class="detail" align="right">19</td>
  <td class="detail" align="center"></td>
@@ -95,7 +95,7 @@
  <td class="comment detail"></td>
 </tr>
 <tr class="odd">
- <td class="indexedColumn" title="Indexed">field</td>
+ <td class="primaryKey" title="Primary Key">field</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center"></td>
@@ -115,7 +115,7 @@
  <td class="comment detail"></td>
 </tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">index</td>
+ <td class="primaryKey" title="Primary Key">index</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
  <td class="detail" align="center"></td>
@@ -137,47 +137,38 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="4 columns">Table contained 0 rows at Fr Jul 17 13:57 MESZ 2015</p><p></p>
+<p title="4 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
+<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup>
 <thead>
  <tr>
   <th>Column(s)</th>
   <th>Type</th>
   <th>Sort</th>
   <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
  </tr>
 </thead>
 <tbody>
  <tr>
-  <td class="primaryKey"></td>
+  <td class="primaryKey">field + index</td>
   <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"></td>
-  <td class="constraint" style="text-align:left;">PK_extdatavalues_ID</td>
-  <td class="detail">These unique columns are also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">field + index</td>
-  <td class="detail">Must be unique</td>
   <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_extdatavalues_field_index</td>
-  <td>&nbsp;</td>
+  <td class="constraint" style="text-align:left;">PK_extdatavalues_field_index</td>
  </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+</tbody></colgroup></colgroup></colgroup></colgroup></table>
 </div>
 <table width="100%" border="0"><tr><td class="container">
 <br><form action="get"><b>Close relationships:</b></form><map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="extdatavalues.html" title="extdatavalues" alt="" coords="171,5,400,165">
-<area shape="rect" id="node2" href="extdatafields.html" title="extdatafields" alt="" coords="5,32,127,163">
+<area shape="rect" id="node1" href="extdatavalues.html" title="extdatavalues" alt="" coords="165,5,392,157">
+<area shape="rect" id="node2" href="extdatafields.html" title="extdatafields" alt="" coords="5,30,121,154">
 </map>
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/extdatavalues.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 </td></tr></table>
 </div>
 <div id="footer">
-	<div>Copyright &copy; 2012-2015 <a href="http://www.zeyos.com">Zeyon Technologies Inc.</a> All rights reserved.</div>
+	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
 	<div id="links">
 		<a href="http://www.zeyos.com" id="zeyos-link"></a>
 		<a href="http://www.zeyconnect.com" id="zeyconnect-link"></a>

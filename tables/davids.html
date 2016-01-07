@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<html>
+<head><link rel="icon" href="../favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"><link href="http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,300" rel="stylesheet" type="text/css">
+  <!-- SchemaSpy rev 590 -->
+  <title>davids - ZeyOS Schema Documentation</title>
+  <link rel="stylesheet" href="../schemaSpy.css" type="text/css">
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../jquery.js"></script>
+  <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../schemaSpy.js"></script>
+  <script LANGUAGE="JavaScript" TYPE="text/javascript">
+    table='davids';
+  </script>
+</head>
+<body>
+<table id="headerHolder" cellspacing="0" cellpadding="0"><tr><td>
+<div id="header">
+ <ul>
+  <li><a href="../index.html" title="All tables and views in the schema">Tables</a></li>
+  <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+  
+  <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+  
+  <li><a href="../columns.byTable.html" title="All of the columns in the schema">Columns</a></li>
+  
+ </ul>
+</div>
+</td></tr></table>
+<div class="content" style="clear:both;"><h1>Table: davids</h1><h2>Columns</h2>
+
+<table width="100%" border="0">
+<tr valign="top"><td class="container" align="left" valign="top">
+<form name="options" action="">
+ <label for="showRelatedCols"><input type="checkbox" id="showRelatedCols">Related columns</label>
+ <label for="showConstNames"><input type="checkbox" id="showConstNames">Constraints</label>
+ <label for="showComments"><input type="checkbox" id="showComments">Comments</label>
+ <label for="showLegend"><input type="checkbox" checked id="showLegend">Legend</label>
+</form>
+</td><td class="container" rowspan="2" align="right" valign="top">
+ <table class="legend" border="0">
+  <tr>
+   <td class="dataTable" valign="bottom">Legend:</td>
+   <td class="container" align="right" valign="top"></td>
+  </tr>
+  <tr><td class="container" colspan="2">
+   <table class="dataTable" border="1">
+    <tbody>
+    <tr><td class="primaryKey">Primary key columns</td></tr>
+    <tr><td class="indexedColumn">Columns with indexes</td></tr>
+    <tr class="impliedRelationship"><td class="detail"><span class="impliedRelationship">Implied relationships</span></td></tr>
+    <tr><td class="excludedColumn">Excluded column relationships</td></tr>
+    <tr><td class="legendDetail">&lt; <em>n</em> &gt; number of related tables</td></tr>
+   </tbody></table>
+  </td></tr>
+ </table>
+<div style="margin-right: 2pt;">
+
+
+</div>
+&nbsp;
+</td></tr><tr valign="top"><td class="container" align="left" valign="top">
+<a name="columns"></a>
+<table id="columns" class="dataTable" border="1" rules="groups">
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup class="comment">
+<thead align="left">
+<tr>
+  <th>Column</th>
+  <th>Type</th>
+  <th>Size</th>
+  <th title="Are nulls allowed?">Nulls</th>
+  <th title="Is column automatically updated?">Auto</th>
+  <th title="Default value">Default</th>
+  <th title="Columns in tables that reference this column"><span class="notSortedByColumn">Children</span></th>
+  <th title="Columns in tables that are referenced by this column"><span class="notSortedByColumn">Parents</span></th>
+  <th title="Comments" class="comment"><span class="notSortedByColumn">Comments</span></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="even">
+ <td class="primaryKey" title="Primary Key">davserver</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="davids.davserver refs davservers.ID via FK_davids_davserver"><a href="davservers.html">davservers</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_davids_davserver<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="primaryKey" title="Primary Key">href</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="indexedColumn" title="Indexed">contact</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="davids.contact refs contacts.ID via FK_davids_contact"><a href="contacts.html">contacts</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_davids_contact<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="indexedColumn" title="Indexed">appointment</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative odd" valign="top">
+    <td class="relatedTable detail" title="davids.appointment refs appointments.ID via FK_davids_appointment"><a href="appointments.html">appointments</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_davids_appointment<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="indexedColumn" title="Indexed">task</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="davids.task refs tasks.ID via FK_davids_task"><a href="tasks.html">tasks</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_davids_task<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="detail">etag</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">''::text</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="detail">vobject</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">''::text</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+<p title="7 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
+</td></tr></table>
+<div class="indent">
+<b>Indexes:</b>
+<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
+<thead>
+ <tr>
+  <th>Column(s)</th>
+  <th>Type</th>
+  <th>Sort</th>
+  <th class="constraint" style="text-align:left;">Constraint Name</th>
+  <th>Anomalies</th>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td class="primaryKey">davserver + href</td>
+  <td class="detail">Primary key</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">PK_davids_davserver_href</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">contact + appointment + task</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">IDX_davids_noassociation</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">appointment</td>
+  <td class="detail">Must be unique</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">UNQ_davids_appointment</td>
+  <td class="detail">This unique column is also nullable</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">contact</td>
+  <td class="detail">Must be unique</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">UNQ_davids_contact</td>
+  <td class="detail">This unique column is also nullable</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">task</td>
+  <td class="detail">Must be unique</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">UNQ_davids_task</td>
+  <td class="detail">This unique column is also nullable</td>
+ </tr>
+</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+</div>
+<table width="100%" border="0"><tr><td class="container">
+<br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from davids">
+&nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
+<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
+<area shape="rect" id="node1" href="davids.html" title="davids" alt="" coords="177,792,413,1012">
+<area shape="rect" id="node2" href="appointments.html" title="appointments" alt="" coords="5,1240,133,1681">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="5,464,133,1223">
+<area shape="rect" id="node4" href="davservers.html" title="davservers" alt="" coords="5,5,133,447">
+<area shape="rect" id="node5" href="tasks.html" title="tasks" alt="" coords="5,1699,133,2163">
+</map>
+  <a name="diagram"><img id="oneDegreeImg" src="../diagrams/davids.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
+<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
+<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="543,1522,679,1601">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="358,1118,494,1197">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="186,233,314,991">
+<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="6,1078,142,1157">
+<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1132,1753,1248,1831">
+<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="900,1215,1028,1679">
+<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="728,1621,856,1699">
+<area shape="rect" id="node16" href="projects.html" title="projects" alt="" coords="547,1671,675,1750">
+<area shape="rect" id="node8" href="addresses.html" title="addresses" alt="" coords="734,1353,850,1431">
+<area shape="rect" id="node9" href="appointments.html" title="appointments" alt="" coords="547,882,675,1323">
+<area shape="rect" id="node10" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="538,105,684,183">
+<area shape="rect" id="node11" href="davids.html" title="davids" alt="" coords="1072,422,1308,642">
+<area shape="rect" id="node12" href="davservers.html" title="davservers" alt="" coords="547,370,675,811">
+<area shape="rect" id="node13" href="invitations.html" title="invitations" alt="" coords="734,849,850,927">
+<area shape="rect" id="node14" href="opportunities.html" title="opportunities" alt="" coords="734,753,850,831">
+<area shape="rect" id="node15" href="participants.html" title="participants" alt="" coords="553,274,669,353">
+</map>
+
+  <a name="diagram"><img id="twoDegreesImg" src="../diagrams/davids.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
+</td></tr></table>
+</div>
+<div id="footer">
+	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
+	<div id="links">
+		<a href="http://www.zeyos.com" id="zeyos-link"></a>
+		<a href="http://www.zeyconnect.com" id="zeyconnect-link"></a>
+		<a href="http://www.ixmldev.com" id="ixml-link"></a>
+	</div>
+	<div style="clear:both"></div>
+</div>
+</body>
+</html>

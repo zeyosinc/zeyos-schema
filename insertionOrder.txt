@@ -17,10 +17,11 @@ stocktransactions
 records
 applications
 pricelists
-comments
 appointments
-dunning
 tasks
+comments
+dunning
+davservers
 extdatavalues
 follows
 serials
@@ -28,6 +29,7 @@ tagrels
 tokens
 extdataforms
 files
+imapids
 likes
 notifications
 permissions
@@ -46,6 +48,7 @@ pricelists2accounts
 pricelists2items
 suppliers
 contracts
+davids
 links
 notes
 objects

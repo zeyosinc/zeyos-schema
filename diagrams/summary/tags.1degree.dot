@@ -1,4 +1,4 @@
-// dot 2.38.0 on Windows 8.1 6.3
+// dot 2.38.0 on Mac OS X 10.11.2
 // SchemaSpy rev 590
 digraph "tags" {
   graph [
@@ -21,7 +21,6 @@ digraph "tags" {
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">tags</TD></TR>
-      <TR><TD PORT="ID" COLSPAN="3" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="entity" COLSPAN="3" ALIGN="LEFT">entity</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="index" COLSPAN="3" ALIGN="LEFT">index</TD></TR>

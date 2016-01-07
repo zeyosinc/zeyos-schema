@@ -1,4 +1,4 @@
-// dot 2.38.0 on Windows 8.1 6.3
+// dot 2.38.0 on Mac OS X 10.11.2
 // SchemaSpy rev 590
 digraph "oneDegreeRelationshipsDiagram" {
   graph [
@@ -21,6 +21,8 @@ digraph "oneDegreeRelationshipsDiagram" {
   ];
   "groups":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "groups":"leader":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "imapids":"mailserver":w -> "mailservers":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
+  "imapids":"message":w -> "messages":"ID":e [arrowhead=none dir=back arrowtail=teeodot];
   "mailservers":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"message":w -> "messages":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -43,11 +45,25 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="activity" COLSPAN="3" ALIGN="LEFT">activity</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
-      <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">28 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">30 &gt;</TD></TR>
     </TABLE>>
     URL="groups.html"
     tooltip="groups"
+  ];
+  "imapids" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">imapids</TD></TR>
+      <TR><TD PORT="mailserver" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">mailserver</TD></TR>
+      <TR><TD PORT="mailbox" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">mailbox</TD></TR>
+      <TR><TD PORT="uidvalidity" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">uidvalidity</TD></TR>
+      <TR><TD PORT="uid" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">uid</TD></TR>
+      <TR><TD PORT="message" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">message</TD></TR>
+      <TR><TD PORT="hash" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">hash</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="imapids.html"
+    tooltip="imapids"
   ];
   "mailservers" [
     label=<
@@ -63,18 +79,17 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="recipientuser" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientuser</TD><TD PORT="recipientuser.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="recipientgroup" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientgroup</TD><TD PORT="recipientgroup.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="activity" COLSPAN="2" ALIGN="LEFT">activity</TD><TD PORT="activity.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="name" COLSPAN="2" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="sender" COLSPAN="2" ALIGN="LEFT">sender</TD><TD PORT="sender.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="serverin" COLSPAN="2" ALIGN="LEFT">serverin</TD><TD PORT="serverin.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="name" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD><TD PORT="name.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="sender" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">sender</TD><TD PORT="sender.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="serverin" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">serverin</TD><TD PORT="serverin.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="usernamein" COLSPAN="2" ALIGN="LEFT">usernamein</TD><TD PORT="usernamein.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="passwordin" COLSPAN="2" ALIGN="LEFT">passwordin</TD><TD PORT="passwordin.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="serverout" COLSPAN="2" ALIGN="LEFT">serverout</TD><TD PORT="serverout.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="serverout" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">serverout</TD><TD PORT="serverout.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="usernameout" COLSPAN="2" ALIGN="LEFT">usernameout</TD><TD PORT="usernameout.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="passwordout" COLSPAN="2" ALIGN="LEFT">passwordout</TD><TD PORT="passwordout.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="description" COLSPAN="2" ALIGN="LEFT">description</TD><TD PORT="description.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="lastfetch" COLSPAN="2" ALIGN="LEFT">lastfetch</TD><TD PORT="lastfetch.type" ALIGN="LEFT">int8[19]</TD></TR>
-      <TR><TD PORT="uidvalidity" COLSPAN="2" ALIGN="LEFT">uidvalidity</TD><TD PORT="uidvalidity.type" ALIGN="LEFT">int4[10]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD PORT="folders" COLSPAN="2" ALIGN="LEFT">folders</TD><TD PORT="folders.type" ALIGN="LEFT">json[2147483647]</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="mailservers.html"
     tooltip="mailservers"
@@ -95,8 +110,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="mailbox" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">mailbox</TD></TR>
       <TR><TD PORT="flag" COLSPAN="3" ALIGN="LEFT">flag</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
-      <TR><TD PORT="subject" COLSPAN="3" ALIGN="LEFT">subject</TD></TR>
-      <TR><TD PORT="sender" COLSPAN="3" ALIGN="LEFT">sender</TD></TR>
+      <TR><TD PORT="subject" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">subject</TD></TR>
+      <TR><TD PORT="sender" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">sender</TD></TR>
       <TR><TD PORT="sender_email" COLSPAN="3" ALIGN="LEFT">sender_email</TD></TR>
       <TR><TD PORT="sender_name" COLSPAN="3" ALIGN="LEFT">sender_name</TD></TR>
       <TR><TD PORT="to" COLSPAN="3" ALIGN="LEFT">to</TD></TR>
@@ -108,9 +123,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="contenttype" COLSPAN="3" ALIGN="LEFT">contenttype</TD></TR>
       <TR><TD PORT="size" COLSPAN="3" ALIGN="LEFT">size</TD></TR>
       <TR><TD PORT="text" COLSPAN="3" ALIGN="LEFT">text</TD></TR>
-      <TR><TD PORT="uid" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">uid</TD></TR>
       <TR><TD PORT="binfile" COLSPAN="3" ALIGN="LEFT">binfile</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="messages.html"
     tooltip="messages"
@@ -130,11 +144,14 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="password" COLSPAN="3" ALIGN="LEFT">password</TD></TR>
       <TR><TD PORT="expdate" COLSPAN="3" ALIGN="LEFT">expdate</TD></TR>
       <TR><TD PORT="lastlogin" COLSPAN="3" ALIGN="LEFT">lastlogin</TD></TR>
-      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
-      <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
-      <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
+      <TR><TD PORT="lastloginattempt" COLSPAN="3" ALIGN="LEFT">lastloginattempt</TD></TR>
+      <TR><TD PORT="loginattempts" COLSPAN="3" ALIGN="LEFT">loginattempts</TD></TR>
+      <TR><TD PORT="logintoken" COLSPAN="3" ALIGN="LEFT">logintoken</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">83 &gt;</TD></TR>
+      <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
+      <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
+      <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">86 &gt;</TD></TR>
     </TABLE>>
     URL="users.html"
     tooltip="users"

@@ -22,15 +22,18 @@ tasks
 comments
 dunning
 davservers
+feedservers
 extdatavalues
 follows
 serials
 tagrels
 tokens
 extdataforms
+feedids
 files
 imapids
 likes
+messagereads
 notifications
 permissions
 resources
@@ -45,7 +48,7 @@ events
 groups2users
 invitations
 pricelists2accounts
-pricelists2items
+prices
 suppliers
 contracts
 davids
@@ -56,5 +59,5 @@ participants
 opportunities
 payments
 actionsteps
-associates
+associations
 binfiles

@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="odd">
+<tr class="even">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">bigserial</td>
  <td class="detail" align="right">19</td>
@@ -94,7 +94,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">record</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -104,7 +104,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="files.record refs records.ID via FK_files_record"><a href="records.html">records</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_files_record<span title="Cascade on delete:
@@ -114,7 +114,7 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">comment</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -124,7 +124,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="files.comment refs comments.ID via FK_files_comment"><a href="comments.html">comments</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_files_comment<span title="Cascade on delete:
@@ -134,8 +134,8 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">filename</td>
+<tr class="odd">
+ <td class="detail">filename</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -145,7 +145,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">mimetype</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -156,7 +156,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">size</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -167,7 +167,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">binfile</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -179,7 +179,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="7 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
+<p title="7 columns">Table contained 0 rows at Wed Apr 13 08:07 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -215,13 +215,6 @@
   <td class="constraint" style="text-align:left;">FK_files_record</td>
   <td>&nbsp;</td>
  </tr>
- <tr>
-  <td class="indexedColumn">filename</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">TRGM_files_search</td>
-  <td>&nbsp;</td>
- </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
 </div>
 <table width="100%" border="0"><tr><td class="container">
@@ -235,12 +228,13 @@
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/files.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
 <area shape="rect" id="node1" href="comments.html" title="comments" alt="" coords="537,75,665,267">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,221,141,300">
-<area shape="rect" id="node3" href="records.html" title="records" alt="" coords="365,145,493,518">
-<area shape="rect" id="node5" href="groups.html" title="groups" alt="" coords="185,188,321,267">
-<area shape="rect" id="node4" href="files.html" title="files" alt="" coords="709,5,936,225">
-<area shape="rect" id="node6" href="likes.html" title="likes" alt="" coords="543,325,659,404">
-<area shape="rect" id="node7" href="notifications.html" title="notifications" alt="" coords="543,500,659,579">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,231,141,309">
+<area shape="rect" id="node3" href="records.html" title="records" alt="" coords="365,154,493,527">
+<area shape="rect" id="node6" href="groups.html" title="groups" alt="" coords="185,197,321,276">
+<area shape="rect" id="node4" href="feedids.html" title="feedids" alt="" coords="543,285,659,364">
+<area shape="rect" id="node5" href="files.html" title="files" alt="" coords="709,5,936,225">
+<area shape="rect" id="node7" href="likes.html" title="likes" alt="" coords="543,399,659,477">
+<area shape="rect" id="node8" href="notifications.html" title="notifications" alt="" coords="543,531,659,609">
 </map>
 
   <a name="diagram"><img id="twoDegreesImg" src="../diagrams/files.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>

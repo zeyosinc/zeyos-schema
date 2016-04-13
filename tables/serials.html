@@ -84,18 +84,7 @@
 </thead>
 <tbody valign="top">
 <tr class="even">
- <td class="primaryKey" title="Primary Key">ID</td>
- <td class="detail">bigserial</td>
- <td class="detail" align="right">19</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center" title="Automatically updated by the database">&nbsp;&radic;&nbsp;</td>
- <td class="detail" align="right">nextval('"serials_ID_seq"'::regclass)</td>
- <td class="detail"></td>
- <td class="detail"> </td>
- <td class="comment detail"></td>
-</tr>
-<tr class="odd">
- <td class="indexedColumn" title="Indexed">transaction</td>
+ <td class="primaryKey" title="Primary Key">transaction</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
  <td class="detail" align="center"></td>
@@ -104,7 +93,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="serials.transaction refs stocktransactions.ID via FK_serials_transaction"><a href="stocktransactions.html">stocktransactions</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_serials_transaction<span title="Cascade on delete:
@@ -114,8 +103,8 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">serial</td>
+<tr class="odd">
+ <td class="primaryKey" title="Primary Key">serial</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -126,59 +115,43 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="3 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
+<p title="2 columns">Table contained 0 rows at Wed Apr 13 08:07 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
+<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup>
 <thead>
  <tr>
   <th>Column(s)</th>
   <th>Type</th>
   <th>Sort</th>
   <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
  </tr>
 </thead>
 <tbody>
  <tr>
-  <td class="primaryKey"></td>
+  <td class="primaryKey">transaction + serial</td>
   <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"></td>
-  <td class="constraint" style="text-align:left;">PK_serials_ID</td>
-  <td class="detail">These unique columns are also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">serial</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">TRGM_serials_search</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">transaction + serial</td>
-  <td class="detail">Must be unique</td>
   <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_serials_transaction_serial</td>
-  <td>&nbsp;</td>
+  <td class="constraint" style="text-align:left;">PK_serials_transaction_serial</td>
  </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+</tbody></colgroup></colgroup></colgroup></colgroup></table>
 </div>
 <table width="100%" border="0"><tr><td class="container">
 <br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from serials">
 &nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
 <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="serials.html" title="serials" alt="" coords="191,5,417,135">
-<area shape="rect" id="node2" href="stocktransactions.html" title="stocktransactions" alt="" coords="5,33,147,451">
+<area shape="rect" id="node1" href="serials.html" title="serials" alt="" coords="191,5,417,112">
+<area shape="rect" id="node2" href="stocktransactions.html" title="stocktransactions" alt="" coords="5,8,147,427">
 </map>
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/serials.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="items.html" title="items" alt="" coords="185,84,313,163">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,180,141,259">
-<area shape="rect" id="node3" href="serials.html" title="serials" alt="" coords="543,5,769,135">
-<area shape="rect" id="node4" href="stocktransactions.html" title="stocktransactions" alt="" coords="357,33,499,451">
-<area shape="rect" id="node5" href="storages.html" title="storages" alt="" coords="185,180,313,259">
-<area shape="rect" id="node6" href="transactions.html" title="transactions" alt="" coords="185,276,313,355">
+<area shape="rect" id="node1" href="items.html" title="items" alt="" coords="185,59,313,138">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,155,141,234">
+<area shape="rect" id="node3" href="serials.html" title="serials" alt="" coords="543,5,769,112">
+<area shape="rect" id="node4" href="stocktransactions.html" title="stocktransactions" alt="" coords="357,8,499,427">
+<area shape="rect" id="node5" href="storages.html" title="storages" alt="" coords="185,155,313,234">
+<area shape="rect" id="node6" href="transactions.html" title="transactions" alt="" coords="185,251,313,330">
 </map>
 
   <a name="diagram"><img id="twoDegreesImg" src="../diagrams/serials.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>

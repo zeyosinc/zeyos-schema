@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">serial</td>
  <td class="detail" align="right">10</td>
@@ -92,16 +92,16 @@
  <td class="detail" align="right">nextval('"pricelists_ID_seq"'::regclass)</td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="pricelists2accounts.pricelist refs pricelists.ID via FK_pricelists2accounts_pricelist"><a href="pricelists2accounts.html">pricelists2accounts</a><span class="relatedKey">.pricelist</span>
     </td>
     <td class="constraint detail">FK_pricelists2accounts_pricelist<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
-    <td class="relatedTable detail" title="pricelists2items.pricelist refs pricelists.ID via FK_pricelists2items_pricelist"><a href="pricelists2items.html">pricelists2items</a><span class="relatedKey">.pricelist</span>
+   <tr class="relative odd" valign="top">
+    <td class="relatedTable detail" title="prices.pricelist refs pricelists.ID via FK_prices_pricelist"><a href="prices.html">prices</a><span class="relatedKey">.pricelist</span>
     </td>
-    <td class="constraint detail">FK_pricelists2items_pricelist<span title="Cascade on delete:
+    <td class="constraint detail">FK_prices_pricelist<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
   </table>
@@ -109,8 +109,8 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
- <td class="indexedColumn" title="Indexed">ownergroup</td>
+<tr class="even">
+ <td class="detail">ownergroup</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -119,7 +119,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="pricelists.ownergroup refs groups.ID via FK_pricelists_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_pricelists_ownergroup<span title="Cascade on delete:
@@ -129,7 +129,7 @@
  </td>
  <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">creator</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -139,7 +139,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="pricelists.creator refs users.ID via FK_pricelists_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_pricelists_creator<span title="Null on delete:
@@ -149,7 +149,7 @@
  </td>
  <td class="comment detail">The object creator</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">creationdate</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -160,7 +160,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">lastmodified</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -171,7 +171,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">activity</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -182,8 +182,8 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">name</td>
+<tr class="odd">
+ <td class="detail">name</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -193,7 +193,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">type</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -204,7 +204,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">currency</td>
  <td class="detail">varchar</td>
  <td class="detail" align="right">3</td>
@@ -215,7 +215,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Currency symbol (e.g. EUR or USD)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">datefrom</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -226,7 +226,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Unix timestamp in seconds</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">dateto</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -237,7 +237,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Unix timestamp in seconds</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">applytoall</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -248,7 +248,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">description</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -260,7 +260,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="13 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
+<p title="13 columns">Table contained 0 rows at Wed Apr 13 08:07 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -282,84 +282,72 @@
   <td class="constraint" style="text-align:left;">PK_pricelists_ID</td>
   <td class="detail">These unique columns are also nullable</td>
  </tr>
- <tr>
-  <td class="indexedColumn">ownergroup</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">FK_pricelists_ownergroup</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">name</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">TRGM_pricelists_search</td>
-  <td>&nbsp;</td>
- </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
 </div>
 <table width="100%" border="0"><tr><td class="container">
 <br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from pricelists">
 &nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
 <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="groups.html" title="groups" alt="" coords="185,95,321,333">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,187,141,651">
-<area shape="rect" id="node3" href="pricelists.html" title="pricelists" alt="" coords="365,83,601,439">
-<area shape="rect" id="node4" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="645,5,797,175">
-<area shape="rect" id="node5" href="pricelists2items.html" title="pricelists2items" alt="" coords="657,293,786,575">
+<area shape="rect" id="node1" href="groups.html" title="groups" alt="" coords="208,95,344,333">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,187,164,673">
+<area shape="rect" id="node3" href="pricelists.html" title="pricelists" alt="" coords="388,83,624,439">
+<area shape="rect" id="node4" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="668,5,820,175">
+<area shape="rect" id="node5" href="prices.html" title="prices" alt="" coords="686,293,802,575">
 </map>
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/pricelists.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="608,346,744,425">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="378,1752,514,2216">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="206,414,334,493">
-<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="26,1427,162,1664">
-<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1246,1417,1362,1495">
-<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="1054,1327,1182,1406">
-<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="850,898,978,977">
-<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="850,2261,978,2339">
-<area shape="rect" id="node43" href="projects.html" title="projects" alt="" coords="612,743,740,822">
-<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="856,994,972,1073">
-<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="612,2147,740,2226">
-<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="612,1031,740,1110">
-<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="612,2633,740,2711">
-<area shape="rect" id="node13" href="categories.html" title="categories" alt="" coords="618,551,734,630">
-<area shape="rect" id="node14" href="comments.html" title="comments" alt="" coords="850,1589,978,1667">
-<area shape="rect" id="node15" href="records.html" title="records" alt="" coords="612,1589,740,1667">
-<area shape="rect" id="node16" href="components.html" title="components" alt="" coords="856,3590,972,3669">
-<area shape="rect" id="node17" href="items.html" title="items" alt="" coords="612,3590,740,3669">
-<area shape="rect" id="node18" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="602,177,749,255">
-<area shape="rect" id="node19" href="contracts.html" title="contracts" alt="" coords="856,802,972,881">
-<area shape="rect" id="node20" href="davservers.html" title="davservers" alt="" coords="612,647,740,726">
-<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="850,669,978,747">
-<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="1034,1423,1202,1502">
-<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="618,839,734,918">
-<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="856,2069,972,2147">
-<area shape="rect" id="node25" href="follows.html" title="follows" alt="" coords="618,1685,734,1763">
-<area shape="rect" id="node26" href="groups2users.html" title="groups2users" alt="" coords="617,935,734,1014">
-<area shape="rect" id="node27" href="invitations.html" title="invitations" alt="" coords="856,1127,972,1206">
-<area shape="rect" id="node28" href="likes.html" title="likes" alt="" coords="856,1781,972,1859">
-<area shape="rect" id="node29" href="links.html" title="links" alt="" coords="618,1127,734,1206">
-<area shape="rect" id="node30" href="mailinglists.html" title="mailinglists" alt="" coords="850,2766,978,2845">
-<area shape="rect" id="node31" href="mailservers.html" title="mailservers" alt="" coords="612,3819,740,3898">
-<area shape="rect" id="node32" href="messages.html" title="messages" alt="" coords="1054,2917,1182,2995">
-<area shape="rect" id="node33" href="notes.html" title="notes" alt="" coords="618,2854,734,2933">
-<area shape="rect" id="node34" href="notifications.html" title="notifications" alt="" coords="856,1685,972,1763">
-<area shape="rect" id="node35" href="objects.html" title="objects" alt="" coords="618,2950,734,3029">
-<area shape="rect" id="node36" href="opportunities.html" title="opportunities" alt="" coords="856,1223,972,1302">
-<area shape="rect" id="node37" href="participants.html" title="participants" alt="" coords="1060,2725,1176,2803">
-<area shape="rect" id="node38" href="payments.html" title="payments" alt="" coords="1060,2629,1176,2707">
-<area shape="rect" id="node39" href="permissions.html" title="permissions" alt="" coords="618,3686,734,3765">
-<area shape="rect" id="node40" href="pricelists.html" title="pricelists" alt="" coords="558,3179,794,3535">
-<area shape="rect" id="node41" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="838,2430,990,2599">
-<area shape="rect" id="node42" href="pricelists2items.html" title="pricelists2items" alt="" coords="849,3092,978,3375">
-<area shape="rect" id="node44" href="resources.html" title="resources" alt="" coords="856,2165,972,2243">
-<area shape="rect" id="node45" href="services.html" title="services" alt="" coords="856,1877,972,1955">
-<area shape="rect" id="node46" href="stocktransactions.html" title="stocktransactions" alt="" coords="1047,2821,1188,2899">
-<area shape="rect" id="node47" href="storages.html" title="storages" alt="" coords="612,3083,740,3162">
-<area shape="rect" id="node48" href="suppliers.html" title="suppliers" alt="" coords="856,2617,972,2695">
-<area shape="rect" id="node49" href="tokens.html" title="tokens" alt="" coords="618,1942,734,2021">
-<area shape="rect" id="node50" href="weblets.html" title="weblets" alt="" coords="856,1973,972,2051">
+<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="625,309,761,387">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="373,1781,531,2267">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="201,413,329,491">
+<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="21,1177,157,1415">
+<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1268,1559,1384,1638">
+<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="1071,1518,1199,1597">
+<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="867,957,995,1035">
+<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="867,823,995,902">
+<area shape="rect" id="node45" href="projects.html" title="projects" alt="" coords="629,1030,757,1109">
+<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="873,1149,989,1227">
+<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="629,2346,757,2425">
+<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="629,1126,757,1205">
+<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="629,3586,757,3665">
+<area shape="rect" id="node13" href="categories.html" title="categories" alt="" coords="635,550,751,629">
+<area shape="rect" id="node14" href="comments.html" title="comments" alt="" coords="867,1697,995,1775">
+<area shape="rect" id="node15" href="records.html" title="records" alt="" coords="629,1683,757,1762">
+<area shape="rect" id="node16" href="components.html" title="components" alt="" coords="873,3887,989,3966">
+<area shape="rect" id="node17" href="items.html" title="items" alt="" coords="629,3887,757,3966">
+<area shape="rect" id="node18" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="620,213,767,291">
+<area shape="rect" id="node19" href="contracts.html" title="contracts" alt="" coords="873,1053,989,1131">
+<area shape="rect" id="node20" href="davservers.html" title="davservers" alt="" coords="629,646,757,725">
+<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="867,727,995,806">
+<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="1051,823,1219,902">
+<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="635,742,751,821">
+<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="873,2322,989,2401">
+<area shape="rect" id="node25" href="feedservers.html" title="feedservers" alt="" coords="629,838,757,917">
+<area shape="rect" id="node26" href="follows.html" title="follows" alt="" coords="635,1779,751,1858">
+<area shape="rect" id="node27" href="groups2users.html" title="groups2users" alt="" coords="635,934,752,1013">
+<area shape="rect" id="node28" href="invitations.html" title="invitations" alt="" coords="873,1318,989,1397">
+<area shape="rect" id="node29" href="likes.html" title="likes" alt="" coords="873,1967,989,2046">
+<area shape="rect" id="node30" href="links.html" title="links" alt="" coords="635,1222,751,1301">
+<area shape="rect" id="node31" href="mailinglists.html" title="mailinglists" alt="" coords="867,2995,995,3074">
+<area shape="rect" id="node32" href="mailservers.html" title="mailservers" alt="" coords="629,3117,757,3195">
+<area shape="rect" id="node33" href="messages.html" title="messages" alt="" coords="1071,3021,1199,3099">
+<area shape="rect" id="node34" href="messagereads.html" title="messagereads" alt="" coords="1263,2938,1389,3017">
+<area shape="rect" id="node35" href="notes.html" title="notes" alt="" coords="635,2887,751,2966">
+<area shape="rect" id="node36" href="notifications.html" title="notifications" alt="" coords="873,1819,989,1898">
+<area shape="rect" id="node37" href="objects.html" title="objects" alt="" coords="635,2983,751,3062">
+<area shape="rect" id="node38" href="opportunities.html" title="opportunities" alt="" coords="873,1414,989,1493">
+<area shape="rect" id="node39" href="participants.html" title="participants" alt="" coords="1077,2925,1193,3003">
+<area shape="rect" id="node40" href="payments.html" title="payments" alt="" coords="1077,2054,1193,2133">
+<area shape="rect" id="node41" href="permissions.html" title="permissions" alt="" coords="635,3682,751,3761">
+<area shape="rect" id="node42" href="pricelists.html" title="pricelists" alt="" coords="575,3213,811,3569">
+<area shape="rect" id="node43" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="855,2603,1007,2773">
+<area shape="rect" id="node44" href="prices.html" title="prices" alt="" coords="873,3144,989,3427">
+<area shape="rect" id="node46" href="resources.html" title="resources" alt="" coords="873,2418,989,2497">
+<area shape="rect" id="node47" href="services.html" title="services" alt="" coords="873,2130,989,2209">
+<area shape="rect" id="node48" href="stocktransactions.html" title="stocktransactions" alt="" coords="1065,3435,1206,3514">
+<area shape="rect" id="node49" href="storages.html" title="storages" alt="" coords="629,3983,757,4062">
+<area shape="rect" id="node50" href="suppliers.html" title="suppliers" alt="" coords="873,2790,989,2869">
+<area shape="rect" id="node51" href="tokens.html" title="tokens" alt="" coords="635,2017,751,2095">
+<area shape="rect" id="node52" href="weblets.html" title="weblets" alt="" coords="873,2226,989,2305">
 </map>
 
   <a name="diagram"><img id="twoDegreesImg" src="../diagrams/pricelists.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>

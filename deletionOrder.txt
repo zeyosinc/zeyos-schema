@@ -1,5 +1,5 @@
 binfiles
-associates
+associations
 actionsteps
 payments
 opportunities
@@ -10,7 +10,7 @@ links
 davids
 contracts
 suppliers
-pricelists2items
+prices
 pricelists2accounts
 invitations
 groups2users
@@ -25,15 +25,18 @@ services
 resources
 permissions
 notifications
+messagereads
 likes
 imapids
 files
+feedids
 extdataforms
 tokens
 tagrels
 serials
 follows
 extdatavalues
+feedservers
 davservers
 dunning
 comments

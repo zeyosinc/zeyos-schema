@@ -1,4 +1,4 @@
-// dot 2.38.0 on Mac OS X 10.11.2
+// dot 2.38.0 on Mac OS X 10.11.3
 // SchemaSpy rev 590
 digraph "twoDegreesRelationshipsDiagram" {
   graph [
@@ -82,6 +82,11 @@ digraph "twoDegreesRelationshipsDiagram" {
   "events":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "extdataforms":"elipses":w -> "applications":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "extdataforms":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "follows":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "groups":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "groups":"leader":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -110,6 +115,8 @@ digraph "twoDegreesRelationshipsDiagram" {
   "mailservers":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "messagereads":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "messagereads":"elipses":w -> "messages":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"elipses":w -> "mailinglists":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"elipses":w -> "mailservers":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -147,9 +154,9 @@ digraph "twoDegreesRelationshipsDiagram" {
   "pricelists2accounts":"account":w -> "accounts":"ID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "pricelists2accounts":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "pricelists2accounts":"pricelist":w -> "pricelists":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "pricelists2items":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "pricelists2items":"elipses":w -> "items":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "pricelists2items":"elipses":w -> "pricelists":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "prices":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "prices":"elipses":w -> "items":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "prices":"elipses":w -> "pricelists":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"elipses":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"elipses":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -195,18 +202,18 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">accounts</TD></TR>
       <TR><TD PORT="ID" COLSPAN="2" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD><TD PORT="ID.type" ALIGN="LEFT">serial[10]</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD><TD PORT="ownergroup.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="2" ALIGN="LEFT">ownergroup</TD><TD PORT="ownergroup.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="creator" COLSPAN="2" ALIGN="LEFT">creator</TD><TD PORT="creator.type" ALIGN="LEFT">int4[10]</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD><TD PORT="assigneduser.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="2" ALIGN="LEFT">assigneduser</TD><TD PORT="assigneduser.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="2" ALIGN="LEFT">creationdate</TD><TD PORT="creationdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
-      <TR><TD PORT="contact" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD><TD PORT="contact.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="2" ALIGN="LEFT">contact</TD><TD PORT="contact.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="2" ALIGN="LEFT">visibility</TD><TD PORT="visibility.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="lastname" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">lastname</TD><TD PORT="lastname.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="firstname" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">firstname</TD><TD PORT="firstname.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="lastname" COLSPAN="2" ALIGN="LEFT">lastname</TD><TD PORT="lastname.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="firstname" COLSPAN="2" ALIGN="LEFT">firstname</TD><TD PORT="firstname.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="type" COLSPAN="2" ALIGN="LEFT">type</TD><TD PORT="type.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="customernum" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">customernum</TD><TD PORT="customernum.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="suppliernum" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">suppliernum</TD><TD PORT="suppliernum.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="customernum" COLSPAN="2" ALIGN="LEFT">customernum</TD><TD PORT="customernum.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="suppliernum" COLSPAN="2" ALIGN="LEFT">suppliernum</TD><TD PORT="suppliernum.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="currency" COLSPAN="2" ALIGN="LEFT">currency</TD><TD PORT="currency.type" ALIGN="LEFT">varchar[3]</TD></TR>
       <TR><TD PORT="locked" COLSPAN="2" ALIGN="LEFT">locked</TD><TD PORT="locked.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="excludetax" COLSPAN="2" ALIGN="LEFT">excludetax</TD><TD PORT="excludetax.type" ALIGN="LEFT">int2[5]</TD></TR>
@@ -221,19 +228,19 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">actionsteps</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="task" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">task</TD></TR>
-      <TR><TD PORT="ticket" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ticket</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="actionnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">actionnum</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="task" COLSPAN="3" ALIGN="LEFT">task</TD></TR>
+      <TR><TD PORT="ticket" COLSPAN="3" ALIGN="LEFT">ticket</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="transaction" COLSPAN="3" ALIGN="LEFT">transaction</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="actionnum" COLSPAN="3" ALIGN="LEFT">actionnum</TD></TR>
+      <TR><TD PORT="date" COLSPAN="3" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="duedate" COLSPAN="3" ALIGN="LEFT">duedate</TD></TR>
       <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="effort" COLSPAN="3" ALIGN="LEFT">effort</TD></TR>
@@ -325,35 +332,34 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">contacts</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="3" ALIGN="LEFT">visibility</TD></TR>
-      <TR><TD PORT="lastname" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">lastname</TD></TR>
-      <TR><TD PORT="firstname" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">firstname</TD></TR>
+      <TR><TD PORT="lastname" COLSPAN="3" ALIGN="LEFT">lastname</TD></TR>
+      <TR><TD PORT="firstname" COLSPAN="3" ALIGN="LEFT">firstname</TD></TR>
       <TR><TD PORT="type" COLSPAN="3" ALIGN="LEFT">type</TD></TR>
       <TR><TD PORT="title" COLSPAN="3" ALIGN="LEFT">title</TD></TR>
-      <TR><TD PORT="company" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">company</TD></TR>
+      <TR><TD PORT="company" COLSPAN="3" ALIGN="LEFT">company</TD></TR>
       <TR><TD PORT="position" COLSPAN="3" ALIGN="LEFT">position</TD></TR>
       <TR><TD PORT="department" COLSPAN="3" ALIGN="LEFT">department</TD></TR>
-      <TR><TD PORT="address" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">address</TD></TR>
-      <TR><TD PORT="postalcode" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">postalcode</TD></TR>
-      <TR><TD PORT="city" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">city</TD></TR>
+      <TR><TD PORT="address" COLSPAN="3" ALIGN="LEFT">address</TD></TR>
+      <TR><TD PORT="postalcode" COLSPAN="3" ALIGN="LEFT">postalcode</TD></TR>
+      <TR><TD PORT="city" COLSPAN="3" ALIGN="LEFT">city</TD></TR>
       <TR><TD PORT="region" COLSPAN="3" ALIGN="LEFT">region</TD></TR>
       <TR><TD PORT="country" COLSPAN="3" ALIGN="LEFT">country</TD></TR>
-      <TR><TD PORT="phone" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">phone</TD></TR>
-      <TR><TD PORT="phone2" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">phone2</TD></TR>
-      <TR><TD PORT="cell" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">cell</TD></TR>
+      <TR><TD PORT="phone" COLSPAN="3" ALIGN="LEFT">phone</TD></TR>
+      <TR><TD PORT="phone2" COLSPAN="3" ALIGN="LEFT">phone2</TD></TR>
+      <TR><TD PORT="cell" COLSPAN="3" ALIGN="LEFT">cell</TD></TR>
       <TR><TD PORT="fax" COLSPAN="3" ALIGN="LEFT">fax</TD></TR>
-      <TR><TD PORT="email" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">email</TD></TR>
-      <TR><TD PORT="email2" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">email2</TD></TR>
+      <TR><TD PORT="email" COLSPAN="3" ALIGN="LEFT">email</TD></TR>
+      <TR><TD PORT="email2" COLSPAN="3" ALIGN="LEFT">email2</TD></TR>
       <TR><TD PORT="website" COLSPAN="3" ALIGN="LEFT">website</TD></TR>
       <TR><TD PORT="birthdate" COLSPAN="3" ALIGN="LEFT">birthdate</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
-      <TR><TD PORT="gravatar" COLSPAN="3" ALIGN="LEFT">gravatar</TD></TR>
       <TR><TD PORT="picbinfile" COLSPAN="3" ALIGN="LEFT">picbinfile</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">9 &gt;</TD></TR>
     </TABLE>>
@@ -375,15 +381,15 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">contracts</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="3" ALIGN="LEFT">visibility</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="contractnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contractnum</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="contractnum" COLSPAN="3" ALIGN="LEFT">contractnum</TD></TR>
       <TR><TD PORT="datefrom" COLSPAN="3" ALIGN="LEFT">datefrom</TD></TR>
       <TR><TD PORT="dateto" COLSPAN="3" ALIGN="LEFT">dateto</TD></TR>
       <TR><TD PORT="datecancel" COLSPAN="3" ALIGN="LEFT">datecancel</TD></TR>
@@ -420,15 +426,16 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">dunning</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="dunningnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dunningnum</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="date" COLSPAN="3" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="duedate" COLSPAN="3" ALIGN="LEFT">duedate</TD></TR>
+      <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="level" COLSPAN="3" ALIGN="LEFT">level</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
@@ -465,6 +472,16 @@ digraph "twoDegreesRelationshipsDiagram" {
     URL="extdataforms.html"
     tooltip="extdataforms"
   ];
+  "feedservers" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">feedservers</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="feedservers.html"
+    tooltip="feedservers"
+  ];
   "follows" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -487,7 +504,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="activity" COLSPAN="3" ALIGN="LEFT">activity</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">30 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">32 &gt;</TD></TR>
     </TABLE>>
     URL="groups.html"
     tooltip="groups"
@@ -562,12 +579,22 @@ digraph "twoDegreesRelationshipsDiagram" {
     URL="mailservers.html"
     tooltip="mailservers"
   ];
+  "messagereads" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">messagereads</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="messagereads.html"
+    tooltip="messagereads"
+  ];
   "messages" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">messages</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 7</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
     </TABLE>>
     URL="messages.html"
     tooltip="messages"
@@ -607,16 +634,16 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">opportunities</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="3" ALIGN="LEFT">contact</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="3" ALIGN="LEFT">visibility</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="opportunitynum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">opportunitynum</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="opportunitynum" COLSPAN="3" ALIGN="LEFT">opportunitynum</TD></TR>
       <TR><TD PORT="duedate" COLSPAN="3" ALIGN="LEFT">duedate</TD></TR>
       <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="priority" COLSPAN="3" ALIGN="LEFT">priority</TD></TR>
@@ -647,13 +674,13 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
       <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
-      <TR><TD PORT="subject" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">subject</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="date" COLSPAN="3" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="subject" COLSPAN="3" ALIGN="LEFT">subject</TD></TR>
       <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="amount" COLSPAN="3" ALIGN="LEFT">amount</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
@@ -696,15 +723,15 @@ digraph "twoDegreesRelationshipsDiagram" {
     URL="pricelists2accounts.html"
     tooltip="pricelists2accounts"
   ];
-  "pricelists2items" [
+  "prices" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">pricelists2items</TD></TR>
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">prices</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
-    URL="pricelists2items.html"
-    tooltip="pricelists2items"
+    URL="prices.html"
+    tooltip="prices"
   ];
   "projects" [
     label=<
@@ -721,7 +748,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">records</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">5 &gt;</TD></TR>
     </TABLE>>
     URL="records.html"
     tooltip="records"
@@ -801,16 +828,16 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">tickets</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="project" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">project</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="project" COLSPAN="3" ALIGN="LEFT">project</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="visibility" COLSPAN="3" ALIGN="LEFT">visibility</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="ticketnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ticketnum</TD></TR>
+      <TR><TD PORT="name" COLSPAN="3" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="ticketnum" COLSPAN="3" ALIGN="LEFT">ticketnum</TD></TR>
       <TR><TD PORT="duedate" COLSPAN="3" ALIGN="LEFT">duedate</TD></TR>
       <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="priority" COLSPAN="3" ALIGN="LEFT">priority</TD></TR>
@@ -836,17 +863,17 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">transactions</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="transactionnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transactionnum</TD></TR>
       <TR><TD PORT="type" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">type</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="date" COLSPAN="3" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="duedate" COLSPAN="3" ALIGN="LEFT">duedate</TD></TR>
-      <TR><TD PORT="status" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">status</TD></TR>
+      <TR><TD PORT="status" COLSPAN="3" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="currency" COLSPAN="3" ALIGN="LEFT">currency</TD></TR>
       <TR><TD PORT="exchangerate" COLSPAN="3" ALIGN="LEFT">exchangerate</TD></TR>
       <TR><TD PORT="shippingrecipient" COLSPAN="3" ALIGN="LEFT">shippingrecipient</TD></TR>
@@ -880,7 +907,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="3" ALIGN="LEFT">creationdate</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="3" ALIGN="LEFT">lastmodified</TD></TR>
-      <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="3" ALIGN="LEFT">contact</TD></TR>
       <TR><TD PORT="activity" COLSPAN="3" ALIGN="LEFT">activity</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="email" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">email</TD></TR>
@@ -890,11 +917,12 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="lastloginattempt" COLSPAN="3" ALIGN="LEFT">lastloginattempt</TD></TR>
       <TR><TD PORT="loginattempts" COLSPAN="3" ALIGN="LEFT">loginattempts</TD></TR>
       <TR><TD PORT="logintoken" COLSPAN="3" ALIGN="LEFT">logintoken</TD></TR>
+      <TR><TD PORT="persistentlogintoken" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">persistentlogintoken</TD></TR>
       <TR><TD PORT="sessionid" COLSPAN="3" ALIGN="LEFT">sessionid</TD></TR>
       <TR><TD PORT="description" COLSPAN="3" ALIGN="LEFT">description</TD></TR>
       <TR><TD PORT="settings" COLSPAN="3" ALIGN="LEFT">settings</TD></TR>
       <TR><TD PORT="signature" COLSPAN="3" ALIGN="LEFT">signature</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">86 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">90 &gt;</TD></TR>
     </TABLE>>
     URL="users.html"
     tooltip="users"

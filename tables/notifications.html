@@ -83,10 +83,10 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
- <td class="primaryKey" title="Primary Key">ID</td>
- <td class="detail">bigserial</td>
- <td class="detail" align="right">19</td>
+<tr class="odd">
+ <td class="detail">ID</td>
+ <td class="detail">serial</td>
+ <td class="detail" align="right">10</td>
  <td class="detail" align="center"></td>
  <td class="detail" align="center" title="Automatically updated by the database">&nbsp;&radic;&nbsp;</td>
  <td class="detail" align="right">nextval('"notifications_ID_seq"'::regclass)</td>
@@ -94,8 +94,8 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
- <td class="detail">user</td>
+<tr class="even">
+ <td class="primaryKey" title="Primary Key">user</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center"></td>
@@ -104,7 +104,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="notifications.user refs users.ID via FK_notifications_user"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_notifications_user<span title="Cascade on delete:
@@ -114,8 +114,8 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">record</td>
+<tr class="odd">
+ <td class="primaryKey" title="Primary Key">record</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
  <td class="detail" align="center"></td>
@@ -124,7 +124,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="notifications.record refs records.ID via FK_notifications_record"><a href="records.html">records</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_notifications_record<span title="Cascade on delete:
@@ -134,7 +134,7 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">date</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -145,7 +145,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Unix timestamp in seconds</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">flag</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -157,98 +157,92 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="5 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
+<p title="5 columns">Table contained 0 rows at Wed Apr 13 08:07 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
+<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup>
 <thead>
  <tr>
   <th>Column(s)</th>
   <th>Type</th>
   <th>Sort</th>
   <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
  </tr>
 </thead>
 <tbody>
  <tr>
-  <td class="primaryKey"></td>
+  <td class="primaryKey">record</td>
   <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"></td>
-  <td class="constraint" style="text-align:left;">PK_notifications_ID</td>
-  <td class="detail">These unique columns are also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">record</td>
-  <td class="detail">Must be unique</td>
   <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_notifications_user_record</td>
-  <td>&nbsp;</td>
+  <td class="constraint" style="text-align:left;">PK_notifications_user_record</td>
  </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+</tbody></colgroup></colgroup></colgroup></colgroup></table>
 </div>
 <table width="100%" border="0"><tr><td class="container">
 <br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from notifications">
 &nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
 <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="notifications.html" title="notifications" alt="" coords="357,5,549,180">
-<area shape="rect" id="node2" href="records.html" title="records" alt="" coords="185,75,313,449">
-<area shape="rect" id="node3" href="users.html" title="users" alt="" coords="5,121,141,585">
+<area shape="rect" id="node1" href="notifications.html" title="notifications" alt="" coords="380,5,552,180">
+<area shape="rect" id="node2" href="records.html" title="records" alt="" coords="208,75,336,449">
+<area shape="rect" id="node3" href="users.html" title="users" alt="" coords="5,120,164,607">
 </map>
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/notifications.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="543,2702,679,2780">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="358,2053,494,2517">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="186,2138,314,2216">
-<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="6,2096,142,2175">
-<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1177,2570,1293,2648">
-<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="985,703,1113,782">
-<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="761,787,889,866">
-<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="761,2522,889,2600">
-<area shape="rect" id="node44" href="projects.html" title="projects" alt="" coords="547,630,675,708">
-<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="767,3004,883,3083">
-<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="547,1488,675,1567">
-<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="547,1016,675,1095">
-<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="547,464,675,543">
-<area shape="rect" id="node13" href="categories.html" title="categories" alt="" coords="553,3279,669,3358">
-<area shape="rect" id="node14" href="comments.html" title="comments" alt="" coords="761,2292,889,2371">
-<area shape="rect" id="node15" href="records.html" title="records" alt="" coords="547,2030,675,2404">
-<area shape="rect" id="node16" href="components.html" title="components" alt="" coords="767,883,883,962">
-<area shape="rect" id="node17" href="items.html" title="items" alt="" coords="547,883,675,962">
-<area shape="rect" id="node18" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="538,3663,685,3742">
-<area shape="rect" id="node19" href="contracts.html" title="contracts" alt="" coords="767,2759,883,2838">
-<area shape="rect" id="node20" href="davservers.html" title="davservers" alt="" coords="547,3375,675,3454">
-<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="761,2426,889,2504">
-<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="965,2426,1133,2504">
-<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="553,3471,669,3550">
-<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="767,1642,883,1720">
-<area shape="rect" id="node25" href="files.html" title="files" alt="" coords="991,2259,1107,2338">
-<area shape="rect" id="node26" href="follows.html" title="follows" alt="" coords="553,1584,669,1663">
-<area shape="rect" id="node27" href="groups2users.html" title="groups2users" alt="" coords="553,3567,670,3646">
-<area shape="rect" id="node28" href="invitations.html" title="invitations" alt="" coords="767,1016,883,1095">
-<area shape="rect" id="node29" href="likes.html" title="likes" alt="" coords="767,1967,883,2046">
-<area shape="rect" id="node30" href="links.html" title="links" alt="" coords="553,2991,669,3070">
-<area shape="rect" id="node31" href="mailinglists.html" title="mailinglists" alt="" coords="761,532,889,611">
-<area shape="rect" id="node32" href="mailservers.html" title="mailservers" alt="" coords="547,74,675,152">
-<area shape="rect" id="node33" href="messages.html" title="messages" alt="" coords="985,126,1113,204">
-<area shape="rect" id="node34" href="notes.html" title="notes" alt="" coords="553,3087,669,3166">
-<area shape="rect" id="node35" href="notifications.html" title="notifications" alt="" coords="729,2063,921,2238">
-<area shape="rect" id="node36" href="objects.html" title="objects" alt="" coords="553,3183,669,3262">
-<area shape="rect" id="node37" href="opportunities.html" title="opportunities" alt="" coords="767,2855,883,2934">
-<area shape="rect" id="node38" href="participants.html" title="participants" alt="" coords="991,499,1107,578">
-<area shape="rect" id="node39" href="payments.html" title="payments" alt="" coords="991,2928,1107,3007">
-<area shape="rect" id="node40" href="permissions.html" title="permissions" alt="" coords="553,315,669,394">
-<area shape="rect" id="node41" href="pricelists.html" title="pricelists" alt="" coords="547,1150,675,1228">
-<area shape="rect" id="node42" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="749,1834,901,1912">
-<area shape="rect" id="node43" href="pricelists2items.html" title="pricelists2items" alt="" coords="760,1150,889,1228">
-<area shape="rect" id="node45" href="resources.html" title="resources" alt="" coords="767,1354,883,1432">
-<area shape="rect" id="node46" href="services.html" title="services" alt="" coords="767,1450,883,1528">
-<area shape="rect" id="node47" href="stocktransactions.html" title="stocktransactions" alt="" coords="978,1592,1119,1671">
-<area shape="rect" id="node48" href="storages.html" title="storages" alt="" coords="547,1319,675,1398">
-<area shape="rect" id="node49" href="suppliers.html" title="suppliers" alt="" coords="767,1738,883,1816">
-<area shape="rect" id="node50" href="tokens.html" title="tokens" alt="" coords="553,1718,669,1796">
-<area shape="rect" id="node51" href="weblets.html" title="weblets" alt="" coords="767,1546,883,1624">
+<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="567,2779,703,2857">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="359,1879,518,2365">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="187,3291,315,3369">
+<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="7,1036,143,1115">
+<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1185,1492,1301,1571">
+<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="988,1411,1116,1489">
+<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="774,1247,902,1325">
+<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="774,2205,902,2284">
+<area shape="rect" id="node47" href="projects.html" title="projects" alt="" coords="571,795,699,873">
+<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="780,3124,896,3203">
+<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="571,1812,699,1891">
+<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="571,3176,699,3255">
+<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="571,3767,699,3845">
+<area shape="rect" id="node13" href="categories.html" title="categories" alt="" coords="577,337,693,416">
+<area shape="rect" id="node14" href="comments.html" title="comments" alt="" coords="774,2531,902,2609">
+<area shape="rect" id="node15" href="records.html" title="records" alt="" coords="571,2315,699,2689">
+<area shape="rect" id="node16" href="components.html" title="components" alt="" coords="780,168,896,247">
+<area shape="rect" id="node17" href="items.html" title="items" alt="" coords="571,168,699,247">
+<area shape="rect" id="node18" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="562,3429,708,3508">
+<area shape="rect" id="node19" href="contracts.html" title="contracts" alt="" coords="780,2805,896,2884">
+<area shape="rect" id="node20" href="davservers.html" title="davservers" alt="" coords="571,433,699,512">
+<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="774,2975,902,3053">
+<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="968,2939,1136,3017">
+<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="577,699,693,777">
+<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="780,1864,896,1943">
+<area shape="rect" id="node25" href="feedids.html" title="feedids" alt="" coords="780,1343,896,1421">
+<area shape="rect" id="node26" href="feedservers.html" title="feedservers" alt="" coords="571,891,699,969">
+<area shape="rect" id="node27" href="files.html" title="files" alt="" coords="994,2497,1110,2576">
+<area shape="rect" id="node28" href="follows.html" title="follows" alt="" coords="577,1945,693,2024">
+<area shape="rect" id="node29" href="groups2users.html" title="groups2users" alt="" coords="576,987,694,1065">
+<area shape="rect" id="node30" href="invitations.html" title="invitations" alt="" coords="780,3220,896,3299">
+<area shape="rect" id="node31" href="likes.html" title="likes" alt="" coords="780,2632,896,2711">
+<area shape="rect" id="node32" href="links.html" title="links" alt="" coords="577,1083,693,1161">
+<area shape="rect" id="node33" href="mailinglists.html" title="mailinglists" alt="" coords="774,3501,902,3580">
+<area shape="rect" id="node34" href="mailservers.html" title="mailservers" alt="" coords="571,3671,699,3749">
+<area shape="rect" id="node35" href="messages.html" title="messages" alt="" coords="988,3236,1116,3315">
+<area shape="rect" id="node36" href="messagereads.html" title="messagereads" alt="" coords="1180,3053,1306,3132">
+<area shape="rect" id="node37" href="notes.html" title="notes" alt="" coords="577,1179,693,1257">
+<area shape="rect" id="node38" href="notifications.html" title="notifications" alt="" coords="752,2301,924,2476">
+<area shape="rect" id="node39" href="objects.html" title="objects" alt="" coords="577,1275,693,1353">
+<area shape="rect" id="node40" href="opportunities.html" title="opportunities" alt="" coords="780,3316,896,3395">
+<area shape="rect" id="node41" href="participants.html" title="participants" alt="" coords="994,3697,1110,3776">
+<area shape="rect" id="node42" href="payments.html" title="payments" alt="" coords="994,2129,1110,2208">
+<area shape="rect" id="node43" href="permissions.html" title="permissions" alt="" coords="577,3863,693,3941">
+<area shape="rect" id="node44" href="pricelists.html" title="pricelists" alt="" coords="571,529,699,608">
+<area shape="rect" id="node45" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="762,1672,914,1751">
+<area shape="rect" id="node46" href="prices.html" title="prices" alt="" coords="780,529,896,608">
+<area shape="rect" id="node48" href="resources.html" title="resources" alt="" coords="780,1960,896,2039">
+<area shape="rect" id="node49" href="services.html" title="services" alt="" coords="780,2056,896,2135">
+<area shape="rect" id="node50" href="stocktransactions.html" title="stocktransactions" alt="" coords="982,621,1123,700">
+<area shape="rect" id="node51" href="storages.html" title="storages" alt="" coords="571,35,699,113">
+<area shape="rect" id="node52" href="suppliers.html" title="suppliers" alt="" coords="780,1576,896,1655">
+<area shape="rect" id="node53" href="tokens.html" title="tokens" alt="" coords="577,2219,693,2297">
+<area shape="rect" id="node54" href="weblets.html" title="weblets" alt="" coords="780,1768,896,1847">
 </map>
 
   <a name="diagram"><img id="twoDegreesImg" src="../diagrams/notifications.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>

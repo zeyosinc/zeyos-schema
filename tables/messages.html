@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="odd">
+<tr class="even">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">serial</td>
  <td class="detail" align="right">10</td>
@@ -92,16 +92,28 @@
  <td class="detail" align="right">nextval('"messages_ID_seq"'::regclass)</td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="imapids.message refs messages.ID via FK_imapids_message"><a href="imapids.html">imapids</a><span class="relatedKey">.message</span>
     </td>
     <td class="constraint detail">FK_imapids_message<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="mailservers.message refs messages.ID via FK_mailservers_message"><a href="mailservers.html">mailservers</a><span class="relatedKey">.message</span>
     </td>
     <td class="constraint detail">FK_mailservers_message<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="messagereads.message refs messages.ID via FK_messagereads_message"><a href="messagereads.html">messagereads</a><span class="relatedKey">.message</span>
+    </td>
+    <td class="constraint detail">FK_messagereads_message<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="messages.reference refs messages.ID via FK_messages_reference"><a href="messages.html">messages</a><span class="relatedKey">.reference</span>
+    </td>
+    <td class="constraint detail">FK_messages_reference<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
   </table>
@@ -109,8 +121,8 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">owneruser</td>
+<tr class="odd">
+ <td class="detail">owneruser</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -119,7 +131,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="messages.owneruser refs users.ID via FK_messages_owneruser"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_messages_owneruser<span title="Cascade on delete:
@@ -129,28 +141,8 @@
  </td>
  <td class="comment detail">The owner user</td>
 </tr>
-<tr class="odd">
- <td class="indexedColumn" title="Indexed">ownergroup</td>
- <td class="detail">int4</td>
- <td class="detail" align="right">10</td>
- <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="right">null</td>
- <td class="detail"></td>
- <td class="detail">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
-    <td class="relatedTable detail" title="messages.ownergroup refs groups.ID via FK_messages_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
-    </td>
-    <td class="constraint detail">FK_messages_ownergroup<span title="Cascade on delete:
- Deletion of parent deletes child">&nbsp;C</span></td>
-   </tr>
-  </table>
- </td>
- <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
-</tr>
 <tr class="even">
- <td class="detail">creator</td>
+ <td class="detail">ownergroup</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -160,6 +152,26 @@
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
    <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="messages.ownergroup refs groups.ID via FK_messages_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_messages_ownergroup<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
+</tr>
+<tr class="odd">
+ <td class="detail">creator</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="messages.creator refs users.ID via FK_messages_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_messages_creator<span title="Null on delete:
@@ -169,7 +181,7 @@
  </td>
  <td class="comment detail">The object creator</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">creationdate</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -180,7 +192,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">lastmodified</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -191,28 +203,8 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="odd">
- <td class="indexedColumn" title="Indexed">mailserver</td>
- <td class="detail">int4</td>
- <td class="detail" align="right">10</td>
- <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="right">null</td>
- <td class="detail"></td>
- <td class="detail">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
-    <td class="relatedTable detail" title="messages.mailserver refs mailservers.ID via FK_messages_mailserver"><a href="mailservers.html">mailservers</a><span class="relatedKey">.ID</span>
-    </td>
-    <td class="constraint detail">FK_messages_mailserver<span title="Null on delete:
- Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
-   </tr>
-  </table>
- </td>
- <td class="comment detail"></td>
-</tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">mailinglist</td>
+ <td class="detail">mailserver</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -222,9 +214,9 @@
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
    <tr class="relative even" valign="top">
-    <td class="relatedTable detail" title="messages.mailinglist refs mailinglists.ID via FK_messages_mailinglist"><a href="mailinglists.html">mailinglists</a><span class="relatedKey">.ID</span>
+    <td class="relatedTable detail" title="messages.mailserver refs mailservers.ID via FK_messages_mailserver"><a href="mailservers.html">mailservers</a><span class="relatedKey">.ID</span>
     </td>
-    <td class="constraint detail">FK_messages_mailinglist<span title="Null on delete:
+    <td class="constraint detail">FK_messages_mailserver<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
   </table>
@@ -232,7 +224,7 @@
  <td class="comment detail"></td>
 </tr>
 <tr class="odd">
- <td class="indexedColumn" title="Indexed">ticket</td>
+ <td class="detail">ticket</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -252,7 +244,47 @@
  <td class="comment detail"></td>
 </tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">mailbox</td>
+ <td class="detail">mailinglist</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
+    <td class="relatedTable detail" title="messages.mailinglist refs mailinglists.ID via FK_messages_mailinglist"><a href="mailinglists.html">mailinglists</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_messages_mailinglist<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="detail">reference</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative odd" valign="top">
+    <td class="relatedTable detail" title="messages.reference refs messages.ID via FK_messages_reference"><a href="messages.html">messages</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_messages_reference<span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="detail">mailbox</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
  <td class="detail" align="center"></td>
@@ -263,18 +295,7 @@
  <td class="comment detail">0: Inbox, 1: Drafts, 2: Sent, 3: Templates, 4: Mailings, 5: Archive, 6: Trash, 7: Junk</td>
 </tr>
 <tr class="odd">
- <td class="detail">flag</td>
- <td class="detail">int2</td>
- <td class="detail" align="right">5</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center"></td>
- <td class="detail" align="right">0</td>
- <td class="detail"></td>
- <td class="detail"> </td>
- <td class="comment detail">0: Unread, 1: Read</td>
-</tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">date</td>
+ <td class="detail">date</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
  <td class="detail" align="center"></td>
@@ -284,8 +305,19 @@
  <td class="detail"> </td>
  <td class="comment detail">Unix timestamp in seconds</td>
 </tr>
+<tr class="even">
+ <td class="detail">subject</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">''::text</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
 <tr class="odd">
- <td class="indexedColumn" title="Indexed">subject</td>
+ <td class="detail">sender</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -296,17 +328,6 @@
  <td class="comment detail"></td>
 </tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">sender</td>
- <td class="detail">text</td>
- <td class="detail" align="right">2147483647</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center"></td>
- <td class="detail" align="right">''::text</td>
- <td class="detail"></td>
- <td class="detail"> </td>
- <td class="comment detail"></td>
-</tr>
-<tr class="odd">
  <td class="detail">sender_email</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -317,7 +338,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">sender_name</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -328,7 +349,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">to</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -339,7 +360,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">to_email</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -350,7 +371,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">to_name</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -361,7 +382,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">to_count</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -372,7 +393,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">cc</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -383,7 +404,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">bcc</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -394,7 +415,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">contenttype</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -405,7 +426,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">size</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -416,7 +437,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">text</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -427,7 +448,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">binfile</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -439,7 +460,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="26 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
+<p title="26 columns">Table contained 0 rows at Wed Apr 13 08:07 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -461,136 +482,76 @@
   <td class="constraint" style="text-align:left;">PK_messages_ID</td>
   <td class="detail">These unique columns are also nullable</td>
  </tr>
- <tr>
-  <td class="indexedColumn">mailinglist</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">FK_messages_mailinglist</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">mailserver</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">FK_messages_mailserver</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">ownergroup</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">FK_messages_ownergroup</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">owneruser</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">FK_messages_owneruser</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">ticket</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">FK_messages_ticket</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">date</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Descending">Desc</span></td>
-  <td class="constraint" style="text-align:left;">IDX_messages_date_ID</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">mailbox</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">IDX_messages_mailbox</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn"></td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"></td>
-  <td class="constraint" style="text-align:left;">IDX_messages_ownerpublic</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">subject + sender</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">TRGM_messages_search</td>
-  <td>&nbsp;</td>
- </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
 </div>
 <table width="100%" border="0"><tr><td class="container">
 <br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from messages">
 &nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
 <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="groups.html" title="groups" alt="" coords="185,238,321,476">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,397,141,861">
-<area shape="rect" id="node3" href="imapids.html" title="imapids" alt="" coords="999,233,1115,425">
-<area shape="rect" id="node4" href="mailservers.html" title="mailservers" alt="" coords="827,30,955,540">
-<area shape="rect" id="node5" href="messages.html" title="messages" alt="" coords="537,164,783,814">
-<area shape="rect" id="node6" href="mailinglists.html" title="mailinglists" alt="" coords="365,310,493,638">
-<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="365,656,493,1074">
+<area shape="rect" id="node1" href="groups.html" title="groups" alt="" coords="208,247,344,484">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,472,164,958">
+<area shape="rect" id="node3" href="imapids.html" title="imapids" alt="" coords="1021,246,1137,438">
+<area shape="rect" id="node4" href="mailservers.html" title="mailservers" alt="" coords="849,32,977,564">
+<area shape="rect" id="node5" href="messages.html" title="messages" alt="" coords="560,306,805,956">
+<area shape="rect" id="node6" href="mailinglists.html" title="mailinglists" alt="" coords="388,856,516,1184">
+<area shape="rect" id="node8" href="tickets.html" title="tickets" alt="" coords="388,420,516,839">
+<area shape="rect" id="node7" href="messagereads.html" title="messagereads" alt="" coords="851,883,976,1030">
 </map>
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/messages.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="559,386,695,465">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="373,1802,509,2266">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="201,638,329,717">
-<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="21,1071,157,1308">
-<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1229,1402,1345,1481">
-<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="999,1521,1127,1600">
-<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="756,1116,884,1535">
-<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="756,608,884,686">
-<area shape="rect" id="node44" href="projects.html" title="projects" alt="" coords="563,1610,691,1689">
-<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="762,896,878,974">
-<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="563,3093,691,3172">
-<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="563,2888,691,2966">
-<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="563,3468,691,3546">
-<area shape="rect" id="node13" href="categories.html" title="categories" alt="" coords="569,725,685,804">
-<area shape="rect" id="node14" href="comments.html" title="comments" alt="" coords="756,3252,884,3330">
-<area shape="rect" id="node15" href="records.html" title="records" alt="" coords="563,3334,691,3413">
-<area shape="rect" id="node16" href="components.html" title="components" alt="" coords="762,3961,878,4040">
-<area shape="rect" id="node17" href="items.html" title="items" alt="" coords="563,3961,691,4040">
-<area shape="rect" id="node18" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="553,556,700,634">
-<area shape="rect" id="node19" href="contracts.html" title="contracts" alt="" coords="762,800,878,878">
-<area shape="rect" id="node20" href="davservers.html" title="davservers" alt="" coords="563,821,691,900">
-<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="756,704,884,782">
-<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="979,722,1147,801">
-<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="569,917,685,996">
-<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="762,2868,878,2946">
-<area shape="rect" id="node25" href="follows.html" title="follows" alt="" coords="569,2792,685,2870">
-<area shape="rect" id="node26" href="groups2users.html" title="groups2users" alt="" coords="568,1013,685,1092">
-<area shape="rect" id="node27" href="imapids.html" title="imapids" alt="" coords="1229,2438,1345,2630">
-<area shape="rect" id="node28" href="mailservers.html" title="mailservers" alt="" coords="563,2192,691,2702">
-<area shape="rect" id="node29" href="messages.html" title="messages" alt="" coords="940,2163,1185,2814">
-<area shape="rect" id="node33" href="mailinglists.html" title="mailinglists" alt="" coords="756,1790,884,2118">
-<area shape="rect" id="node30" href="invitations.html" title="invitations" alt="" coords="762,1589,878,1668">
-<area shape="rect" id="node31" href="likes.html" title="likes" alt="" coords="762,3348,878,3426">
-<area shape="rect" id="node32" href="links.html" title="links" alt="" coords="569,1109,685,1188">
-<area shape="rect" id="node34" href="notes.html" title="notes" alt="" coords="569,3673,685,3752">
-<area shape="rect" id="node35" href="notifications.html" title="notifications" alt="" coords="762,3444,878,3522">
-<area shape="rect" id="node36" href="objects.html" title="objects" alt="" coords="569,3769,685,3848">
-<area shape="rect" id="node37" href="opportunities.html" title="opportunities" alt="" coords="762,386,878,465">
-<area shape="rect" id="node38" href="participants.html" title="participants" alt="" coords="1005,1756,1121,1834">
-<area shape="rect" id="node39" href="payments.html" title="payments" alt="" coords="1005,589,1121,668">
-<area shape="rect" id="node40" href="permissions.html" title="permissions" alt="" coords="569,290,685,369">
-<area shape="rect" id="node41" href="pricelists.html" title="pricelists" alt="" coords="563,3865,691,3944">
-<area shape="rect" id="node42" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="744,2676,896,2754">
-<area shape="rect" id="node43" href="pricelists2items.html" title="pricelists2items" alt="" coords="755,3865,885,3944">
-<area shape="rect" id="node45" href="resources.html" title="resources" alt="" coords="762,2964,878,3042">
-<area shape="rect" id="node46" href="services.html" title="services" alt="" coords="762,3060,878,3138">
-<area shape="rect" id="node47" href="stocktransactions.html" title="stocktransactions" alt="" coords="992,3804,1133,3882">
-<area shape="rect" id="node48" href="storages.html" title="storages" alt="" coords="563,4094,691,4173">
-<area shape="rect" id="node49" href="suppliers.html" title="suppliers" alt="" coords="762,2772,878,2850">
-<area shape="rect" id="node50" href="tokens.html" title="tokens" alt="" coords="569,2024,685,2102">
-<area shape="rect" id="node51" href="weblets.html" title="weblets" alt="" coords="762,3156,878,3234">
+<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="582,508,718,587">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="374,2011,532,2498">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="202,903,330,982">
+<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="22,1518,158,1756">
+<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1257,2571,1373,2650">
+<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="1022,3515,1150,3594">
+<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="779,3072,907,3490">
+<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="779,556,907,635">
+<area shape="rect" id="node46" href="projects.html" title="projects" alt="" coords="586,2996,714,3075">
+<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="785,460,901,539">
+<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="586,2446,714,2524">
+<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="586,1716,714,1795">
+<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="586,2827,714,2906">
+<area shape="rect" id="node13" href="categories.html" title="categories" alt="" coords="592,1135,708,1214">
+<area shape="rect" id="node14" href="comments.html" title="comments" alt="" coords="779,1914,907,1992">
+<area shape="rect" id="node15" href="records.html" title="records" alt="" coords="586,2010,714,2088">
+<area shape="rect" id="node16" href="components.html" title="components" alt="" coords="785,882,901,960">
+<area shape="rect" id="node17" href="items.html" title="items" alt="" coords="586,642,714,720">
+<area shape="rect" id="node18" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="576,834,723,912">
+<area shape="rect" id="node19" href="contracts.html" title="contracts" alt="" coords="785,364,901,443">
+<area shape="rect" id="node20" href="davservers.html" title="davservers" alt="" coords="586,3462,714,3540">
+<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="779,1426,907,1504">
+<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="1002,1426,1170,1504">
+<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="592,3558,708,3636">
+<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="785,2298,901,2376">
+<area shape="rect" id="node25" href="feedservers.html" title="feedservers" alt="" coords="586,316,714,395">
+<area shape="rect" id="node26" href="follows.html" title="follows" alt="" coords="592,2179,708,2258">
+<area shape="rect" id="node27" href="groups2users.html" title="groups2users" alt="" coords="591,1039,708,1118">
+<area shape="rect" id="node28" href="imapids.html" title="imapids" alt="" coords="1257,4032,1373,4224">
+<area shape="rect" id="node29" href="mailservers.html" title="mailservers" alt="" coords="586,3654,714,4186">
+<area shape="rect" id="node30" href="messages.html" title="messages" alt="" coords="963,3672,1208,4322">
+<area shape="rect" id="node34" href="mailinglists.html" title="mailinglists" alt="" coords="779,2690,907,3018">
+<area shape="rect" id="node31" href="invitations.html" title="invitations" alt="" coords="785,1692,901,1771">
+<area shape="rect" id="node32" href="likes.html" title="likes" alt="" coords="785,2010,901,2088">
+<area shape="rect" id="node33" href="links.html" title="links" alt="" coords="592,3270,708,3348">
+<area shape="rect" id="node35" href="messagereads.html" title="messagereads" alt="" coords="1252,3582,1378,3729">
+<area shape="rect" id="node36" href="notes.html" title="notes" alt="" coords="592,3366,708,3444">
+<area shape="rect" id="node37" href="notifications.html" title="notifications" alt="" coords="785,2106,901,2184">
+<area shape="rect" id="node38" href="objects.html" title="objects" alt="" coords="592,1231,708,1310">
+<area shape="rect" id="node39" href="opportunities.html" title="opportunities" alt="" coords="785,652,901,731">
+<area shape="rect" id="node40" href="participants.html" title="participants" alt="" coords="1028,2671,1144,2750">
+<area shape="rect" id="node41" href="payments.html" title="payments" alt="" coords="1028,556,1144,635">
+<area shape="rect" id="node42" href="permissions.html" title="permissions" alt="" coords="592,412,708,491">
+<area shape="rect" id="node43" href="pricelists.html" title="pricelists" alt="" coords="586,738,714,816">
+<area shape="rect" id="node44" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="767,978,919,1056">
+<area shape="rect" id="node45" href="prices.html" title="prices" alt="" coords="785,1074,901,1152">
+<area shape="rect" id="node47" href="resources.html" title="resources" alt="" coords="785,2394,901,2472">
+<area shape="rect" id="node48" href="services.html" title="services" alt="" coords="785,2490,901,2568">
+<area shape="rect" id="node49" href="stocktransactions.html" title="stocktransactions" alt="" coords="1015,711,1156,790">
+<area shape="rect" id="node50" href="storages.html" title="storages" alt="" coords="586,75,714,154">
+<area shape="rect" id="node51" href="suppliers.html" title="suppliers" alt="" coords="785,786,901,864">
+<area shape="rect" id="node52" href="tokens.html" title="tokens" alt="" coords="592,2312,708,2391">
+<area shape="rect" id="node53" href="weblets.html" title="weblets" alt="" coords="785,2202,901,2280">
 </map>
 
   <a name="diagram"><img id="twoDegreesImg" src="../diagrams/messages.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>

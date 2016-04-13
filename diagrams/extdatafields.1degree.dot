@@ -1,4 +1,4 @@
-// dot 2.38.0 on Mac OS X 10.11.2
+// dot 2.38.0 on Mac OS X 10.11.3
 // SchemaSpy rev 590
 digraph "oneDegreeRelationshipsDiagram" {
   graph [
@@ -36,7 +36,6 @@ digraph "oneDegreeRelationshipsDiagram" {
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">extdatavalues</TD></TR>
-      <TR><TD PORT="ID" COLSPAN="3" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="field" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">field</TD></TR>
       <TR><TD PORT="index" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">index</TD></TR>
       <TR><TD PORT="value" COLSPAN="3" ALIGN="LEFT">value</TD></TR>

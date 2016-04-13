@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">davserver</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -93,7 +93,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="davids.davserver refs davservers.ID via FK_davids_davserver"><a href="davservers.html">davservers</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_davids_davserver<span title="Cascade on delete:
@@ -103,7 +103,7 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="primaryKey" title="Primary Key">href</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -114,7 +114,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">contact</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -124,7 +124,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="davids.contact refs contacts.ID via FK_davids_contact"><a href="contacts.html">contacts</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_davids_contact<span title="Null on delete:
@@ -134,7 +134,7 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">appointment</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -144,7 +144,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="davids.appointment refs appointments.ID via FK_davids_appointment"><a href="appointments.html">appointments</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_davids_appointment<span title="Null on delete:
@@ -154,7 +154,7 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">task</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -164,7 +164,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="davids.task refs tasks.ID via FK_davids_task"><a href="tasks.html">tasks</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_davids_task<span title="Null on delete:
@@ -174,7 +174,7 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">etag</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -185,7 +185,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">vobject</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -197,7 +197,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="7 columns">Table contained 0 rows at Thu Jan 07 11:18 CET 2016</p><p></p>
+<p title="7 columns">Table contained 0 rows at Wed Apr 13 08:07 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>
@@ -217,13 +217,6 @@
   <td class="detail">Primary key</td>
   <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
   <td class="constraint" style="text-align:left;">PK_davids_davserver_href</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">contact + appointment + task</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">IDX_davids_noassociation</td>
   <td>&nbsp;</td>
  </tr>
  <tr>
@@ -253,18 +246,18 @@
 <br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from davids">
 &nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
 <map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="davids.html" title="davids" alt="" coords="177,792,413,1012">
-<area shape="rect" id="node2" href="appointments.html" title="appointments" alt="" coords="5,1240,133,1681">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="5,464,133,1223">
+<area shape="rect" id="node1" href="davids.html" title="davids" alt="" coords="177,781,413,1001">
+<area shape="rect" id="node2" href="appointments.html" title="appointments" alt="" coords="5,1219,133,1660">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="5,465,133,1201">
 <area shape="rect" id="node4" href="davservers.html" title="davservers" alt="" coords="5,5,133,447">
-<area shape="rect" id="node5" href="tasks.html" title="tasks" alt="" coords="5,1699,133,2163">
+<area shape="rect" id="node5" href="tasks.html" title="tasks" alt="" coords="5,1678,133,2142">
 </map>
   <a name="diagram"><img id="oneDegreeImg" src="../diagrams/davids.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
 <map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
 <area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="543,1522,679,1601">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="358,1118,494,1197">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="186,233,314,991">
-<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="6,1078,142,1157">
+<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="358,1095,494,1174">
+<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="186,233,314,969">
+<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="6,1055,142,1134">
 <area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1132,1753,1248,1831">
 <area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="900,1215,1028,1679">
 <area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="728,1621,856,1699">

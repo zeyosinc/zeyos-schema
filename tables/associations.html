@@ -1,0 +1,235 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN' 'http://www.w3.org/TR/html4/loose.dtd'>
+<html>
+<head><link rel="icon" href="../favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"><link href="http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,300" rel="stylesheet" type="text/css">
+  <!-- SchemaSpy rev 590 -->
+  <title>associations - ZeyOS Schema Documentation</title>
+  <link rel="stylesheet" href="../schemaSpy.css" type="text/css">
+  <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+  <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../jquery.js"></script>
+  <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../schemaSpy.js"></script>
+  <script LANGUAGE="JavaScript" TYPE="text/javascript">
+    table='associations';
+  </script>
+</head>
+<body>
+<table id="headerHolder" cellspacing="0" cellpadding="0"><tr><td>
+<div id="header">
+ <ul>
+  <li><a href="../index.html" title="All tables and views in the schema">Tables</a></li>
+  <li><a href="../relationships.html" title="Diagram of table relationships">Relationships</a></li>
+  
+  <li><a href="../constraints.html" title="Useful for diagnosing error messages that just give constraint name or number">Constraints</a></li>
+  
+  <li><a href="../columns.byTable.html" title="All of the columns in the schema">Columns</a></li>
+  
+ </ul>
+</div>
+</td></tr></table>
+<div class="content" style="clear:both;"><h1>Table: associations</h1><h2>Columns</h2>
+
+<table width="100%" border="0">
+<tr valign="top"><td class="container" align="left" valign="top">
+<form name="options" action="">
+ <label for="showRelatedCols"><input type="checkbox" id="showRelatedCols">Related columns</label>
+ <label for="showConstNames"><input type="checkbox" id="showConstNames">Constraints</label>
+ <label for="showComments"><input type="checkbox" checked id="showComments">Comments</label>
+ <label for="showLegend"><input type="checkbox" checked id="showLegend">Legend</label>
+</form>
+</td><td class="container" rowspan="2" align="right" valign="top">
+ <table class="legend" border="0">
+  <tr>
+   <td class="dataTable" valign="bottom">Legend:</td>
+   <td class="container" align="right" valign="top"></td>
+  </tr>
+  <tr><td class="container" colspan="2">
+   <table class="dataTable" border="1">
+    <tbody>
+    <tr><td class="primaryKey">Primary key columns</td></tr>
+    <tr><td class="indexedColumn">Columns with indexes</td></tr>
+    <tr class="impliedRelationship"><td class="detail"><span class="impliedRelationship">Implied relationships</span></td></tr>
+    <tr><td class="excludedColumn">Excluded column relationships</td></tr>
+    <tr><td class="legendDetail">&lt; <em>n</em> &gt; number of related tables</td></tr>
+   </tbody></table>
+  </td></tr>
+ </table>
+<div style="margin-right: 2pt;">
+
+
+</div>
+&nbsp;
+</td></tr><tr valign="top"><td class="container" align="left" valign="top">
+<a name="columns"></a>
+<table id="columns" class="dataTable" border="1" rules="groups">
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup>
+<colgroup class="comment">
+<thead align="left">
+<tr>
+  <th>Column</th>
+  <th>Type</th>
+  <th>Size</th>
+  <th title="Are nulls allowed?">Nulls</th>
+  <th title="Is column automatically updated?">Auto</th>
+  <th title="Default value">Default</th>
+  <th title="Columns in tables that reference this column"><span class="notSortedByColumn">Children</span></th>
+  <th title="Columns in tables that are referenced by this column"><span class="notSortedByColumn">Parents</span></th>
+  <th title="Comments" class="comment"><span class="notSortedByColumn">Comments</span></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="even">
+ <td class="primaryKey" title="Primary Key">ID</td>
+ <td class="detail">bigserial</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center" title="Automatically updated by the database">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="right">nextval('"associations_ID_seq"'::regclass)</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="detail">creator</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">The object creator</td>
+</tr>
+<tr class="even">
+ <td class="detail">creationdate</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">(date_part('epoch'::text, now()))::bigint</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
+</tr>
+<tr class="odd">
+ <td class="indexedColumn" title="Indexed">entity1</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="indexedColumn" title="Indexed">index1</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="indexedColumn" title="Indexed">entity2</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="indexedColumn" title="Indexed">index2</td>
+ <td class="detail">int8</td>
+ <td class="detail" align="right">19</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
+ <td class="detail">relation</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">''::text</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="even">
+ <td class="detail">meta</td>
+ <td class="detail">json</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+<p title="9 columns">Table contained 0 rows at Wed Apr 13 08:07 CEST 2016</p><p></p>
+</td></tr></table>
+<div class="indent">
+<b>Indexes:</b>
+<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
+<thead>
+ <tr>
+  <th>Column(s)</th>
+  <th>Type</th>
+  <th>Sort</th>
+  <th class="constraint" style="text-align:left;">Constraint Name</th>
+  <th>Anomalies</th>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+  <td class="primaryKey"></td>
+  <td class="detail">Primary key</td>
+  <td class="detail" style="text-align:left;"></td>
+  <td class="constraint" style="text-align:left;">PK_associations_ID</td>
+  <td class="detail">These unique columns are also nullable</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">entity2 + index2</td>
+  <td class="detail">Performance</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">IDX_associations_entity2_index2</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr>
+  <td class="indexedColumn">entity1 + index1 + entity2 + index2</td>
+  <td class="detail">Must be unique</td>
+  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
+  <td class="constraint" style="text-align:left;">UNQ_associations_entity1_index1_entity2_index2</td>
+  <td>&nbsp;</td>
+ </tr>
+</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
+</div>
+</div>
+<div id="footer">
+	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
+	<div id="links">
+		<a href="http://www.zeyos.com" id="zeyos-link"></a>
+		<a href="http://www.zeyconnect.com" id="zeyconnect-link"></a>
+		<a href="http://www.ixmldev.com" id="ixml-link"></a>
+	</div>
+	<div style="clear:both"></div>
+</div>
+</body>
+</html>

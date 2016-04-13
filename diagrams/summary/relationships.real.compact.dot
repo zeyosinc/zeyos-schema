@@ -1,4 +1,4 @@
-// dot 2.38.0 on Mac OS X 10.11.2
+// dot 2.38.0 on Mac OS X 10.11.3
 // SchemaSpy rev 590
 digraph "compactRelationshipsDiagram" {
   graph [
@@ -24,14 +24,10 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">accounts</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
-      <TR><TD PORT="lastname" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">lastname</TD></TR>
-      <TR><TD PORT="firstname" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">firstname</TD></TR>
-      <TR><TD PORT="customernum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">customernum</TD></TR>
-      <TR><TD PORT="suppliernum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">suppliernum</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="3" ALIGN="LEFT">contact</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">10 &gt;</TD></TR>
     </TABLE>>
@@ -43,17 +39,14 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">actionsteps</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="task" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">task</TD></TR>
-      <TR><TD PORT="ticket" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ticket</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="actionnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">actionnum</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="task" COLSPAN="3" ALIGN="LEFT">task</TD></TR>
+      <TR><TD PORT="ticket" COLSPAN="3" ALIGN="LEFT">ticket</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="transaction" COLSPAN="3" ALIGN="LEFT">transaction</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -81,7 +74,6 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">applications</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="identifier" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
@@ -94,14 +86,10 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">appointments</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="location" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">location</TD></TR>
-      <TR><TD PORT="datefrom" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">datefrom</TD></TR>
-      <TR><TD PORT="dateto" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dateto</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
@@ -113,10 +101,9 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">campaigns</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
@@ -171,21 +158,10 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">contacts</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="lastname" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">lastname</TD></TR>
-      <TR><TD PORT="firstname" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">firstname</TD></TR>
-      <TR><TD PORT="company" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">company</TD></TR>
-      <TR><TD PORT="address" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">address</TD></TR>
-      <TR><TD PORT="postalcode" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">postalcode</TD></TR>
-      <TR><TD PORT="city" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">city</TD></TR>
-      <TR><TD PORT="phone" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">phone</TD></TR>
-      <TR><TD PORT="phone2" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">phone2</TD></TR>
-      <TR><TD PORT="cell" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">cell</TD></TR>
-      <TR><TD PORT="email" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">email</TD></TR>
-      <TR><TD PORT="email2" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">email2</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">9 &gt;</TD></TR>
     </TABLE>>
@@ -198,8 +174,8 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">contacts2contacts</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="contact1" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact1</TD></TR>
-      <TR><TD PORT="contact2" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact2</TD></TR>
+      <TR><TD PORT="contact1" COLSPAN="3" ALIGN="LEFT">contact1</TD></TR>
+      <TR><TD PORT="contact2" COLSPAN="3" ALIGN="LEFT">contact2</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -211,12 +187,10 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">contracts</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="contractnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contractnum</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -243,14 +217,11 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">davservers</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="recipientuser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientuser</TD></TR>
-      <TR><TD PORT="recipientgroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientgroup</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="url" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">url</TD></TR>
-      <TR><TD PORT="username" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">username</TD></TR>
+      <TR><TD PORT="recipientuser" COLSPAN="3" ALIGN="LEFT">recipientuser</TD></TR>
+      <TR><TD PORT="recipientgroup" COLSPAN="3" ALIGN="LEFT">recipientgroup</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
@@ -262,12 +233,11 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">dunning</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="dunningnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dunningnum</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
@@ -293,13 +263,11 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">events</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="entity" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">entity</TD></TR>
       <TR><TD PORT="index" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">index</TD></TR>
-      <TR><TD PORT="datefrom" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">datefrom</TD></TR>
-      <TR><TD PORT="dateto" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">dateto</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -324,8 +292,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">extdataforms</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="application" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">application</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="application" COLSPAN="3" ALIGN="LEFT">application</TD></TR>
       <TR><TD PORT="identifier" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
@@ -345,6 +312,34 @@ digraph "compactRelationshipsDiagram" {
     URL="tables/extdatavalues.html"
     tooltip="extdatavalues"
   ];
+  "feedids" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">feedids</TD></TR>
+      <TR><TD PORT="feedserver" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">feedserver</TD></TR>
+      <TR><TD PORT="uuid" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">uuid</TD></TR>
+      <TR><TD PORT="record" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">record</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/feedids.html"
+    tooltip="feedids"
+  ];
+  "feedservers" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">feedservers</TD></TR>
+      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="recipientuser" COLSPAN="3" ALIGN="LEFT">recipientuser</TD></TR>
+      <TR><TD PORT="recipientgroup" COLSPAN="3" ALIGN="LEFT">recipientgroup</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="tables/feedservers.html"
+    tooltip="feedservers"
+  ];
   "files" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -352,7 +347,6 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="record" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">record</TD></TR>
       <TR><TD PORT="comment" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">comment</TD></TR>
-      <TR><TD PORT="filename" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">filename</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -382,7 +376,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="leader" COLSPAN="3" ALIGN="LEFT">leader</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">30 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">32 &gt;</TD></TR>
     </TABLE>>
     URL="tables/groups.html"
     tooltip="groups"
@@ -435,12 +429,8 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">items</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="manufacturer" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">manufacturer</TD></TR>
-      <TR><TD PORT="itemnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">itemnum</TD></TR>
-      <TR><TD PORT="barcode" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">barcode</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">5 &gt;</TD></TR>
     </TABLE>>
@@ -465,12 +455,10 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">links</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="url" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">url</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -482,13 +470,11 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">mailinglists</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="campaign" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">campaign</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="sender" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">sender</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="campaign" COLSPAN="3" ALIGN="LEFT">campaign</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
@@ -500,39 +486,45 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">mailservers</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
       <TR><TD PORT="message" COLSPAN="3" ALIGN="LEFT">message</TD></TR>
-      <TR><TD PORT="recipientuser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientuser</TD></TR>
-      <TR><TD PORT="recipientgroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">recipientgroup</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="sender" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">sender</TD></TR>
-      <TR><TD PORT="serverin" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">serverin</TD></TR>
-      <TR><TD PORT="serverout" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">serverout</TD></TR>
+      <TR><TD PORT="recipientuser" COLSPAN="3" ALIGN="LEFT">recipientuser</TD></TR>
+      <TR><TD PORT="recipientgroup" COLSPAN="3" ALIGN="LEFT">recipientgroup</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
     URL="tables/mailservers.html"
     tooltip="mailservers"
   ];
+  "messagereads" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">messagereads</TD></TR>
+      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="message" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">message</TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/messagereads.html"
+    tooltip="messagereads"
+  ];
   "messages" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">messages</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="mailserver" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">mailserver</TD></TR>
-      <TR><TD PORT="mailinglist" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">mailinglist</TD></TR>
-      <TR><TD PORT="ticket" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ticket</TD></TR>
-      <TR><TD PORT="mailbox" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">mailbox</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
-      <TR><TD PORT="subject" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">subject</TD></TR>
-      <TR><TD PORT="sender" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">sender</TD></TR>
+      <TR><TD PORT="mailserver" COLSPAN="3" ALIGN="LEFT">mailserver</TD></TR>
+      <TR><TD PORT="ticket" COLSPAN="3" ALIGN="LEFT">ticket</TD></TR>
+      <TR><TD PORT="mailinglist" COLSPAN="3" ALIGN="LEFT">mailinglist</TD></TR>
+      <TR><TD PORT="reference" COLSPAN="3" ALIGN="LEFT">reference</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 7</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
     </TABLE>>
     URL="tables/messages.html"
     tooltip="messages"
@@ -542,11 +534,10 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">notes</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -557,9 +548,8 @@ digraph "compactRelationshipsDiagram" {
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">notifications</TD></TR>
-      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="user" COLSPAN="3" ALIGN="LEFT">user</TD></TR>
-      <TR><TD PORT="record" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">record</TD></TR>
+      <TR><TD PORT="user" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">user</TD></TR>
+      <TR><TD PORT="record" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">record</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -571,11 +561,10 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">objects</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -587,13 +576,11 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">opportunities</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="opportunitynum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">opportunitynum</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="3" ALIGN="LEFT">contact</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -606,9 +593,9 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">participants</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="mailinglist" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">mailinglist</TD></TR>
-      <TR><TD PORT="campaign" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">campaign</TD></TR>
-      <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
+      <TR><TD PORT="mailinglist" COLSPAN="3" ALIGN="LEFT">mailinglist</TD></TR>
+      <TR><TD PORT="campaign" COLSPAN="3" ALIGN="LEFT">campaign</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="3" ALIGN="LEFT">contact</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -622,11 +609,9 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
-      <TR><TD PORT="subject" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">subject</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
@@ -652,9 +637,8 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">pricelists</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
@@ -675,31 +659,29 @@ digraph "compactRelationshipsDiagram" {
     URL="tables/pricelists2accounts.html"
     tooltip="pricelists2accounts"
   ];
-  "pricelists2items" [
+  "prices" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">pricelists2items</TD></TR>
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">prices</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="pricelist" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">pricelist</TD></TR>
-      <TR><TD PORT="item" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD></TR>
+      <TR><TD PORT="item" COLSPAN="3" ALIGN="LEFT">item</TD></TR>
+      <TR><TD PORT="pricelist" COLSPAN="3" ALIGN="LEFT">pricelist</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
-    URL="tables/pricelists2items.html"
-    tooltip="pricelists2items"
+    URL="tables/prices.html"
+    tooltip="prices"
   ];
   "projects" [
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">projects</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="projectnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">projectnum</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
@@ -711,17 +693,15 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">records</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
-      <TR><TD PORT="creator" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
       <TR><TD PORT="entity" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">entity</TD></TR>
       <TR><TD PORT="index" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">index</TD></TR>
       <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
-      <TR><TD PORT="sender" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">sender</TD></TR>
-      <TR><TD PORT="text" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">text</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">5 &gt;</TD></TR>
     </TABLE>>
     URL="tables/records.html"
     tooltip="records"
@@ -732,8 +712,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">resources</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="application" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">application</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="application" COLSPAN="3" ALIGN="LEFT">application</TD></TR>
       <TR><TD PORT="identifier" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
@@ -745,9 +724,8 @@ digraph "compactRelationshipsDiagram" {
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">serials</TD></TR>
-      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
-      <TR><TD PORT="serial" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">serial</TD></TR>
+      <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">transaction</TD></TR>
+      <TR><TD PORT="serial" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">serial</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
     </TABLE>>
     URL="tables/serials.html"
@@ -759,8 +737,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">services</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="application" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">application</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="application" COLSPAN="3" ALIGN="LEFT">application</TD></TR>
       <TR><TD PORT="identifier" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
@@ -774,9 +751,9 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">stocktransactions</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="item" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">item</TD></TR>
-      <TR><TD PORT="storage" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">storage</TD></TR>
-      <TR><TD PORT="transaction" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transaction</TD></TR>
+      <TR><TD PORT="item" COLSPAN="3" ALIGN="LEFT">item</TD></TR>
+      <TR><TD PORT="storage" COLSPAN="3" ALIGN="LEFT">storage</TD></TR>
+      <TR><TD PORT="transaction" COLSPAN="3" ALIGN="LEFT">transaction</TD></TR>
       <TR><TD PORT="transfer" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transfer</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
@@ -789,9 +766,8 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">storages</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">1 &gt;</TD></TR>
     </TABLE>>
@@ -840,14 +816,12 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">tasks</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="owneruser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">owneruser</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="owneruser" COLSPAN="3" ALIGN="LEFT">owneruser</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="ticket" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ticket</TD></TR>
-      <TR><TD PORT="project" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">project</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="tasknum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">tasknum</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="ticket" COLSPAN="3" ALIGN="LEFT">ticket</TD></TR>
+      <TR><TD PORT="project" COLSPAN="3" ALIGN="LEFT">project</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">2 &gt;</TD></TR>
     </TABLE>>
@@ -859,13 +833,11 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">tickets</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="project" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">project</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
-      <TR><TD PORT="ticketnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ticketnum</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="project" COLSPAN="3" ALIGN="LEFT">project</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">3 &gt;</TD></TR>
     </TABLE>>
@@ -876,9 +848,8 @@ digraph "compactRelationshipsDiagram" {
     label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">tokens</TD></TR>
-      <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="user" COLSPAN="3" ALIGN="LEFT">user</TD></TR>
-      <TR><TD PORT="identifier" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD></TR>
+      <TR><TD PORT="user" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">user</TD></TR>
+      <TR><TD PORT="identifier" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">identifier</TD></TR>
       <TR><TD PORT="token" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">token</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
@@ -891,14 +862,12 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">transactions</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="ownergroup" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">ownergroup</TD></TR>
+      <TR><TD PORT="ownergroup" COLSPAN="3" ALIGN="LEFT">ownergroup</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="assigneduser" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD></TR>
-      <TR><TD PORT="account" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">account</TD></TR>
+      <TR><TD PORT="assigneduser" COLSPAN="3" ALIGN="LEFT">assigneduser</TD></TR>
+      <TR><TD PORT="account" COLSPAN="3" ALIGN="LEFT">account</TD></TR>
       <TR><TD PORT="transactionnum" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">transactionnum</TD></TR>
       <TR><TD PORT="type" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">type</TD></TR>
-      <TR><TD PORT="date" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD></TR>
-      <TR><TD PORT="status" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">status</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
     </TABLE>>
@@ -910,11 +879,12 @@ digraph "compactRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">users</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
-      <TR><TD PORT="contact" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">contact</TD></TR>
+      <TR><TD PORT="contact" COLSPAN="3" ALIGN="LEFT">contact</TD></TR>
       <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
       <TR><TD PORT="email" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">email</TD></TR>
+      <TR><TD PORT="persistentlogintoken" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">persistentlogintoken</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">86 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">90 &gt;</TD></TR>
     </TABLE>>
     URL="tables/users.html"
     tooltip="users"
@@ -925,8 +895,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">weblets</TD></TR>
       <TR><TD PORT="ID" COLSPAN="3" BGCOLOR="#bed1b8" ALIGN="LEFT">ID</TD></TR>
       <TR><TD PORT="creator" COLSPAN="3" ALIGN="LEFT">creator</TD></TR>
-      <TR><TD PORT="application" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">application</TD></TR>
-      <TR><TD PORT="name" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">name</TD></TR>
+      <TR><TD PORT="application" COLSPAN="3" ALIGN="LEFT">application</TD></TR>
       <TR><TD PORT="identifier" COLSPAN="3" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
@@ -998,6 +967,13 @@ digraph "compactRelationshipsDiagram" {
   "extdataforms":"application":w -> "applications":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "extdataforms":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "extdatavalues":"field":w -> "extdatafields":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedids":"feedserver":w -> "feedservers":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedids":"record":w -> "records":"ID":e [arrowhead=none dir=back arrowtail=teeodot];
+  "feedservers":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"recipientgroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "feedservers":"recipientuser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "files":"comment":w -> "comments":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "files":"record":w -> "records":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "follows":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1030,11 +1006,14 @@ digraph "compactRelationshipsDiagram" {
   "mailservers":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"recipientgroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "mailservers":"recipientuser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "messagereads":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "messagereads":"message":w -> "messages":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"mailinglist":w -> "mailinglists":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"mailserver":w -> "mailservers":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"owneruser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "messages":"reference":w -> "messages":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "messages":"ticket":w -> "tickets":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "notes":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1067,9 +1046,9 @@ digraph "compactRelationshipsDiagram" {
   "pricelists2accounts":"account":w -> "accounts":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "pricelists2accounts":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "pricelists2accounts":"pricelist":w -> "pricelists":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "pricelists2items":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "pricelists2items":"item":w -> "items":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "pricelists2items":"pricelist":w -> "pricelists":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "prices":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "prices":"item":w -> "items":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "prices":"pricelist":w -> "pricelists":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"assigneduser":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"creator":w -> "users":"ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "projects":"ownergroup":w -> "groups":"ID":e [arrowhead=none dir=back arrowtail=crowodot];

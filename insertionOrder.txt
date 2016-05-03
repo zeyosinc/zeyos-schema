@@ -25,12 +25,10 @@ davservers
 feedservers
 extdatavalues
 follows
-serials
 tagrels
 tokens
 extdataforms
 feedids
-files
 imapids
 likes
 messagereads
@@ -45,6 +43,7 @@ components
 contacts2contacts
 dunning2transactions
 events
+files
 groups2users
 invitations
 pricelists2accounts

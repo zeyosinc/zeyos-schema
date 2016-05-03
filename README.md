@@ -65,7 +65,6 @@ Tables
 * [projects](http://schema.zeyos.com/tables/projects.html)
 * [records](http://schema.zeyos.com/tables/records.html)
 * [resources](http://schema.zeyos.com/tables/resources.html)
-* [serials](http://schema.zeyos.com/tables/serials.html)
 * [services](http://schema.zeyos.com/tables/services.html)
 * [stocktransactions](http://schema.zeyos.com/tables/stocktransactions.html)
 * [storages](http://schema.zeyos.com/tables/storages.html)

@@ -14,6 +14,7 @@ prices
 pricelists2accounts
 invitations
 groups2users
+files
 events
 dunning2transactions
 contacts2contacts
@@ -28,12 +29,10 @@ notifications
 messagereads
 likes
 imapids
-files
 feedids
 extdataforms
 tokens
 tagrels
-serials
 follows
 extdatavalues
 feedservers

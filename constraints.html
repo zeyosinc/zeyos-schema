@@ -32,7 +32,7 @@
 <div class="indent">
 <table width="100%">
 <tr><td class="container" valign="bottom"><b>
-189 Foreign Key Constraints:</b>
+190 Foreign Key Constraints:</b>
 </td><td class="container" align="right">
 <table>
   <tr><td class="container" align="right" valign="top"></td></tr>
@@ -563,93 +563,107 @@
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
   <tr class="even">
+  <td class="detail">FK_files_creator</td>
+  <td class="detail"><a href="tables/files.html">files</a>.creator</td>
+  <td class="detail"><a href="tables/users.html">users</a>.ID</td>
+  <td class="detail"><span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
+ </tr>
+  <tr class="odd">
   <td class="detail">FK_files_record</td>
   <td class="detail"><a href="tables/files.html">files</a>.record</td>
   <td class="detail"><a href="tables/records.html">records</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_follows_creator</td>
   <td class="detail"><a href="tables/follows.html">follows</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_groups2users_creator</td>
   <td class="detail"><a href="tables/groups2users.html">groups2users</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_groups2users_group</td>
   <td class="detail"><a href="tables/groups2users.html">groups2users</a>.group</td>
   <td class="detail"><a href="tables/groups.html">groups</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_groups2users_user</td>
   <td class="detail"><a href="tables/groups2users.html">groups2users</a>.user</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_groups_creator</td>
   <td class="detail"><a href="tables/groups.html">groups</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_groups_leader</td>
   <td class="detail"><a href="tables/groups.html">groups</a>.leader</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_imapids_mailserver</td>
   <td class="detail"><a href="tables/imapids.html">imapids</a>.mailserver</td>
   <td class="detail"><a href="tables/mailservers.html">mailservers</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_imapids_message</td>
   <td class="detail"><a href="tables/imapids.html">imapids</a>.message</td>
   <td class="detail"><a href="tables/messages.html">messages</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_invitations_appointment</td>
   <td class="detail"><a href="tables/invitations.html">invitations</a>.appointment</td>
   <td class="detail"><a href="tables/appointments.html">appointments</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_invitations_contact</td>
   <td class="detail"><a href="tables/invitations.html">invitations</a>.contact</td>
   <td class="detail"><a href="tables/contacts.html">contacts</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_invitations_creator</td>
   <td class="detail"><a href="tables/invitations.html">invitations</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_items_creator</td>
   <td class="detail"><a href="tables/items.html">items</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
+  <td class="detail"><span title="Null on delete:
+ Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
+ </tr>
+  <tr class="even">
+  <td class="detail">FK_items_model</td>
+  <td class="detail"><a href="tables/items.html">items</a>.model</td>
+  <td class="detail"><a href="tables/items.html">items</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
@@ -1151,230 +1165,223 @@
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
   <tr class="even">
-  <td class="detail">FK_serials_transaction</td>
-  <td class="detail"><a href="tables/serials.html">serials</a>.transaction</td>
-  <td class="detail"><a href="tables/stocktransactions.html">stocktransactions</a>.ID</td>
-  <td class="detail"><span title="Cascade on delete:
- Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
- </tr>
-  <tr class="odd">
   <td class="detail">FK_services_application</td>
   <td class="detail"><a href="tables/services.html">services</a>.application</td>
   <td class="detail"><a href="tables/applications.html">applications</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_services_creator</td>
   <td class="detail"><a href="tables/services.html">services</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_stocktransactions_creator</td>
   <td class="detail"><a href="tables/stocktransactions.html">stocktransactions</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_stocktransactions_item</td>
   <td class="detail"><a href="tables/stocktransactions.html">stocktransactions</a>.item</td>
   <td class="detail"><a href="tables/items.html">items</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_stocktransactions_storage</td>
   <td class="detail"><a href="tables/stocktransactions.html">stocktransactions</a>.storage</td>
   <td class="detail"><a href="tables/storages.html">storages</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_stocktransactions_transaction</td>
   <td class="detail"><a href="tables/stocktransactions.html">stocktransactions</a>.transaction</td>
   <td class="detail"><a href="tables/transactions.html">transactions</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_stocktransactions_transfer</td>
   <td class="detail"><a href="tables/stocktransactions.html">stocktransactions</a>.transfer</td>
   <td class="detail"><a href="tables/stocktransactions.html">stocktransactions</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_storages_creator</td>
   <td class="detail"><a href="tables/storages.html">storages</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_storages_ownergroup</td>
   <td class="detail"><a href="tables/storages.html">storages</a>.ownergroup</td>
   <td class="detail"><a href="tables/groups.html">groups</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_suppliers_account</td>
   <td class="detail"><a href="tables/suppliers.html">suppliers</a>.account</td>
   <td class="detail"><a href="tables/accounts.html">accounts</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_suppliers_creator</td>
   <td class="detail"><a href="tables/suppliers.html">suppliers</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_suppliers_item</td>
   <td class="detail"><a href="tables/suppliers.html">suppliers</a>.item</td>
   <td class="detail"><a href="tables/items.html">items</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_tagrels_name</td>
   <td class="detail"><a href="tables/tagrels.html">tagrels</a>.name</td>
   <td class="detail"><a href="tables/tagnames.html">tagnames</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_tasks_assigneduser</td>
   <td class="detail"><a href="tables/tasks.html">tasks</a>.assigneduser</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_tasks_creator</td>
   <td class="detail"><a href="tables/tasks.html">tasks</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_tasks_ownergroup</td>
   <td class="detail"><a href="tables/tasks.html">tasks</a>.ownergroup</td>
   <td class="detail"><a href="tables/groups.html">groups</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_tasks_owneruser</td>
   <td class="detail"><a href="tables/tasks.html">tasks</a>.owneruser</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_tasks_project</td>
   <td class="detail"><a href="tables/tasks.html">tasks</a>.project</td>
   <td class="detail"><a href="tables/projects.html">projects</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_tasks_ticket</td>
   <td class="detail"><a href="tables/tasks.html">tasks</a>.ticket</td>
   <td class="detail"><a href="tables/tickets.html">tickets</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_tickets_account</td>
   <td class="detail"><a href="tables/tickets.html">tickets</a>.account</td>
   <td class="detail"><a href="tables/accounts.html">accounts</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_tickets_assigneduser</td>
   <td class="detail"><a href="tables/tickets.html">tickets</a>.assigneduser</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_tickets_creator</td>
   <td class="detail"><a href="tables/tickets.html">tickets</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_tickets_ownergroup</td>
   <td class="detail"><a href="tables/tickets.html">tickets</a>.ownergroup</td>
   <td class="detail"><a href="tables/groups.html">groups</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_tickets_project</td>
   <td class="detail"><a href="tables/tickets.html">tickets</a>.project</td>
   <td class="detail"><a href="tables/projects.html">projects</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_tokens_user</td>
   <td class="detail"><a href="tables/tokens.html">tokens</a>.user</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_transactions_account</td>
   <td class="detail"><a href="tables/transactions.html">transactions</a>.account</td>
   <td class="detail"><a href="tables/accounts.html">accounts</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_transactions_assigneduser</td>
   <td class="detail"><a href="tables/transactions.html">transactions</a>.assigneduser</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_transactions_creator</td>
   <td class="detail"><a href="tables/transactions.html">transactions</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_transactions_ownergroup</td>
   <td class="detail"><a href="tables/transactions.html">transactions</a>.ownergroup</td>
   <td class="detail"><a href="tables/groups.html">groups</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_users_contact</td>
   <td class="detail"><a href="tables/users.html">users</a>.contact</td>
   <td class="detail"><a href="tables/contacts.html">contacts</a>.ID</td>
   <td class="detail"><span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">Null on delete&nbsp;</span></td>
  </tr>
-  <tr class="odd">
+  <tr class="even">
   <td class="detail">FK_weblets_application</td>
   <td class="detail"><a href="tables/weblets.html">weblets</a>.application</td>
   <td class="detail"><a href="tables/applications.html">applications</a>.ID</td>
   <td class="detail"><span title="Cascade on delete:
  Deletion of parent deletes child">Cascade on delete&nbsp;</span></td>
  </tr>
-  <tr class="even">
+  <tr class="odd">
   <td class="detail">FK_weblets_creator</td>
   <td class="detail"><a href="tables/weblets.html">weblets</a>.creator</td>
   <td class="detail"><a href="tables/users.html">users</a>.ID</td>

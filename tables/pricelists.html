@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">serial</td>
  <td class="detail" align="right">10</td>
@@ -92,13 +92,13 @@
  <td class="detail" align="right">nextval('"pricelists_ID_seq"'::regclass)</td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="pricelists2accounts.pricelist refs pricelists.ID via FK_pricelists2accounts_pricelist"><a href="pricelists2accounts.html">pricelists2accounts</a><span class="relatedKey">.pricelist</span>
     </td>
     <td class="constraint detail">FK_pricelists2accounts_pricelist<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="prices.pricelist refs pricelists.ID via FK_prices_pricelist"><a href="prices.html">prices</a><span class="relatedKey">.pricelist</span>
     </td>
     <td class="constraint detail">FK_prices_pricelist<span title="Cascade on delete:
@@ -109,7 +109,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">ownergroup</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -119,7 +119,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="pricelists.ownergroup refs groups.ID via FK_pricelists_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_pricelists_ownergroup<span title="Cascade on delete:
@@ -129,7 +129,7 @@
  </td>
  <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">creator</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -139,7 +139,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="pricelists.creator refs users.ID via FK_pricelists_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_pricelists_creator<span title="Null on delete:
@@ -149,7 +149,7 @@
  </td>
  <td class="comment detail">The object creator</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">creationdate</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -160,7 +160,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">lastmodified</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -171,7 +171,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">activity</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -182,7 +182,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">name</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -193,7 +193,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">type</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -204,7 +204,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">currency</td>
  <td class="detail">varchar</td>
  <td class="detail" align="right">3</td>
@@ -215,7 +215,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Currency symbol (e.g. EUR or USD)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">datefrom</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -226,7 +226,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Unix timestamp in seconds</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">dateto</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -237,7 +237,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Unix timestamp in seconds</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">applytoall</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -248,7 +248,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">description</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -260,7 +260,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="13 columns">Table contained 0 rows at Tue May 03 12:31 EEST 2016</p><p></p>
+<p title="13 columns">Table contained 0 rows at Wed Jun 08 08:41 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>

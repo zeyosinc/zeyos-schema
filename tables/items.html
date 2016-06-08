@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">serial</td>
  <td class="detail" align="right">10</td>
@@ -92,37 +92,37 @@
  <td class="detail" align="right">nextval('"items_ID_seq"'::regclass)</td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="components.component refs items.ID via FK_components_component"><a href="components.html">components</a><span class="relatedKey">.component</span>
     </td>
     <td class="constraint detail">FK_components_component<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="components.item refs items.ID via FK_components_item"><a href="components.html">components</a><span class="relatedKey">.item</span>
     </td>
     <td class="constraint detail">FK_components_item<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="items.model refs items.ID via FK_items_model"><a href="items.html">items</a><span class="relatedKey">.model</span>
     </td>
     <td class="constraint detail">FK_items_model<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="prices.item refs items.ID via FK_prices_item"><a href="prices.html">prices</a><span class="relatedKey">.item</span>
     </td>
     <td class="constraint detail">FK_prices_item<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="stocktransactions.item refs items.ID via FK_stocktransactions_item"><a href="stocktransactions.html">stocktransactions</a><span class="relatedKey">.item</span>
     </td>
     <td class="constraint detail">FK_stocktransactions_item<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="suppliers.item refs items.ID via FK_suppliers_item"><a href="suppliers.html">suppliers</a><span class="relatedKey">.item</span>
     </td>
     <td class="constraint detail">FK_suppliers_item<span title="Cascade on delete:
@@ -133,7 +133,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">ownergroup</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -143,7 +143,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="items.ownergroup refs groups.ID via FK_items_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_items_ownergroup<span title="Cascade on delete:
@@ -153,7 +153,7 @@
  </td>
  <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">creator</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -163,7 +163,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="items.creator refs users.ID via FK_items_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_items_creator<span title="Null on delete:
@@ -173,7 +173,7 @@
  </td>
  <td class="comment detail">The object creator</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">creationdate</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -184,7 +184,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">lastmodified</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -195,7 +195,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">model</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -205,7 +205,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="items.model refs items.ID via FK_items_model"><a href="items.html">items</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_items_model<span title="Null on delete:
@@ -215,7 +215,7 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">visibility</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -226,7 +226,7 @@
  <td class="detail"> </td>
  <td class="comment detail">0: visible, 1: archived, 2: deleted</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">name</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -237,7 +237,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">manufacturer</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -248,7 +248,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">itemnum</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -259,7 +259,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">barcode</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -270,7 +270,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">type</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -281,7 +281,7 @@
  <td class="detail"> </td>
  <td class="comment detail">0: Regular, 1: Serials, 2: Charges, 3: Serials & Charges, 4: Package Set, 5: Component Container, 6: No stock</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">unit</td>
  <td class="detail">varchar</td>
  <td class="detail" align="right">3</td>
@@ -292,7 +292,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">sellingprice</td>
  <td class="detail">float8</td>
  <td class="detail" align="right">17,17</td>
@@ -303,7 +303,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">purchaseprice</td>
  <td class="detail">float8</td>
  <td class="detail" align="right">17,17</td>
@@ -314,7 +314,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">taxrate</td>
  <td class="detail">float8</td>
  <td class="detail" align="right">17,17</td>
@@ -325,7 +325,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">weight</td>
  <td class="detail">float8</td>
  <td class="detail" align="right">17,17</td>
@@ -336,7 +336,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">description</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -347,7 +347,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">picbinfile</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -359,7 +359,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="19 columns">Table contained 0 rows at Tue May 03 12:31 EEST 2016</p><p></p>
+<p title="19 columns">Table contained 0 rows at Wed Jun 08 08:41 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>

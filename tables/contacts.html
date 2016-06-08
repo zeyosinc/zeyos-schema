@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">serial</td>
  <td class="detail" align="right">10</td>
@@ -92,55 +92,55 @@
  <td class="detail" align="right">nextval('"contacts_ID_seq"'::regclass)</td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="accounts.contact refs contacts.ID via FK_accounts_contact"><a href="accounts.html">accounts</a><span class="relatedKey">.contact</span>
     </td>
     <td class="constraint detail">FK_accounts_contact<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="addresses.contact refs contacts.ID via FK_addresses_contact"><a href="addresses.html">addresses</a><span class="relatedKey">.contact</span>
     </td>
     <td class="constraint detail">FK_addresses_contact<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="contacts2contacts.contact1 refs contacts.ID via FK_contacts2contacts_contact1"><a href="contacts2contacts.html">contacts2contacts</a><span class="relatedKey">.contact1</span>
     </td>
     <td class="constraint detail">FK_contacts2contacts_contact1<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="contacts2contacts.contact2 refs contacts.ID via FK_contacts2contacts_contact2"><a href="contacts2contacts.html">contacts2contacts</a><span class="relatedKey">.contact2</span>
     </td>
     <td class="constraint detail">FK_contacts2contacts_contact2<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="davids.contact refs contacts.ID via FK_davids_contact"><a href="davids.html">davids</a><span class="relatedKey">.contact</span>
     </td>
     <td class="constraint detail">FK_davids_contact<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="invitations.contact refs contacts.ID via FK_invitations_contact"><a href="invitations.html">invitations</a><span class="relatedKey">.contact</span>
     </td>
     <td class="constraint detail">FK_invitations_contact<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="opportunities.contact refs contacts.ID via FK_opportunities_contact"><a href="opportunities.html">opportunities</a><span class="relatedKey">.contact</span>
     </td>
     <td class="constraint detail">FK_opportunities_contact<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="participants.contact refs contacts.ID via FK_participants_contact"><a href="participants.html">participants</a><span class="relatedKey">.contact</span>
     </td>
     <td class="constraint detail">FK_participants_contact<span title="Null on delete:
  Foreign key to parent set to NULL when parent deleted">&nbsp;N</span></td>
    </tr>
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="users.contact refs contacts.ID via FK_users_contact"><a href="users.html">users</a><span class="relatedKey">.contact</span>
     </td>
     <td class="constraint detail">FK_users_contact<span title="Null on delete:
@@ -151,7 +151,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">owneruser</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -161,7 +161,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="contacts.owneruser refs users.ID via FK_contacts_owneruser"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_contacts_owneruser<span title="Cascade on delete:
@@ -171,7 +171,7 @@
  </td>
  <td class="comment detail">The owner user</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">ownergroup</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -181,7 +181,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="contacts.ownergroup refs groups.ID via FK_contacts_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_contacts_ownergroup<span title="Cascade on delete:
@@ -191,7 +191,7 @@
  </td>
  <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">creator</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -201,7 +201,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="contacts.creator refs users.ID via FK_contacts_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_contacts_creator<span title="Null on delete:
@@ -211,7 +211,7 @@
  </td>
  <td class="comment detail">The object creator</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">assigneduser</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -221,7 +221,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="contacts.assigneduser refs users.ID via FK_contacts_assigneduser"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_contacts_assigneduser<span title="Null on delete:
@@ -231,7 +231,7 @@
  </td>
  <td class="comment detail">The assigned user</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">creationdate</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -242,7 +242,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">lastmodified</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -253,7 +253,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">visibility</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -264,7 +264,7 @@
  <td class="detail"> </td>
  <td class="comment detail">0: visible, 1: archived, 2: deleted</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">lastname</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -275,7 +275,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">firstname</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -286,7 +286,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">type</td>
  <td class="detail">int2</td>
  <td class="detail" align="right">5</td>
@@ -297,7 +297,7 @@
  <td class="detail"> </td>
  <td class="comment detail">Contact type (0: Company, 1: Person)</td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">title</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -308,7 +308,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">company</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -319,7 +319,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">position</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -330,7 +330,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">department</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -341,7 +341,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">address</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -352,7 +352,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">postalcode</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -363,7 +363,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">city</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -374,7 +374,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">region</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -385,7 +385,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">country</td>
  <td class="detail">varchar</td>
  <td class="detail" align="right">2</td>
@@ -396,7 +396,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">phone</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -407,7 +407,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">phone2</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -418,7 +418,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">cell</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -429,7 +429,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">fax</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -440,7 +440,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="indexedColumn" title="Indexed">email</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -451,7 +451,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="indexedColumn" title="Indexed">email2</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -462,7 +462,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">website</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -473,7 +473,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">birthdate</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -484,7 +484,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">description</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -495,7 +495,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">picbinfile</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -507,7 +507,7 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="30 columns">Table contained 0 rows at Tue May 03 12:31 EEST 2016</p><p></p>
+<p title="30 columns">Table contained 0 rows at Wed Jun 08 08:41 CEST 2016</p><p></p>
 </td></tr></table>
 <div class="indent">
 <b>Indexes:</b>

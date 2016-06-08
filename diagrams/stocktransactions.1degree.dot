@@ -1,4 +1,4 @@
-// dot 2.38.0 on Mac OS X 10.11.4
+// dot 2.38.0 on Mac OS X 10.11.5
 // SchemaSpy rev 590
 digraph "oneDegreeRelationshipsDiagram" {
   graph [
@@ -73,7 +73,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="chargenum" COLSPAN="2" ALIGN="LEFT">chargenum</TD><TD PORT="chargenum.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="location" COLSPAN="2" ALIGN="LEFT">location</TD><TD PORT="location.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="reference" COLSPAN="2" ALIGN="LEFT">reference</TD><TD PORT="reference.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="amount" COLSPAN="2" ALIGN="LEFT">amount</TD><TD PORT="amount.type" ALIGN="LEFT">int4[10]</TD></TR>
+      <TR><TD PORT="amount" COLSPAN="2" ALIGN="LEFT">amount</TD><TD PORT="amount.type" ALIGN="LEFT">float8[17,17]</TD></TR>
       <TR><TD PORT="sellingprice" COLSPAN="2" ALIGN="LEFT">sellingprice</TD><TD PORT="sellingprice.type" ALIGN="LEFT">float8[17,17]</TD></TR>
       <TR><TD PORT="purchaseprice" COLSPAN="2" ALIGN="LEFT">purchaseprice</TD><TD PORT="purchaseprice.type" ALIGN="LEFT">float8[17,17]</TD></TR>
       <TR><TD PORT="serials" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">serials</TD><TD PORT="serials.type" ALIGN="LEFT">_text[2147483647]</TD></TR>

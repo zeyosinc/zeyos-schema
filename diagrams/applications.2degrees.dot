@@ -239,11 +239,11 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="identifier" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">identifier</TD><TD PORT="identifier.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="vendor" COLSPAN="2" ALIGN="LEFT">vendor</TD><TD PORT="vendor.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="accesskey" COLSPAN="2" ALIGN="LEFT">accesskey</TD><TD PORT="accesskey.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="zeyconnectid" COLSPAN="2" ALIGN="LEFT">zeyconnectid</TD><TD PORT="zeyconnectid.type" ALIGN="LEFT">varchar[40]</TD></TR>
       <TR><TD PORT="defaultsettings" COLSPAN="2" ALIGN="LEFT">defaultsettings</TD><TD PORT="defaultsettings.type" ALIGN="LEFT">json[2147483647]</TD></TR>
       <TR><TD PORT="settings" COLSPAN="2" ALIGN="LEFT">settings</TD><TD PORT="settings.type" ALIGN="LEFT">json[2147483647]</TD></TR>
       <TR><TD PORT="settingscode" COLSPAN="2" ALIGN="LEFT">settingscode</TD><TD PORT="settingscode.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="usersettingscode" COLSPAN="2" ALIGN="LEFT">usersettingscode</TD><TD PORT="usersettingscode.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="dependencies" COLSPAN="2" ALIGN="LEFT">dependencies</TD><TD PORT="dependencies.type" ALIGN="LEFT">_text[2147483647]</TD></TR>
       <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">0 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">4 &gt;</TD></TR>
     </TABLE>>
     URL="applications.html"

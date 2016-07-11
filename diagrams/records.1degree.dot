@@ -135,8 +135,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="assigneduser" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">assigneduser</TD><TD PORT="assigneduser.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="creationdate" COLSPAN="2" ALIGN="LEFT">creationdate</TD><TD PORT="creationdate.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="lastmodified" COLSPAN="2" ALIGN="LEFT">lastmodified</TD><TD PORT="lastmodified.type" ALIGN="LEFT">int8[19]</TD></TR>
-      <TR><TD PORT="entity" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">entity</TD><TD PORT="entity.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="index" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">index</TD><TD PORT="index.type" ALIGN="LEFT">int8[19]</TD></TR>
+      <TR><TD PORT="entity" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">entity</TD><TD PORT="entity.type" ALIGN="LEFT">tp_entity[2147483647]</TD></TR>
+      <TR><TD PORT="index" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">index</TD><TD PORT="index.type" ALIGN="LEFT">int4[10]</TD></TR>
       <TR><TD PORT="flag" COLSPAN="2" ALIGN="LEFT">flag</TD><TD PORT="flag.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="date" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">date</TD><TD PORT="date.type" ALIGN="LEFT">int8[19]</TD></TR>
       <TR><TD PORT="sender" COLSPAN="2" BGCOLOR="#f4f7da" ALIGN="LEFT">sender</TD><TD PORT="sender.type" ALIGN="LEFT">text[2147483647]</TD></TR>

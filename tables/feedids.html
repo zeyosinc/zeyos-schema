@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">feedserver</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -93,7 +93,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="feedids.feedserver refs feedservers.ID via FK_feedids_feedserver"><a href="feedservers.html">feedservers</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_feedids_feedserver<span title="Cascade on delete:
@@ -103,19 +103,8 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
- <td class="primaryKey" title="Primary Key">uuid</td>
- <td class="detail">text</td>
- <td class="detail" align="right">2147483647</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center"></td>
- <td class="detail"></td>
- <td class="detail"></td>
- <td class="detail"> </td>
- <td class="comment detail"></td>
-</tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">record</td>
+ <td class="detail">record</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -134,62 +123,25 @@
  </td>
  <td class="comment detail"></td>
 </tr>
+<tr class="odd">
+ <td class="primaryKey" title="Primary Key">uuid</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="3 columns">Table contained 0 rows at Mon Jul 11 10:24 CEST 2016</p><p></p>
+<p title="3 columns">Table contained 0 rows at Mon Jun 12 17:47 CEST 2017</p><p></p>
 </td></tr></table>
-<div class="indent">
-<b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
-<thead>
- <tr>
-  <th>Column(s)</th>
-  <th>Type</th>
-  <th>Sort</th>
-  <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
- </tr>
-</thead>
-<tbody>
- <tr>
-  <td class="primaryKey">feedserver + uuid</td>
-  <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">PK_feedids_feedserver_uuid</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">record</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_feedids_record</td>
-  <td class="detail">This unique column is also nullable</td>
- </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-</div>
 <table width="100%" border="0"><tr><td class="container">
-<br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from feedids">
-&nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
-<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="feedids.html" title="feedids" alt="" coords="177,164,404,293">
-<area shape="rect" id="node2" href="feedservers.html" title="feedservers" alt="" coords="5,5,133,356">
-<area shape="rect" id="node3" href="records.html" title="records" alt="" coords="5,374,133,747">
-</map>
-  <a name="diagram"><img id="oneDegreeImg" src="../diagrams/feedids.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
-<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="comments.html" title="comments" alt="" coords="587,222,715,300">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,386,141,464">
-<area shape="rect" id="node3" href="records.html" title="records" alt="" coords="365,401,493,774">
-<area shape="rect" id="node6" href="groups.html" title="groups" alt="" coords="185,352,321,431">
-<area shape="rect" id="node4" href="feedids.html" title="feedids" alt="" coords="537,318,764,447">
-<area shape="rect" id="node5" href="feedservers.html" title="feedservers" alt="" coords="365,32,493,383">
-<area shape="rect" id="node7" href="files.html" title="files" alt="" coords="808,434,924,512">
-<area shape="rect" id="node8" href="likes.html" title="likes" alt="" coords="593,544,709,623">
-<area shape="rect" id="node9" href="notifications.html" title="notifications" alt="" coords="593,724,709,803">
-</map>
-
-  <a name="diagram"><img id="twoDegreesImg" src="../diagrams/feedids.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
-</td></tr></table>
-</div>
+</td></tr></table><p>
+<br>SchemaSpy was unable to generate a diagram of table relationships.
+<br>SchemaSpy requires Graphviz version 2.2.1 or versions greater than 2.4 from <a href="http://www.graphviz.org" target="_blank">www.graphviz.org</a>.
+</p></div>
 <div id="footer">
 	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
 	<div id="links">

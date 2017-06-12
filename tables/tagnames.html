@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">serial</td>
  <td class="detail" align="right">10</td>
@@ -92,7 +92,7 @@
  <td class="detail" align="right">nextval('"tagnames_ID_seq"'::regclass)</td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
+   <tr class="relative odd" valign="top">
     <td class="relatedTable detail" title="tagrels.name refs tagnames.ID via FK_tagrels_name"><a href="tagrels.html">tagrels</a><span class="relatedKey">.name</span>
     </td>
     <td class="constraint detail">FK_tagrels_name<span title="Cascade on delete:
@@ -103,8 +103,8 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
- <td class="indexedColumn" title="Indexed">entity</td>
+<tr class="even">
+ <td class="detail">entity</td>
  <td class="detail">tp_entity</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -114,8 +114,8 @@
  <td class="detail"> </td>
  <td class="comment detail">The referenced entity name (e.g. "contacts")</td>
 </tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">name</td>
+<tr class="odd">
+ <td class="detail">name</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -126,52 +126,13 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="3 columns">Table contained 0 rows at Mon Jul 11 10:24 CEST 2016</p><p></p>
+<p title="3 columns">Table contained 0 rows at Mon Jun 12 17:47 CEST 2017</p><p></p>
 </td></tr></table>
-<div class="indent">
-<b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
-<thead>
- <tr>
-  <th>Column(s)</th>
-  <th>Type</th>
-  <th>Sort</th>
-  <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
- </tr>
-</thead>
-<tbody>
- <tr>
-  <td class="primaryKey"></td>
-  <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"></td>
-  <td class="constraint" style="text-align:left;">PK_tagnames_ID</td>
-  <td class="detail">These unique columns are also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">name</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">IDX_tagnames_name</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">entity + name</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_tagnames_entity_name</td>
-  <td>&nbsp;</td>
- </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-</div>
 <table width="100%" border="0"><tr><td class="container">
-<br><form action="get"><b>Close relationships:</b></form><map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="tagrels.html" title="tagrels" alt="" coords="307,9,423,110">
-<area shape="rect" id="node2" href="tagnames.html" title="tagnames" alt="" coords="5,5,263,135">
-</map>
-  <a name="diagram"><img id="oneDegreeImg" src="../diagrams/tagnames.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
-</td></tr></table>
-</div>
+</td></tr></table><p>
+<br>SchemaSpy was unable to generate a diagram of table relationships.
+<br>SchemaSpy requires Graphviz version 2.2.1 or versions greater than 2.4 from <a href="http://www.graphviz.org" target="_blank">www.graphviz.org</a>.
+</p></div>
 <div id="footer">
 	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
 	<div id="links">

@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="odd">
+<tr class="even">
  <td class="primaryKey" title="Primary Key">davserver</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
@@ -93,7 +93,7 @@
  <td class="detail"></td>
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="davids.davserver refs davservers.ID via FK_davids_davserver"><a href="davservers.html">davservers</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_davids_davserver<span title="Cascade on delete:
@@ -103,19 +103,8 @@
  </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="even">
- <td class="primaryKey" title="Primary Key">href</td>
- <td class="detail">text</td>
- <td class="detail" align="right">2147483647</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center"></td>
- <td class="detail"></td>
- <td class="detail"></td>
- <td class="detail"> </td>
- <td class="comment detail"></td>
-</tr>
 <tr class="odd">
- <td class="indexedColumn" title="Indexed">contact</td>
+ <td class="detail">contact</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -135,7 +124,7 @@
  <td class="comment detail">Reference to the associated contact</td>
 </tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">appointment</td>
+ <td class="detail">appointment</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -155,7 +144,7 @@
  <td class="comment detail"></td>
 </tr>
 <tr class="odd">
- <td class="indexedColumn" title="Indexed">task</td>
+ <td class="detail">task</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -175,6 +164,17 @@
  <td class="comment detail">Reference to the associated task</td>
 </tr>
 <tr class="even">
+ <td class="primaryKey" title="Primary Key">href</td>
+ <td class="detail">text</td>
+ <td class="detail" align="right">2147483647</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="center"></td>
+ <td class="detail"></td>
+ <td class="detail"></td>
+ <td class="detail"> </td>
+ <td class="comment detail"></td>
+</tr>
+<tr class="odd">
  <td class="detail">etag</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -185,7 +185,7 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
  <td class="detail">vobject</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
@@ -197,91 +197,13 @@
  <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="7 columns">Table contained 0 rows at Mon Jul 11 10:24 CEST 2016</p><p></p>
+<p title="7 columns">Table contained 0 rows at Mon Jun 12 17:47 CEST 2017</p><p></p>
 </td></tr></table>
-<div class="indent">
-<b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
-<thead>
- <tr>
-  <th>Column(s)</th>
-  <th>Type</th>
-  <th>Sort</th>
-  <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
- </tr>
-</thead>
-<tbody>
- <tr>
-  <td class="primaryKey">davserver + href</td>
-  <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">PK_davids_davserver_href</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">davserver</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">IDX_davids_noassociation</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">appointment</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_davids_appointment</td>
-  <td class="detail">This unique column is also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">contact</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_davids_contact</td>
-  <td class="detail">This unique column is also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">task</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_davids_task</td>
-  <td class="detail">This unique column is also nullable</td>
- </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-</div>
 <table width="100%" border="0"><tr><td class="container">
-<br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from davids">
-&nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
-<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="davids.html" title="davids" alt="" coords="177,781,413,1001">
-<area shape="rect" id="node2" href="appointments.html" title="appointments" alt="" coords="5,1219,133,1660">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="5,465,133,1201">
-<area shape="rect" id="node4" href="davservers.html" title="davservers" alt="" coords="5,5,133,447">
-<area shape="rect" id="node5" href="tasks.html" title="tasks" alt="" coords="5,1678,133,2142">
-</map>
-  <a name="diagram"><img id="oneDegreeImg" src="../diagrams/davids.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
-<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="543,1522,679,1601">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="358,1095,494,1174">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="186,233,314,969">
-<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="6,1055,142,1134">
-<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1132,1753,1248,1831">
-<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="900,1215,1028,1679">
-<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="728,1621,856,1699">
-<area shape="rect" id="node16" href="projects.html" title="projects" alt="" coords="547,1671,675,1750">
-<area shape="rect" id="node8" href="addresses.html" title="addresses" alt="" coords="734,1353,850,1431">
-<area shape="rect" id="node9" href="appointments.html" title="appointments" alt="" coords="547,882,675,1323">
-<area shape="rect" id="node10" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="538,105,684,183">
-<area shape="rect" id="node11" href="davids.html" title="davids" alt="" coords="1072,422,1308,642">
-<area shape="rect" id="node12" href="davservers.html" title="davservers" alt="" coords="547,370,675,811">
-<area shape="rect" id="node13" href="invitations.html" title="invitations" alt="" coords="734,849,850,927">
-<area shape="rect" id="node14" href="opportunities.html" title="opportunities" alt="" coords="734,753,850,831">
-<area shape="rect" id="node15" href="participants.html" title="participants" alt="" coords="553,274,669,353">
-</map>
-
-  <a name="diagram"><img id="twoDegreesImg" src="../diagrams/davids.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
-</td></tr></table>
-</div>
+</td></tr></table><p>
+<br>SchemaSpy was unable to generate a diagram of table relationships.
+<br>SchemaSpy requires Graphviz version 2.2.1 or versions greater than 2.4 from <a href="http://www.graphviz.org" target="_blank">www.graphviz.org</a>.
+</p></div>
 <div id="footer">
 	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
 	<div id="links">

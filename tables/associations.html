@@ -117,7 +117,7 @@
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">entity1</td>
+ <td class="detail">entity1</td>
  <td class="detail">tp_entity</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -128,7 +128,7 @@
  <td class="comment detail">First entity name (e.g. "tasks")</td>
 </tr>
 <tr class="odd">
- <td class="indexedColumn" title="Indexed">entity2</td>
+ <td class="detail">entity2</td>
  <td class="detail">tp_entity</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -139,7 +139,7 @@
  <td class="comment detail">Second entity name (e.g. "contracts")</td>
 </tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">index1</td>
+ <td class="detail">index1</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center"></td>
@@ -150,7 +150,7 @@
  <td class="comment detail">First object ID</td>
 </tr>
 <tr class="odd">
- <td class="indexedColumn" title="Indexed">index2</td>
+ <td class="detail">index2</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center"></td>
@@ -183,44 +183,8 @@
  <td class="comment detail">Optional meta data</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="9 columns">Table contained 0 rows at Mon Jul 11 10:24 CEST 2016</p><p></p>
+<p title="9 columns">Table contained 0 rows at Mon Jun 12 17:47 CEST 2017</p><p></p>
 </td></tr></table>
-<div class="indent">
-<b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
-<thead>
- <tr>
-  <th>Column(s)</th>
-  <th>Type</th>
-  <th>Sort</th>
-  <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
- </tr>
-</thead>
-<tbody>
- <tr>
-  <td class="primaryKey"></td>
-  <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"></td>
-  <td class="constraint" style="text-align:left;">PK_associations_ID</td>
-  <td class="detail">These unique columns are also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">entity2 + index2</td>
-  <td class="detail">Performance</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">IDX_associations_entity2_index2</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">entity1 + index1 + entity2 + index2</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_associations_entity1_index1_entity2_index2</td>
-  <td>&nbsp;</td>
- </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-</div>
 </div>
 <div id="footer">
 	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>

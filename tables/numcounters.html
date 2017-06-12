@@ -2,13 +2,13 @@
 <html>
 <head><link rel="icon" href="../favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="../favicon.ico" type="image/x-icon"><link href="http://fonts.googleapis.com/css?family=Roboto:400,700,700italic,300" rel="stylesheet" type="text/css">
   <!-- SchemaSpy rev 590 -->
-  <title>follows - ZeyOS Schema Documentation</title>
+  <title>numcounters - ZeyOS Schema Documentation</title>
   <link rel="stylesheet" href="../schemaSpy.css" type="text/css">
   <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
   <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../jquery.js"></script>
   <script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="../schemaSpy.js"></script>
   <script LANGUAGE="JavaScript" TYPE="text/javascript">
-    table='follows';
+    table='numcounters';
   </script>
 </head>
 <body>
@@ -25,14 +25,14 @@
  </ul>
 </div>
 </td></tr></table>
-<div class="content" style="clear:both;"><h1>Table: follows</h1><h2>Columns</h2>
+<div class="content" style="clear:both;"><h1>Table: numcounters</h1><h2>Columns</h2>
 
 <table width="100%" border="0">
 <tr valign="top"><td class="container" align="left" valign="top">
 <form name="options" action="">
  <label for="showRelatedCols"><input type="checkbox" id="showRelatedCols">Related columns</label>
  <label for="showConstNames"><input type="checkbox" id="showConstNames">Constraints</label>
- <label for="showComments"><input type="checkbox" checked id="showComments">Comments</label>
+ <label for="showComments"><input type="checkbox" id="showComments">Comments</label>
  <label for="showLegend"><input type="checkbox" checked id="showLegend">Legend</label>
 </form>
 </td><td class="container" rowspan="2" align="right" valign="top">
@@ -84,77 +84,31 @@
 </thead>
 <tbody valign="top">
 <tr class="odd">
- <td class="primaryKey" title="Primary Key">ID</td>
- <td class="detail">bigserial</td>
- <td class="detail" align="right">19</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center" title="Automatically updated by the database">&nbsp;&radic;&nbsp;</td>
- <td class="detail" align="right">nextval('"follows_ID_seq"'::regclass)</td>
- <td class="detail"></td>
- <td class="detail"> </td>
- <td class="comment detail"></td>
-</tr>
-<tr class="even">
- <td class="detail">creator</td>
- <td class="detail">int4</td>
- <td class="detail" align="right">10</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center"></td>
- <td class="detail"></td>
- <td class="detail"></td>
- <td class="detail">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative even" valign="top">
-    <td class="relatedTable detail" title="follows.creator refs users.ID via FK_follows_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
-    </td>
-    <td class="constraint detail">FK_follows_creator<span title="Cascade on delete:
- Deletion of parent deletes child">&nbsp;C</span></td>
-   </tr>
-  </table>
- </td>
- <td class="comment detail">The object creator</td>
-</tr>
-<tr class="odd">
- <td class="detail">creationdate</td>
- <td class="detail">int8</td>
- <td class="detail" align="right">19</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="center"></td>
- <td class="detail" align="right">(date_part('epoch'::text, now()))::bigint</td>
- <td class="detail"></td>
- <td class="detail"> </td>
- <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
-</tr>
-<tr class="even">
- <td class="detail">entity</td>
- <td class="detail">tp_entity</td>
+ <td class="primaryKey" title="Primary Key">identifier</td>
+ <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
  <td class="detail" align="center"></td>
  <td class="detail"></td>
  <td class="detail"></td>
  <td class="detail"> </td>
- <td class="comment detail">The referenced entity name (e.g. "contacts")</td>
+ <td class="comment detail"></td>
 </tr>
-<tr class="odd">
- <td class="detail">index</td>
- <td class="detail">int8</td>
- <td class="detail" align="right">19</td>
+<tr class="even">
+ <td class="detail">counter</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
  <td class="detail" align="center"></td>
  <td class="detail" align="center"></td>
  <td class="detail"></td>
  <td class="detail"></td>
  <td class="detail"> </td>
- <td class="comment detail">The ID of the referenced entity</td>
+ <td class="comment detail"></td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="5 columns">Table contained 0 rows at Mon Jun 12 17:47 CEST 2017</p><p></p>
+<p title="2 columns">Table contained 0 rows at Mon Jun 12 17:47 CEST 2017</p><p></p>
 </td></tr></table>
-<table width="100%" border="0"><tr><td class="container">
-</td></tr></table><p>
-<br>SchemaSpy was unable to generate a diagram of table relationships.
-<br>SchemaSpy requires Graphviz version 2.2.1 or versions greater than 2.4 from <a href="http://www.graphviz.org" target="_blank">www.graphviz.org</a>.
-</p></div>
+</div>
 <div id="footer">
 	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
 	<div id="links">

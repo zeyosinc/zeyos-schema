@@ -83,7 +83,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="even">
+<tr class="odd">
  <td class="primaryKey" title="Primary Key">ID</td>
  <td class="detail">serial</td>
  <td class="detail" align="right">10</td>
@@ -94,28 +94,8 @@
  <td class="detail"> </td>
  <td class="comment detail"></td>
 </tr>
-<tr class="odd">
- <td class="indexedColumn" title="Indexed">owneruser</td>
- <td class="detail">int4</td>
- <td class="detail" align="right">10</td>
- <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
- <td class="detail" align="center"></td>
- <td class="detail" align="right">null</td>
- <td class="detail"></td>
- <td class="detail">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0">
-   <tr class="relative odd" valign="top">
-    <td class="relatedTable detail" title="categories.owneruser refs users.ID via FK_categories_owneruser"><a href="users.html">users</a><span class="relatedKey">.ID</span>
-    </td>
-    <td class="constraint detail">FK_categories_owneruser<span title="Cascade on delete:
- Deletion of parent deletes child">&nbsp;C</span></td>
-   </tr>
-  </table>
- </td>
- <td class="comment detail">The owner user</td>
-</tr>
 <tr class="even">
- <td class="indexedColumn" title="Indexed">ownergroup</td>
+ <td class="detail">owneruser</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -125,17 +105,17 @@
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
    <tr class="relative even" valign="top">
-    <td class="relatedTable detail" title="categories.ownergroup refs groups.ID via FK_categories_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
+    <td class="relatedTable detail" title="categories.owneruser refs users.ID via FK_categories_owneruser"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
-    <td class="constraint detail">FK_categories_ownergroup<span title="Cascade on delete:
+    <td class="constraint detail">FK_categories_owneruser<span title="Cascade on delete:
  Deletion of parent deletes child">&nbsp;C</span></td>
    </tr>
   </table>
  </td>
- <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
+ <td class="comment detail">The owner user</td>
 </tr>
 <tr class="odd">
- <td class="detail">creator</td>
+ <td class="detail">ownergroup</td>
  <td class="detail">int4</td>
  <td class="detail" align="right">10</td>
  <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
@@ -145,6 +125,26 @@
  <td class="detail">
   <table border="0" width="100%" cellspacing="0" cellpadding="0">
    <tr class="relative odd" valign="top">
+    <td class="relatedTable detail" title="categories.ownergroup refs groups.ID via FK_categories_ownergroup"><a href="groups.html">groups</a><span class="relatedKey">.ID</span>
+    </td>
+    <td class="constraint detail">FK_categories_ownergroup<span title="Cascade on delete:
+ Deletion of parent deletes child">&nbsp;C</span></td>
+   </tr>
+  </table>
+ </td>
+ <td class="comment detail">The owner group (if owneruser and ownergroup are NULL, the element is public)</td>
+</tr>
+<tr class="even">
+ <td class="detail">creator</td>
+ <td class="detail">int4</td>
+ <td class="detail" align="right">10</td>
+ <td class="detail" align="center" title="nullable">&nbsp;&radic;&nbsp;</td>
+ <td class="detail" align="center"></td>
+ <td class="detail" align="right">null</td>
+ <td class="detail"></td>
+ <td class="detail">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0">
+   <tr class="relative even" valign="top">
     <td class="relatedTable detail" title="categories.creator refs users.ID via FK_categories_creator"><a href="users.html">users</a><span class="relatedKey">.ID</span>
     </td>
     <td class="constraint detail">FK_categories_creator<span title="Null on delete:
@@ -154,7 +154,7 @@
  </td>
  <td class="comment detail">The object creator</td>
 </tr>
-<tr class="even">
+<tr class="odd">
  <td class="detail">creationdate</td>
  <td class="detail">int8</td>
  <td class="detail" align="right">19</td>
@@ -165,8 +165,8 @@
  <td class="detail"> </td>
  <td class="comment detail">Last modification date/time (Unix timestamp in seconds)</td>
 </tr>
-<tr class="odd">
- <td class="indexedColumn" title="Indexed">entity</td>
+<tr class="even">
+ <td class="detail">entity</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -176,8 +176,8 @@
  <td class="detail"> </td>
  <td class="comment detail">The referenced entity name (e.g. "contacts")</td>
 </tr>
-<tr class="even">
- <td class="indexedColumn" title="Indexed">name</td>
+<tr class="odd">
+ <td class="detail">name</td>
  <td class="detail">text</td>
  <td class="detail" align="right">2147483647</td>
  <td class="detail" align="center"></td>
@@ -188,119 +188,13 @@
  <td class="comment detail">Category name</td>
 </tr>
 </tbody></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-<p title="7 columns">Table contained 0 rows at Mon Jul 11 10:24 CEST 2016</p><p></p>
+<p title="7 columns">Table contained 0 rows at Mon Jun 12 17:47 CEST 2017</p><p></p>
 </td></tr></table>
-<div class="indent">
-<b>Indexes:</b>
-<table class="dataTable" border="1" rules="groups"><colgroup><colgroup><colgroup><colgroup><colgroup>
-<thead>
- <tr>
-  <th>Column(s)</th>
-  <th>Type</th>
-  <th>Sort</th>
-  <th class="constraint" style="text-align:left;">Constraint Name</th>
-  <th>Anomalies</th>
- </tr>
-</thead>
-<tbody>
- <tr>
-  <td class="primaryKey"></td>
-  <td class="detail">Primary key</td>
-  <td class="detail" style="text-align:left;"></td>
-  <td class="constraint" style="text-align:left;">PK_categories_ID</td>
-  <td class="detail">These unique columns are also nullable</td>
- </tr>
- <tr>
-  <td class="indexedColumn">entity + name</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_categories_entity_name</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">ownergroup + entity + name</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_categories_ownergroup_entity_name</td>
-  <td>&nbsp;</td>
- </tr>
- <tr>
-  <td class="indexedColumn">owneruser + entity + name</td>
-  <td class="detail">Must be unique</td>
-  <td class="detail" style="text-align:left;"><span title="Ascending">Asc</span>/<span title="Ascending">Asc</span>/<span title="Ascending">Asc</span></td>
-  <td class="constraint" style="text-align:left;">UNQ_categories_owneruser_entity_name</td>
-  <td>&nbsp;</td>
- </tr>
-</tbody></colgroup></colgroup></colgroup></colgroup></colgroup></table>
-</div>
 <table width="100%" border="0"><tr><td class="container">
-<br><form action="get"><b>Close relationships</b><span class="degrees" id="degrees" title="Detail diminishes with increased separation from categories">
-&nbsp;within <label for="oneDegree"><input type="radio" name="degrees" id="oneDegree" checked>one</label>  <label for="twoDegrees"><input type="radio" name="degrees" id="twoDegrees">two degrees</label> of separation</span><b>:</b></form>
-<map id="oneDegreeRelationshipsDiagram" name="oneDegreeRelationshipsDiagram">
-<area shape="rect" id="node1" href="categories.html" title="categories" alt="" coords="388,5,624,225">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="5,111,164,621">
-<area shape="rect" id="node3" href="groups.html" title="groups" alt="" coords="208,54,344,291">
-</map>
-  <a name="diagram"><img id="oneDegreeImg" src="../diagrams/categories.1degree.png" usemap="#oneDegreeRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
-<map id="twoDegreesRelationshipsDiagram" name="twoDegreesRelationshipsDiagram">
-<area shape="rect" id="node1" href="accounts.html" title="accounts" alt="" coords="627,309,763,387">
-<area shape="rect" id="node2" href="users.html" title="users" alt="" coords="374,1951,533,2460">
-<area shape="rect" id="node3" href="contacts.html" title="contacts" alt="" coords="202,463,330,542">
-<area shape="rect" id="node4" href="groups.html" title="groups" alt="" coords="22,1319,158,1556">
-<area shape="rect" id="node5" href="actionsteps.html" title="actionsteps" alt="" coords="1270,1422,1386,1501">
-<area shape="rect" id="node6" href="tasks.html" title="tasks" alt="" coords="1073,1569,1201,1647">
-<area shape="rect" id="node7" href="tickets.html" title="tickets" alt="" coords="869,1179,997,1258">
-<area shape="rect" id="node8" href="transactions.html" title="transactions" alt="" coords="869,1275,997,1354">
-<area shape="rect" id="node46" href="projects.html" title="projects" alt="" coords="631,1171,759,1250">
-<area shape="rect" id="node9" href="addresses.html" title="addresses" alt="" coords="875,1467,991,1546">
-<area shape="rect" id="node10" href="applications.html" title="applications" alt="" coords="631,2382,759,2461">
-<area shape="rect" id="node11" href="appointments.html" title="appointments" alt="" coords="631,1363,759,1442">
-<area shape="rect" id="node12" href="campaigns.html" title="campaigns" alt="" coords="631,3522,759,3601">
-<area shape="rect" id="node13" href="categories.html" title="categories" alt="" coords="577,646,813,866">
-<area shape="rect" id="node14" href="comments.html" title="comments" alt="" coords="869,2899,997,2978">
-<area shape="rect" id="node15" href="records.html" title="records" alt="" coords="631,2993,759,3071">
-<area shape="rect" id="node16" href="components.html" title="components" alt="" coords="875,3737,991,3815">
-<area shape="rect" id="node17" href="items.html" title="items" alt="" coords="631,3787,759,3866">
-<area shape="rect" id="node18" href="contacts2contacts.html" title="contacts2contacts" alt="" coords="622,213,768,291">
-<area shape="rect" id="node19" href="contracts.html" title="contracts" alt="" coords="875,1371,991,1450">
-<area shape="rect" id="node20" href="davservers.html" title="davservers" alt="" coords="631,550,759,629">
-<area shape="rect" id="node21" href="dunning.html" title="dunning" alt="" coords="869,1046,997,1125">
-<area shape="rect" id="node22" href="dunning2transactions.html" title="dunning2transactions" alt="" coords="1053,1343,1221,1422">
-<area shape="rect" id="node23" href="events.html" title="events" alt="" coords="637,883,753,962">
-<area shape="rect" id="node24" href="extdataforms.html" title="extdataforms" alt="" coords="875,2522,991,2601">
-<area shape="rect" id="node25" href="feedservers.html" title="feedservers" alt="" coords="631,979,759,1058">
-<area shape="rect" id="node26" href="files.html" title="files" alt="" coords="1079,2899,1195,2978">
-<area shape="rect" id="node27" href="follows.html" title="follows" alt="" coords="637,2727,753,2806">
-<area shape="rect" id="node28" href="groups2users.html" title="groups2users" alt="" coords="636,1075,754,1154">
-<area shape="rect" id="node29" href="invitations.html" title="invitations" alt="" coords="875,1637,991,1715">
-<area shape="rect" id="node30" href="likes.html" title="likes" alt="" coords="875,2995,991,3074">
-<area shape="rect" id="node31" href="links.html" title="links" alt="" coords="637,1267,753,1346">
-<area shape="rect" id="node32" href="mailinglists.html" title="mailinglists" alt="" coords="869,3187,997,3266">
-<area shape="rect" id="node33" href="mailservers.html" title="mailservers" alt="" coords="631,2897,759,2975">
-<area shape="rect" id="node34" href="messages.html" title="messages" alt="" coords="1073,2474,1201,2553">
-<area shape="rect" id="node35" href="messagereads.html" title="messagereads" alt="" coords="1265,2275,1390,2354">
-<area shape="rect" id="node36" href="notes.html" title="notes" alt="" coords="637,3234,753,3313">
-<area shape="rect" id="node37" href="notifications.html" title="notifications" alt="" coords="875,3091,991,3170">
-<area shape="rect" id="node38" href="objects.html" title="objects" alt="" coords="637,3330,753,3409">
-<area shape="rect" id="node39" href="opportunities.html" title="opportunities" alt="" coords="875,1961,991,2039">
-<area shape="rect" id="node40" href="participants.html" title="participants" alt="" coords="1079,3238,1195,3317">
-<area shape="rect" id="node41" href="payments.html" title="payments" alt="" coords="1079,2013,1195,2091">
-<area shape="rect" id="node42" href="permissions.html" title="permissions" alt="" coords="637,3618,753,3697">
-<area shape="rect" id="node43" href="pricelists.html" title="pricelists" alt="" coords="631,3426,759,3505">
-<area shape="rect" id="node44" href="pricelists2accounts.html" title="pricelists2accounts" alt="" coords="857,2234,1009,2313">
-<area shape="rect" id="node45" href="prices.html" title="prices" alt="" coords="875,3426,991,3505">
-<area shape="rect" id="node47" href="resources.html" title="resources" alt="" coords="875,2618,991,2697">
-<area shape="rect" id="node48" href="services.html" title="services" alt="" coords="875,2714,991,2793">
-<area shape="rect" id="node49" href="stocktransactions.html" title="stocktransactions" alt="" coords="1066,3569,1208,3647">
-<area shape="rect" id="node50" href="storages.html" title="storages" alt="" coords="631,3883,759,3962">
-<area shape="rect" id="node51" href="suppliers.html" title="suppliers" alt="" coords="875,2330,991,2409">
-<area shape="rect" id="node52" href="tokens.html" title="tokens" alt="" coords="637,1913,753,1991">
-<area shape="rect" id="node53" href="weblets.html" title="weblets" alt="" coords="875,2426,991,2505">
-</map>
-
-  <a name="diagram"><img id="twoDegreesImg" src="../diagrams/categories.2degrees.png" usemap="#twoDegreesRelationshipsDiagram" class="diagram" border="0" alt="" align="left"></a>
-</td></tr></table>
-</div>
+</td></tr></table><p>
+<br>SchemaSpy was unable to generate a diagram of table relationships.
+<br>SchemaSpy requires Graphviz version 2.2.1 or versions greater than 2.4 from <a href="http://www.graphviz.org" target="_blank">www.graphviz.org</a>.
+</p></div>
 <div id="footer">
 	<div>Copyright &copy; 2012-2016 <a href="http://www.zeyos.com">ZeyOS, Inc.</a> All rights reserved.</div>
 	<div id="links">
